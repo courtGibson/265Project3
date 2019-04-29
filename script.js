@@ -1,8 +1,16 @@
 var dataP = d3.json("distanceDataJson.json")
+var mapP = d3.json("world-eckert3-highres.geo.json")
 
-dataP.then(function(data)
+
+Promise.all([dataP, mapP]).then(function(data)
 {
-  console.log("data", data);
+  var runData = values[0]
+  var geoData = values[1]
+
+  console.log("data", runData);
+
+  var map = makeMap();
+
   var womenByEvent = getWomen(data);
   var menByEvent = getMen(data);
 
@@ -14,6 +22,7 @@ dataP.then(function(data)
 {
   console.log(err);
 });
+
 
 
 var getWomen = function(data)
@@ -62,12 +71,12 @@ var getWomen = function(data)
   }
 
 })
-  console.log("women 800m", eight)
+/*  console.log("women 800m", eight)
   console.log("women 1500m", fifteen)
   console.log("women steeple", steeple)
   console.log("women 5k", fivek)
   console.log("women 10k", tenk)
-  console.log("women marathon", marathon)
+  console.log("women marathon", marathon)*/
 
   events.push(eight)
   events.push(fifteen)
@@ -126,12 +135,12 @@ var getMen = function(data)
 })
 
 
-console.log("men 800m", eight)
+/*console.log("men 800m", eight)
 console.log("men 1500m", fifteen)
 console.log("men steeple", steeple)
 console.log("men 5k", fivek)
 console.log("men 10k", tenk)
-console.log("men marathon", marathon)
+console.log("men marathon", marathon)*/
 
   events.push(eight)
   events.push(fifteen)
