@@ -1,13 +1,13 @@
 var dataP = d3.json("distanceDataJson.json")
 var mapP = d3.json("countries.geojson")
-var keyedDataP = d3.json("newJson.json")
+//var keyedDataP = d3.json("newJson.json")
 
 
-Promise.all([dataP, mapP, keyedDataP]).then(function(values)
+Promise.all([dataP, mapP/*, keyedDataP*/]).then(function(values)
 {
   var runData = values[0]
   var geoData = values[1]
-  var keyedData = values[2]
+  //var keyedData = values[2]
 
 
   putMapDataInRunData(runData, geoData);
@@ -26,7 +26,6 @@ Promise.all([dataP, mapP, keyedDataP]).then(function(values)
 
   //console.log(womenByEvent)
   //console.log(menByEvent)
-
   drawCircles(runData, byCountry);
 },
   function(err)
@@ -36,42 +35,8 @@ Promise.all([dataP, mapP, keyedDataP]).then(function(values)
 
 var format = function(runData)
 {
-  var newData = {}
 
-
-/*
-{ years:
-  [
-    2014:
-      countries:
-      [
-        Brazil:
-        [
-          events:
-          [
-            steeple:
-              gender:
-                female:
-              [
-
-              ]
-              male:
-              [
-
-              ]
-          ]
-        ]
-        , Cuba:
-
-      ]
-    , 2015:
-
-  ]
-
-}
-*/
-
-
+//console.log("newData", newData)
   var years = []
   var countries = []
   var events = []
@@ -94,56 +59,57 @@ runData.forEach(function(d)
 
 })
   years.reverse()
-  //console.log("years", years)
+  var newData = {years: []}
 
-
-  for (var currYear=0; currYear<years.length; currYear++)
+  for (var currYear = 0; currYear<years.length; currYear++)
   {
-    // add conutries to years
-    currYear.countries = countries;
+    var newYObj = {year: years[currYear], countries: []}
+    newData.years.push(newYObj);
 
-    for (var currCountry=0; currCountry<countries.length; currCountry++)
+    for (var currCountry = 0; currCountry<countries.length; currCountry++)
     {
-      //add events to countries
-      currCountry.events = events;
+        var newCObj = {country: countries[currCountry], id : countries[currCountry].split(" ").join("_"), events: []}
+        newData.years[currYear].countries.push(newCObj);
 
-      for (var currEvent=0; currEvent<events.length; currEvent++)
-      {
-        var females = []
-        var males = []
-        for (var currAthlete=0; currAthlete<runData.length; currAthlete++)
+        for (var currEvent = 0; currEvent<events.length; currEvent++)
         {
-          // add gendered athletes to events
-          if(runData[currAthlete].year == years[currYear] && runData[currAthlete].country == countries[currCountry] && runData[currAthlete].event == events[currEvent])
+          var newEObj = {event: events[currEvent], gender: {male: [], female: []}};
+          newData.years[currYear].countries[currCountry].events.push(newEObj);
+
+          for (var i = 0; i<runData.length; i++)
           {
-            if (runData[currAthlete].gender == "female")
+            if (runData[i].year == years[currYear] && runData[i].country == countries[currCountry] && runData[i].event == events[currEvent])
             {
-              females.push(runData[currAthlete]);
-            }
-            else
-            {
-              males.push(runData[currAthlete]);
+              var athlete = {name: runData[i].name.split(" (")[0], time: runData[i].time, data: runData[i]}
+              if (runData[i].gender == "female")
+              {
+                  newData.years[currYear].countries[currCountry].events[currEvent].gender.female.push(athlete);
+              }
+              else
+              {
+                newData.years[currYear].countries[currCountry].events[currEvent].gender.male.push(athlete);
+              }
             }
           }
-        }
-        currEvent.females = females;
-        currEvent.males = males;
-      }
 
+        }
     }
 
   }
-  console.log("years", years)
-  console.log("events", events)
+
+  console.log("newData", newData)
 
 }
 
-var drawCircles = function(runData, byCountry)
+var drawCircles = function(runData, data)
 {
   var svg = d3.select("svg")
 
+//data.forEach(functionsvg.append("g")
+
+
   svg.selectAll("circle")
-      .data(byCountry)
+      .data(data)
       .enter()
       .append("circle")
       .attr("cx", )
@@ -162,7 +128,7 @@ var makeMap = function(geoData)
   var svg = d3.select("body").append("svg")
                              .attr("width", w)
                              .attr("height", h)
-                             .attr("fill", "rgb(26, 30, 52)")
+                             .attr("fill", "rgb(23, 25, 32)")
                              .call(zoom)
 
   var projection = d3
@@ -265,28 +231,28 @@ function initiateZoom()
                               .attr("d", path)
                               .attr("id", function(d, i)
                               {
-                                 return "country" + d.properties.ADMIN;
+                                 return "country" + [d.properties.ADMIN];
                               })
                               .attr("class", "country")
-                              .attr("fill", "rgb(55, 65, 111)")
+                              .attr("fill", "rgb(48, 52, 67)")
                               .attr("stroke", "Black")
                               .attr("stroke-width", .1)
                               // add a mouseover action to show name label for feature/country
                               .on("mouseover", function(d, i)
                               {
 
-                                var e = d3.select("#"+d.properties.ADMIN+"text");
+                                var e = d3.select("#"+[d.properties.ADMIN]+"text");
                                 //console.log("e", e)
                                e.attr("fill", "GreenYellow");
-                                 d3.select("#countryLabel" + d.properties.ADMIN)
+                                 d3.select("#countryLabel" + [d.properties.ADMIN])
                                     .style("display", "block");
                               })
                               .on("mouseout", function(d, i)
                               {
-                                var e = d3.select("#"+d.properties.ADMIN+"text");
+                                var e = d3.select("#"+[d.properties.ADMIN]+"text");
                                 //console.log("e", e)
                                e.attr("fill", "transparent");
-                                 d3.select("#countryLabel" + d.properties.ADMIN)
+                                 d3.select("#countryLabel" + [d.properties.ADMIN])
                                  .style("display", "none");
                               })
                               // add an onclick action to zoom into clicked country
@@ -304,7 +270,7 @@ function initiateZoom()
                                  .attr("class", "countryLabel")
                                  .attr("id", function(d)
                                  {
-                                    return "countryLabel" + d.properties.ADMIN;
+                                    return "countryLabel" + [d.properties.ADMIN];
                                  })
                                  .attr("transform", function(d)
                                  {
@@ -316,7 +282,7 @@ function initiateZoom()
                                  {
                                    //d3.select(this).attr("fill","black");
                                    //console.log(d.properties.ADMIN+"text")
-                                   var e = d3.select("#"+d.properties.ADMIN+"text");
+                                   var e = d3.select("#"+[d.properties.ADMIN]+"text");
                                    //console.log("e", e)
                                   e.attr("fill", "GreenYellow");
                                     //d3.select(this).attr("font-size", 7);
@@ -325,7 +291,7 @@ function initiateZoom()
                                  })
                                  .on("mouseout", function(d, i)
                                  {
-                                   var e = d3.select("#"+d.properties.ADMIN+"text");
+                                   var e = d3.select("#"+[d.properties.ADMIN]+"text");
                                    //console.log("e", e)
                                   e.attr("fill", "transparent");
                                      d3.select(this).style("display", "none")
@@ -336,7 +302,7 @@ function initiateZoom()
                                  {
                                     d3.selectAll(".country")
                                       .classed("country-on", false);
-                                    d3.select("#country" + d.properties.ADMIN)
+                                    d3.select("#country" + [d.properties.ADMIN])
                                       .classed("country-on", true);
                                     boxZoom(path.bounds(d), path.centroid(d), 20);
                                  })
@@ -365,7 +331,7 @@ function getTextBox(selection)
                    .attr("class", "countryName")
                    .attr("id", function(d)
                    {
-                      return d.properties.ADMIN+"text";
+                      return [d.properties.ADMIN]+"text";
                    })
                    .style("text-anchor", "middle")
                    .attr("dx", 0)
@@ -374,7 +340,7 @@ function getTextBox(selection)
                    .attr("font-size", 7)
                    .text(function(d)
                    {
-                      return d.properties.ADMIN;
+                      return [d.properties.ADMIN];
                    })
                    .call(getTextBox)
 
@@ -423,7 +389,7 @@ var putMapDataInRunData = function(runData, geoData)
       }
       //console.log("currSpot", geoData.features[count])
       currSpot = geoData.features[count];
-      currCountry = currSpot.properties.ADMIN;
+      currCountry = [currSpot.properties.ADMIN];
       //console.log("name: ", currCountry)
 
       if (d.country == currCountry)
