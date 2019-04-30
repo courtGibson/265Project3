@@ -1,11 +1,13 @@
 var dataP = d3.json("distanceDataJson.json")
 var mapP = d3.json("countries.geojson")
+var keyedDataP = d3.json("newJson.json")
 
 
-Promise.all([dataP, mapP]).then(function(values)
+Promise.all([dataP, mapP, keyedDataP]).then(function(values)
 {
   var runData = values[0]
   var geoData = values[1]
+  var keyedData = values[2]
 
 
   putMapDataInRunData(runData, geoData);
@@ -19,11 +21,11 @@ Promise.all([dataP, mapP]).then(function(values)
 
   var womenByEvent = getWomen(runData);
   var menByEvent = getMen(runData);
-  var byCountry = getByCountry(runData);
+  var formatted= format(runData);
 
 
-  console.log(womenByEvent)
-  console.log(menByEvent)
+  //console.log(womenByEvent)
+  //console.log(menByEvent)
 
   drawCircles(runData, byCountry);
 },
@@ -32,39 +34,108 @@ Promise.all([dataP, mapP]).then(function(values)
   console.log(err);
 });
 
-var getByCountry = function(runData)
+var format = function(runData)
 {
+  var newData = {}
+
+
+/*
+{ years:
+  [
+    2014:
+      countries:
+      [
+        Brazil:
+        [
+          events:
+          [
+            steeple:
+              gender:
+                female:
+              [
+
+              ]
+              male:
+              [
+
+              ]
+          ]
+        ]
+        , Cuba:
+
+      ]
+    , 2015:
+
+  ]
+
+}
+*/
+
+
+  var years = []
   var countries = []
-  runData.forEach(function(d)
+  var events = []
+
+
+runData.forEach(function(d)
 {
-  if(!countries.includes(d.country))
+  if(!years.includes(d.year))
+  {
+    years.push(d.year);
+  }
+  if (!countries.includes(d.country))
   {
     countries.push(d.country);
   }
-})
-
-console.log("countries", countries)
-
-var bigarray = []
-  countries.forEach(function(d)
-{
-  /// add center point to data
-  var smallarray = []
-  smallarray.push(d);
-  var athletes = []
-  runData.forEach(function(runD)
-{
-  if(runD.country == d)
+  if (!events.includes(d.event))
   {
-    athletes.push(runD);
+    events.push(d.event);
   }
-})
-smallarray.push(athletes);
-bigarray.push(smallarray);
-})
 
-console.log("bigarray", bigarray)
-return bigarray;
+})
+  years.reverse()
+  //console.log("years", years)
+
+
+  for (var currYear=0; currYear<years.length; currYear++)
+  {
+    // add conutries to years
+    currYear.countries = countries;
+
+    for (var currCountry=0; currCountry<countries.length; currCountry++)
+    {
+      //add events to countries
+      currCountry.events = events;
+
+      for (var currEvent=0; currEvent<events.length; currEvent++)
+      {
+        var females = []
+        var males = []
+        for (var currAthlete=0; currAthlete<runData.length; currAthlete++)
+        {
+          // add gendered athletes to events
+          if(runData[currAthlete].year == years[currYear] && runData[currAthlete].country == countries[currCountry] && runData[currAthlete].event == events[currEvent])
+          {
+            if (runData[currAthlete].gender == "female")
+            {
+              females.push(runData[currAthlete]);
+            }
+            else
+            {
+              males.push(runData[currAthlete]);
+            }
+          }
+        }
+        currEvent.females = females;
+        currEvent.males = males;
+      }
+
+    }
+
+  }
+  console.log("years", years)
+  console.log("events", events)
+
 }
 
 var drawCircles = function(runData, byCountry)
