@@ -26,7 +26,7 @@
  {
    "time": "01:56.5",
    "name": "Ajee’ Wilson",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "female",
    "year": 2018
@@ -50,7 +50,7 @@
  {
    "time": "01:57.7",
    "name": "Raevyn Rogers",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "female",
    "year": 2018
@@ -58,7 +58,7 @@
  {
    "time": "01:58.0",
    "name": "Ce’Aira Brown",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "female",
    "year": 2018
@@ -74,7 +74,7 @@
  {
    "time": "01:58.0",
    "name": "Charlene Lipsey",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "female",
    "year": 2018
@@ -114,7 +114,7 @@
  {
    "time": "01:59.1",
    "name": "Laura Muir",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "800m",
    "gender": "female",
    "year": 2018
@@ -138,7 +138,7 @@
  {
    "time": "01:59.3",
    "name": "Lynsey Sharp",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "800m",
    "gender": "female",
    "year": 2018
@@ -170,7 +170,7 @@
  {
    "time": "01:59.7",
    "name": "Kaela Edwards",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "female",
    "year": 2018
@@ -186,7 +186,7 @@
  {
    "time": "01:59.8",
    "name": "Shelayna Oskan-Clarke",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "800m",
    "gender": "female",
    "year": 2018
@@ -210,7 +210,7 @@
  {
    "time": "01:59.9",
    "name": "Adelle Tracey",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "800m",
    "gender": "female",
    "year": 2018
@@ -226,7 +226,7 @@
  {
    "time": "01:59.9",
    "name": "Alexandra Bell",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "800m",
    "gender": "female",
    "year": 2018
@@ -258,7 +258,7 @@
  {
    "time": "02:00.1",
    "name": "Olivia Baker",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "female",
    "year": 2018
@@ -266,7 +266,7 @@
  {
    "time": "02:00.1",
    "name": "Hanna Green",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "female",
    "year": 2018
@@ -354,7 +354,7 @@
  {
    "time": "02:00.4",
    "name": "Laura Roesler",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "female",
    "year": 2018
@@ -410,7 +410,7 @@
  {
    "time": "03:57.3",
    "name": "Shelby Houlihan",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2018
@@ -434,7 +434,7 @@
  {
    "time": "03:58.2",
    "name": "Laura Muir",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "1500m",
    "gender": "female",
    "year": 2018
@@ -458,7 +458,7 @@
  {
    "time": "03:59.4",
    "name": "Jenny Simpson",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2018
@@ -514,7 +514,7 @@
  {
    "time": "04:01.8",
    "name": "Laura Weightman",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "1500m",
    "gender": "female",
    "year": 2018
@@ -530,7 +530,7 @@
  {
    "time": "04:02.0",
    "name": "Eilish McColgan",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "1500m",
    "gender": "female",
    "year": 2018
@@ -570,7 +570,7 @@
  {
    "time": "04:02.6",
    "name": "Brenda Martinez",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2018
@@ -586,7 +586,7 @@
  {
    "time": "04:03.0",
    "name": "Colleen Quigley",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2018
@@ -594,7 +594,7 @@
  {
    "time": "04:03.2",
    "name": "Sarah McDonald",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "1500m",
    "gender": "female",
    "year": 2018
@@ -602,7 +602,7 @@
  {
    "time": "04:03.4",
    "name": "Melissa Courtney",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "1500m",
    "gender": "female",
    "year": 2018
@@ -634,7 +634,7 @@
  {
    "time": "04:04.1",
    "name": "Kate Grace",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2018
@@ -690,7 +690,7 @@
  {
    "time": "04:05.0",
    "name": "Charlene Lipsey",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2018
@@ -706,7 +706,7 @@
  {
    "time": "04:05.2",
    "name": "Ajee’ Wilson",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2018
@@ -722,7 +722,7 @@
  {
    "time": "04:05.6",
    "name": "Steph Twell",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "1500m",
    "gender": "female",
    "year": 2018
@@ -738,7 +738,7 @@
  {
    "time": "04:05.7",
    "name": "*Emily Lipari",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2018
@@ -770,7 +770,7 @@
  {
    "time": "04:05.9",
    "name": "Sara Vaughn",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2018
@@ -794,7 +794,7 @@
  {
    "time": "04:06.0",
    "name": "Helen Schlachtenhaufen",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2018
@@ -818,7 +818,7 @@
  {
    "time": "09:00.9",
    "name": "Courtney Frerichs",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "female",
    "year": 2018
@@ -842,7 +842,7 @@
  {
    "time": "09:05.1",
    "name": "Emma Coburn",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "female",
    "year": 2018
@@ -866,7 +866,7 @@
  {
    "time": "09:10.3",
    "name": "Colleen Quigley",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "female",
    "year": 2018
@@ -1058,7 +1058,7 @@
  {
    "time": "09:32.1",
    "name": "Rosie Clarke",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "3000m Steeplechase",
    "gender": "female",
    "year": 2018
@@ -1066,7 +1066,7 @@
  {
    "time": "09:32.7",
    "name": "Mel Lawrence",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "female",
    "year": 2018
@@ -1146,7 +1146,7 @@
  {
    "time": "09:38.6",
    "name": "Allie Ostrander",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "female",
    "year": 2018
@@ -1250,7 +1250,7 @@
  {
    "time": "14:34.4",
    "name": "Shelby Houlihan",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "female",
    "year": 2018
@@ -1274,7 +1274,7 @@
  {
    "time": "14:52.8",
    "name": "Eilish McColgan",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "5000m",
    "gender": "female",
    "year": 2018
@@ -1306,7 +1306,7 @@
  {
    "time": "15:01.4",
    "name": "Molly Huddle",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "female",
    "year": 2018
@@ -1322,7 +1322,7 @@
  {
    "time": "15:02.4",
    "name": "Karissa Schweizer",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "female",
    "year": 2018
@@ -1346,7 +1346,7 @@
  {
    "time": "15:04.8",
    "name": "Melissa Courtney",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "5000m",
    "gender": "female",
    "year": 2018
@@ -1402,7 +1402,7 @@
  {
    "time": "15:08.2",
    "name": "Marielle Hall",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "female",
    "year": 2018
@@ -1426,7 +1426,7 @@
  {
    "time": "15:09.6",
    "name": "Vanessa Fraser",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "female",
    "year": 2018
@@ -1458,7 +1458,7 @@
  {
    "time": "15:11.3",
    "name": "Sarah Pagano",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "female",
    "year": 2018
@@ -1474,7 +1474,7 @@
  {
    "time": "15:13.7",
    "name": "Emily Sisson",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "female",
    "year": 2018
@@ -1490,7 +1490,7 @@
  {
    "time": "15:15.2",
    "name": "Lauren Paquette",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "female",
    "year": 2018
@@ -1530,7 +1530,7 @@
  {
    "time": "15:15.5",
    "name": "Emily Infeld",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "female",
    "year": 2018
@@ -1538,7 +1538,7 @@
  {
    "time": "15:15.6",
    "name": "Gwen Jorgensen",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "female",
    "year": 2018
@@ -1562,7 +1562,7 @@
  {
    "time": "15:15.9",
    "name": "Rachel Schneider",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "female",
    "year": 2018
@@ -1586,7 +1586,7 @@
  {
    "time": "15:16.4",
    "name": "Allie Ostrander",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "female",
    "year": 2018
@@ -1706,7 +1706,7 @@
  {
    "time": "31:52.3",
    "name": "Molly Huddle",
-   "country": "United States",
+   "country": "United States of America",
    "event": "10000m",
    "gender": "female",
    "year": 2018
@@ -1730,7 +1730,7 @@
  {
    "time": "31:54.8",
    "name": "Jessica Tonn",
-   "country": "United States",
+   "country": "United States of America",
    "event": "10000m",
    "gender": "female",
    "year": 2018
@@ -1738,7 +1738,7 @@
  {
    "time": "31:55.7",
    "name": "Gwen Jorgensen",
-   "country": "United States",
+   "country": "United States of America",
    "event": "10000m",
    "gender": "female",
    "year": 2018
@@ -1746,7 +1746,7 @@
  {
    "time": "31:56.4",
    "name": "Sarah Pagano",
-   "country": "United States",
+   "country": "United States of America",
    "event": "10000m",
    "gender": "female",
    "year": 2018
@@ -1754,7 +1754,7 @@
  {
    "time": "31:56.7",
    "name": "Marielle Hall",
-   "country": "United States",
+   "country": "United States of America",
    "event": "10000m",
    "gender": "female",
    "year": 2018
@@ -1770,7 +1770,7 @@
  {
    "time": "31:57.6",
    "name": "Chelsea Blaase",
-   "country": "United States",
+   "country": "United States of America",
    "event": "10000m",
    "gender": "female",
    "year": 2018
@@ -1794,7 +1794,7 @@
  {
    "time": "31:57.8",
    "name": "Carrie Dimoff",
-   "country": "United States",
+   "country": "United States of America",
    "event": "10000m",
    "gender": "female",
    "year": 2018
@@ -1818,7 +1818,7 @@
  {
    "time": "32:00.6",
    "name": "Karissa Schweizer",
-   "country": "United States",
+   "country": "United States of America",
    "event": "10000m",
    "gender": "female",
    "year": 2018
@@ -1842,7 +1842,7 @@
  {
    "time": "32:05.1",
    "name": "Stephanie Bruce",
-   "country": "United States",
+   "country": "United States of America",
    "event": "10000m",
    "gender": "female",
    "year": 2018
@@ -1858,7 +1858,7 @@
  {
    "time": "32:06.3",
    "name": "*Emily Sisson",
-   "country": "United States",
+   "country": "United States of America",
    "event": "10000m",
    "gender": "female",
    "year": 2018
@@ -1978,7 +1978,7 @@
  {
    "time": "32:15.7",
    "name": "Charlotte Arter",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "10000m",
    "gender": "female",
    "year": 2018
@@ -1986,7 +1986,7 @@
  {
    "time": "32:15.7",
    "name": "Alice Wright",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "10000m",
    "gender": "female",
    "year": 2018
@@ -2154,7 +2154,7 @@
  {
    "time": "2:21:42",
    "name": "Amy Cragg",
-   "country": "United States",
+   "country": "United States of America",
    "event": "marathon",
    "gender": "female",
    "year": 2018
@@ -2418,7 +2418,7 @@
  {
    "time": "01:55.6",
    "name": "Ajee’ Wilson",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "female",
    "year": 2017
@@ -2426,7 +2426,7 @@
  {
    "time": "01:56.8",
    "name": "Sifan Hassan",
-   "country": "Holland",
+   "country": "Netherlands",
    "event": "800m",
    "gender": "female",
    "year": 2017
@@ -2458,7 +2458,7 @@
  {
    "time": "01:57.4",
    "name": "Charlene Lipsey",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "female",
    "year": 2017
@@ -2474,7 +2474,7 @@
  {
    "time": "01:58.0",
    "name": "Lynsey Sharp",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "800m",
    "gender": "female",
    "year": 2017
@@ -2506,7 +2506,7 @@
  {
    "time": "01:58.4",
    "name": "Brenda Martinez",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "female",
    "year": 2017
@@ -2514,7 +2514,7 @@
  {
    "time": "01:58.7",
    "name": "Laura Muir",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "800m",
    "gender": "female",
    "year": 2017
@@ -2538,7 +2538,7 @@
  {
    "time": "01:59.1",
    "name": "Raevyn Rogers",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "female",
    "year": 2017
@@ -2570,7 +2570,7 @@
  {
    "time": "01:59.3",
    "name": "Kate Grace",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "female",
    "year": 2017
@@ -2594,7 +2594,7 @@
  {
    "time": "01:59.5",
    "name": "Laura Roesler",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "female",
    "year": 2017
@@ -2602,7 +2602,7 @@
  {
    "time": "01:59.6",
    "name": "Sanne Verstegen",
-   "country": "Holland",
+   "country": "Netherlands",
    "event": "800m",
    "gender": "female",
    "year": 2017
@@ -2626,7 +2626,7 @@
  {
    "time": "01:59.8",
    "name": "Shelayna Oskan-Clarke",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "800m",
    "gender": "female",
    "year": 2017
@@ -2666,7 +2666,7 @@
  {
    "time": "02:00.0",
    "name": "Chrishuna Williams",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "female",
    "year": 2017
@@ -2706,7 +2706,7 @@
  {
    "time": "02:00.3",
    "name": "Adelle Tracey",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "800m",
    "gender": "female",
    "year": 2017
@@ -2722,7 +2722,7 @@
  {
    "time": "03:56.1",
    "name": "Sifan Hassan",
-   "country": "Holland",
+   "country": "Netherlands",
    "event": "1500m",
    "gender": "female",
    "year": 2017
@@ -2770,7 +2770,7 @@
  {
    "time": "04:00.3",
    "name": "Laura Muir",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "1500m",
    "gender": "female",
    "year": 2017
@@ -2802,7 +2802,7 @@
  {
    "time": "04:00.7",
    "name": "Jenny Simpson",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2017
@@ -2810,7 +2810,7 @@
  {
    "time": "04:00.7",
    "name": "Laura Weightman",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "1500m",
    "gender": "female",
    "year": 2017
@@ -2826,7 +2826,7 @@
  {
    "time": "04:01.6",
    "name": "Eilish McColgan",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "1500m",
    "gender": "female",
    "year": 2017
@@ -2850,7 +2850,7 @@
  {
    "time": "04:02.2",
    "name": "Susan Krumins",
-   "country": "Holland",
+   "country": "Netherlands",
    "event": "1500m",
    "gender": "female",
    "year": 2017
@@ -2866,7 +2866,7 @@
  {
    "time": "04:02.8",
    "name": "Brenda Martinez",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2017
@@ -2922,7 +2922,7 @@
  {
    "time": "04:03.6",
    "name": "Kate Grace",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2017
@@ -2930,7 +2930,7 @@
  {
    "time": "04:03.7",
    "name": "Jessica Judd",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "1500m",
    "gender": "female",
    "year": 2017
@@ -2938,7 +2938,7 @@
  {
    "time": "04:03.8",
    "name": "Maureen Koster",
-   "country": "Holland",
+   "country": "Netherlands",
    "event": "1500m",
    "gender": "female",
    "year": 2017
@@ -2946,7 +2946,7 @@
  {
    "time": "04:03.9",
    "name": "Colleen Quigley",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2017
@@ -2962,7 +2962,7 @@
  {
    "time": "04:04.3",
    "name": "Amanda Eccleston",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2017
@@ -3002,7 +3002,7 @@
  {
    "time": "04:04.6",
    "name": "Shannon Rowbury",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2017
@@ -3010,7 +3010,7 @@
  {
    "time": "04:04.6",
    "name": "Sara Vaughn",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2017
@@ -3018,7 +3018,7 @@
  {
    "time": "04:04.6",
    "name": "Stephanie Garcia",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2017
@@ -3026,7 +3026,7 @@
  {
    "time": "04:04.7",
    "name": "Alexa Efraimson",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2017
@@ -3074,7 +3074,7 @@
  {
    "time": "09:02.6",
    "name": "Emma Coburn",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "female",
    "year": 2017
@@ -3090,7 +3090,7 @@
  {
    "time": "09:03.8",
    "name": "Courtney Frerichs",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "female",
    "year": 2017
@@ -3130,7 +3130,7 @@
  {
    "time": "09:16.0",
    "name": "Colleen Quigley",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "female",
    "year": 2017
@@ -3226,7 +3226,7 @@
  {
    "time": "09:25.0",
    "name": "Stephanie Garcia",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "female",
    "year": 2017
@@ -3298,7 +3298,7 @@
  {
    "time": "09:30.9",
    "name": "Marisa Howard",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "female",
    "year": 2017
@@ -3314,7 +3314,7 @@
  {
    "time": "09:31.6",
    "name": "Leah O’Connor",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "female",
    "year": 2017
@@ -3322,7 +3322,7 @@
  {
    "time": "09:32.1",
    "name": "Rosie Clarke",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "3000m Steeplechase",
    "gender": "female",
    "year": 2017
@@ -3354,7 +3354,7 @@
  {
    "time": "09:34.9",
    "name": "Mel Lawrence",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "female",
    "year": 2017
@@ -3458,7 +3458,7 @@
  {
    "time": "14:41.2",
    "name": "Sifan Hassan",
-   "country": "Holland",
+   "country": "Netherlands",
    "event": "5000m",
    "gender": "female",
    "year": 2017
@@ -3474,7 +3474,7 @@
  {
    "time": "14:48.5",
    "name": "Eilish McColgan",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "5000m",
    "gender": "female",
    "year": 2017
@@ -3482,7 +3482,7 @@
  {
    "time": "14:49.1",
    "name": "Laura Muir",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "5000m",
    "gender": "female",
    "year": 2017
@@ -3490,7 +3490,7 @@
  {
    "time": "14:51.2",
    "name": "Susan Krumins",
-   "country": "Holland",
+   "country": "Netherlands",
    "event": "5000m",
    "gender": "female",
    "year": 2017
@@ -3538,7 +3538,7 @@
  {
    "time": "14:56.3",
    "name": "Emily Infeld",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "female",
    "year": 2017
@@ -3562,7 +3562,7 @@
  {
    "time": "14:57.6",
    "name": "Shannon Rowbury",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "female",
    "year": 2017
@@ -3586,7 +3586,7 @@
  {
    "time": "14:59.0",
    "name": "Shalane Flanagan",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "female",
    "year": 2017
@@ -3594,7 +3594,7 @@
  {
    "time": "15:00.4",
    "name": "Shelby Houlihan",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "female",
    "year": 2017
@@ -3626,7 +3626,7 @@
  {
    "time": "15:01.6",
    "name": "Molly Huddle",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "female",
    "year": 2017
@@ -3634,7 +3634,7 @@
  {
    "time": "15:02.1",
    "name": "Emily Sisson",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "female",
    "year": 2017
@@ -3770,7 +3770,7 @@
  {
    "time": "31:17.2",
    "name": "Amy Cragg",
-   "country": "United States",
+   "country": "United States of America",
    "event": "10000m",
    "gender": "female",
    "year": 2017
@@ -3794,7 +3794,7 @@
  {
    "time": "31:19.9",
    "name": "Molly Huddle",
-   "country": "United States",
+   "country": "United States of America",
    "event": "10000m",
    "gender": "female",
    "year": 2017
@@ -3802,7 +3802,7 @@
  {
    "time": "31:20.2",
    "name": "Susan Krumins",
-   "country": "Holland",
+   "country": "Netherlands",
    "event": "10000m",
    "gender": "female",
    "year": 2017
@@ -3810,7 +3810,7 @@
  {
    "time": "31:20.4",
    "name": "Emily Infeld",
-   "country": "United States",
+   "country": "United States of America",
    "event": "10000m",
    "gender": "female",
    "year": 2017
@@ -3834,7 +3834,7 @@
  {
    "time": "31:25.6",
    "name": "Emily Sisson",
-   "country": "United States",
+   "country": "United States of America",
    "event": "10000m",
    "gender": "female",
    "year": 2017
@@ -3858,7 +3858,7 @@
  {
    "time": "31:31.1",
    "name": "Shalane Flanagan",
-   "country": "United States",
+   "country": "United States of America",
    "event": "10000m",
    "gender": "female",
    "year": 2017
@@ -3874,7 +3874,7 @@
  {
    "time": "31:35.9",
    "name": "Kim Conley",
-   "country": "United States",
+   "country": "United States of America",
    "event": "10000m",
    "gender": "female",
    "year": 2017
@@ -3946,7 +3946,7 @@
  {
    "time": "31:45.6",
    "name": "Katrina Wootton",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "10000m",
    "gender": "female",
    "year": 2017
@@ -3962,7 +3962,7 @@
  {
    "time": "31:47.4",
    "name": "Failuna Abdi Matanga",
-   "country": "Tanzania",
+   "country": "United Republic of Tanzania",
    "event": "10000m",
    "gender": "female",
    "year": 2017
@@ -3994,7 +3994,7 @@
  {
    "time": "31:54.6",
    "name": "Natosha Rogers",
-   "country": "United States",
+   "country": "United States of America",
    "event": "10000m",
    "gender": "female",
    "year": 2017
@@ -4066,7 +4066,7 @@
  {
    "time": "2:20:57",
    "name": "Jordan Hasay",
-   "country": "United States",
+   "country": "United States of America",
    "event": "marathon",
    "gender": "female",
    "year": 2017
@@ -4370,7 +4370,7 @@
  {
    "time": "01:57.7",
    "name": "Molly Ludlow",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "female",
    "year": 2016
@@ -4378,7 +4378,7 @@
  {
    "time": "01:57.7",
    "name": "Lynsey Sharp",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "800m",
    "gender": "female",
    "year": 2016
@@ -4394,7 +4394,7 @@
  {
    "time": "01:58.3",
    "name": "Kate Grace",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "female",
    "year": 2016
@@ -4474,7 +4474,7 @@
  {
    "time": "01:59.3",
    "name": "Sanne Verstegen",
-   "country": "Holland",
+   "country": "Netherlands",
    "event": "800m",
    "gender": "female",
    "year": 2016
@@ -4498,7 +4498,7 @@
  {
    "time": "01:59.4",
    "name": "Ajee’ Wilson",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "female",
    "year": 2016
@@ -4506,7 +4506,7 @@
  {
    "time": "01:59.5",
    "name": "Shelayna Oskan-Clarke",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "800m",
    "gender": "female",
    "year": 2016
@@ -4514,7 +4514,7 @@
  {
    "time": "01:59.6",
    "name": "Chrishuna Williams",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "female",
    "year": 2016
@@ -4522,7 +4522,7 @@
  {
    "time": "01:59.6",
    "name": "Brenda Martinez",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "female",
    "year": 2016
@@ -4594,7 +4594,7 @@
  {
    "time": "02:00.0",
    "name": "Shannon Rowbury",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "female",
    "year": 2016
@@ -4626,7 +4626,7 @@
  {
    "time": "02:00.0",
    "name": "Adelle Tracey",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "800m",
    "gender": "female",
    "year": 2016
@@ -4642,7 +4642,7 @@
  {
    "time": "03:55.2",
    "name": "Laura Muir",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "1500m",
    "gender": "female",
    "year": 2016
@@ -4666,7 +4666,7 @@
  {
    "time": "03:57.1",
    "name": "Sifan Hassan",
-   "country": "Holland",
+   "country": "Netherlands",
    "event": "1500m",
    "gender": "female",
    "year": 2016
@@ -4674,7 +4674,7 @@
  {
    "time": "03:57.8",
    "name": "Shannon Rowbury",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2016
@@ -4690,7 +4690,7 @@
  {
    "time": "03:58.2",
    "name": "Jenny Simpson",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2016
@@ -4770,7 +4770,7 @@
  {
    "time": "04:02.7",
    "name": "Laura Weightman",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "1500m",
    "gender": "female",
    "year": 2016
@@ -4802,7 +4802,7 @@
  {
    "time": "04:03.2",
    "name": "Amanda Eccleston",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2016
@@ -4810,7 +4810,7 @@
  {
    "time": "04:03.4",
    "name": "Shelby Houlihan",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2016
@@ -4818,7 +4818,7 @@
  {
    "time": "04:03.6",
    "name": "Brenda Martinez",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2016
@@ -4834,7 +4834,7 @@
  {
    "time": "04:03.7",
    "name": "Eilish McColgan",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "1500m",
    "gender": "female",
    "year": 2016
@@ -4842,7 +4842,7 @@
  {
    "time": "04:03.8",
    "name": "Maureen Koster",
-   "country": "Holland",
+   "country": "Netherlands",
    "event": "1500m",
    "gender": "female",
    "year": 2016
@@ -4850,7 +4850,7 @@
  {
    "time": "04:03.9",
    "name": "Morgan Uceny",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2016
@@ -4898,7 +4898,7 @@
  {
    "time": "04:04.5",
    "name": "Heather Kampf",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2016
@@ -4930,7 +4930,7 @@
  {
    "time": "04:05.3",
    "name": "Lauren Johnson",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2016
@@ -4978,7 +4978,7 @@
  {
    "time": "09:07.6",
    "name": "Emma Coburn",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "female",
    "year": 2016
@@ -5034,7 +5034,7 @@
  {
    "time": "09:18.8",
    "name": "Leah O’Connor",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "female",
    "year": 2016
@@ -5050,7 +5050,7 @@
  {
    "time": "09:19.5",
    "name": "Stephanie Garcia",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "female",
    "year": 2016
@@ -5066,7 +5066,7 @@
  {
    "time": "09:20.0",
    "name": "Colleen Quigley",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "female",
    "year": 2016
@@ -5082,7 +5082,7 @@
  {
    "time": "09:20.9",
    "name": "Courtney Frerichs",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "female",
    "year": 2016
@@ -5178,7 +5178,7 @@
  {
    "time": "09:28.7",
    "name": "Shalaya Kipp (Oiselle)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "female",
    "year": 2016
@@ -5202,7 +5202,7 @@
  {
    "time": "09:29.8",
    "name": "Ashley Higginson (Saucony)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "female",
    "year": 2016
@@ -5354,7 +5354,7 @@
  {
    "time": "14:38.9",
    "name": "Shannon Rowbury (NikOP)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "female",
    "year": 2016
@@ -5450,7 +5450,7 @@
  {
    "time": "14:48.1",
    "name": "Molly Huddle (Saucony)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "female",
    "year": 2016
@@ -5482,7 +5482,7 @@
  {
    "time": "14:59.0",
    "name": "Steph Twell (GB)",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "5000m",
    "gender": "female",
    "year": 2016
@@ -5506,7 +5506,7 @@
  {
    "time": "15:00.7",
    "name": "Susan Kuijken (Hol)",
-   "country": "Holland",
+   "country": "Netherlands",
    "event": "5000m",
    "gender": "female",
    "year": 2016
@@ -5514,7 +5514,7 @@
  {
    "time": "15:00.9",
    "name": "Emily Infeld (BowTC)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "female",
    "year": 2016
@@ -5546,7 +5546,7 @@
  {
    "time": "15:04.1",
    "name": "Nicole Tully (Hoka)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "female",
    "year": 2016
@@ -5554,7 +5554,7 @@
  {
    "time": "15:05.0",
    "name": "Eilish McColgan (GB)",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "5000m",
    "gender": "female",
    "year": 2016
@@ -5570,7 +5570,7 @@
  {
    "time": "15:06.0",
    "name": "Marielle Hall (Nike)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "female",
    "year": 2016
@@ -5578,7 +5578,7 @@
  {
    "time": "15:06.1",
    "name": "Shelby Houlihan (BowTC)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "female",
    "year": 2016
@@ -5642,7 +5642,7 @@
  {
    "time": "30:13.2",
    "name": "Molly Huddle (Saucony)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "10000m",
    "gender": "female",
    "year": 2016
@@ -5786,7 +5786,7 @@
  {
    "time": "31:26.9",
    "name": "Emily Infeld (BowTC)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "10000m",
    "gender": "female",
    "year": 2016
@@ -5834,7 +5834,7 @@
  {
    "time": "31:32.4",
    "name": "Susan Kuijken (Hol)",
-   "country": "Holland",
+   "country": "Netherlands",
    "event": "10000m",
    "gender": "female",
    "year": 2016
@@ -5842,7 +5842,7 @@
  {
    "time": "31:33.4",
    "name": "Jo Pavey (GB)",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "10000m",
    "gender": "female",
    "year": 2016
@@ -5858,7 +5858,7 @@
  {
    "time": "31:35.9",
    "name": "Jess Andrews (GB)",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "10000m",
    "gender": "female",
    "year": 2016
@@ -5874,7 +5874,7 @@
  {
    "time": "31:36.9",
    "name": "Darya Maslova (Kir)",
-   "country": "kiribati",
+   "country": "Kiribati",
    "event": "10000m",
    "gender": "female",
    "year": 2016
@@ -5890,7 +5890,7 @@
  {
    "time": "31:37.5",
    "name": "Marielle Hall (Nike)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "10000m",
    "gender": "female",
    "year": 2016
@@ -5898,7 +5898,7 @@
  {
    "time": "31:38.0",
    "name": "Juliet Chekwel (Uga)",
-   "country": "",
+   "country": "Uganda",
    "event": "10000m",
    "gender": "female",
    "year": 2016
@@ -6266,7 +6266,7 @@
  {
    "time": "01:57.6",
    "name": "Francine Niyonsaba (Burundi)",
-   "country": "Burndi",
+   "country": "Burundi",
    "event": "800m",
    "gender": "female",
    "year": 2015
@@ -6281,8 +6281,8 @@
  },
  {
    "time": "01:57.7",
-   "name": "Lynsey Sharp (Great Britain)",
-   "country": "Great Britain",
+   "name": "Lynsey Sharp (United Kingdom)",
+   "country": "United Kingdom",
    "event": "800m",
    "gender": "female",
    "year": 2015
@@ -6290,7 +6290,7 @@
  {
    "time": "01:57.9",
    "name": "Ajee’ Wilson (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "female",
    "year": 2015
@@ -6329,8 +6329,8 @@
  },
  {
    "time": "01:58.5",
-   "name": "Sifan Hassan (Holland)",
-   "country": "Holland",
+   "name": "Sifan Hassan (Netherlands)",
+   "country": "Netherlands",
    "event": "800m",
    "gender": "female",
    "year": 2015
@@ -6362,7 +6362,7 @@
  {
    "time": "01:58.7",
    "name": "Molly Ludlow (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "female",
    "year": 2015
@@ -6377,8 +6377,8 @@
  },
  {
    "time": "01:58.9",
-   "name": "Shelayna Oskan-Clarke (Great Britain)",
-   "country": "Great Britain",
+   "name": "Shelayna Oskan-Clarke (United Kingdom)",
+   "country": "United Kingdom",
    "event": "800m",
    "gender": "female",
    "year": 2015
@@ -6394,7 +6394,7 @@
  {
    "time": "01:59.0",
    "name": "Brenda Martinez (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "female",
    "year": 2015
@@ -6410,7 +6410,7 @@
  {
    "time": "01:59.1",
    "name": "Chanelle Price (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "female",
    "year": 2015
@@ -6426,15 +6426,15 @@
  {
    "time": "01:59.2",
    "name": "Alysia Montaño (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "female",
    "year": 2015
  },
  {
    "time": "01:59.2",
-   "name": "Jenny Meadows (Great Britain)",
-   "country": "Great Britain",
+   "name": "Jenny Meadows (United Kingdom)",
+   "country": "United Kingdom",
    "event": "800m",
    "gender": "female",
    "year": 2015
@@ -6498,15 +6498,15 @@
  {
    "time": "01:59.7",
    "name": "Raevyn Rogers (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "female",
    "year": 2015
  },
  {
    "time": "01:59.9",
-   "name": "Amela Terzić (Serbia)",
-   "country": "Serbia",
+   "name": "Amela Terzić (Republic of Serbia)",
+   "country": "Republic of Serbia",
    "event": "800m",
    "gender": "female",
    "year": 2015
@@ -6530,7 +6530,7 @@
  {
    "time": "02:00.0",
    "name": "Shannon Rowbury (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "female",
    "year": 2015
@@ -6538,7 +6538,7 @@
  {
    "time": "02:00.1",
    "name": "Maggie Vessey (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "female",
    "year": 2015
@@ -6569,8 +6569,8 @@
  },
  {
    "time": "03:56.0",
-   "name": "Sifan Hassan (Holland)",
-   "country": "Holland",
+   "name": "Sifan Hassan (Netherlands)",
+   "country": "Netherlands",
    "event": "1500m",
    "gender": "female",
    "year": 2015
@@ -6578,7 +6578,7 @@
  {
    "time": "03:56.3",
    "name": "Shannon Rowbury (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2015
@@ -6586,15 +6586,15 @@
  {
    "time": "03:57.3",
    "name": "Jenny Simpson (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2015
  },
  {
    "time": "03:58.7",
-   "name": "Laura Muir (Great Britain)",
-   "country": "Great Britain",
+   "name": "Laura Muir (United Kingdom)",
+   "country": "United Kingdom",
    "event": "1500m",
    "gender": "female",
    "year": 2015
@@ -6617,8 +6617,8 @@
  },
  {
    "time": "03:59.8",
-   "name": "Maureen Koster (Holland)",
-   "country": "Holland",
+   "name": "Maureen Koster (Netherlands)",
+   "country": "Netherlands",
    "event": "1500m",
    "gender": "female",
    "year": 2015
@@ -6730,7 +6730,7 @@
  {
    "time": "04:03.2",
    "name": "Sarah Brown (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2015
@@ -6746,7 +6746,7 @@
  {
    "time": "04:03.4",
    "name": "Alexa Efraimson (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2015
@@ -6754,7 +6754,7 @@
  {
    "time": "04:03.6",
    "name": "Kerri Gallagher (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2015
@@ -6762,7 +6762,7 @@
  {
    "time": "04:03.8",
    "name": "Katie Mackey (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2015
@@ -6778,7 +6778,7 @@
  {
    "time": "04:04.2",
    "name": "Lauren Johnson (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2015
@@ -6794,7 +6794,7 @@
  {
    "time": "04:04.3",
    "name": "Gabe Grunewald (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2015
@@ -6802,7 +6802,7 @@
  {
    "time": "04:04.3",
    "name": "Treniere Moser (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2015
@@ -6826,7 +6826,7 @@
  {
    "time": "04:04.5",
    "name": "Heather Kampf (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2015
@@ -6841,8 +6841,8 @@
  },
  {
    "time": "04:04.7",
-   "name": "Laura Weightman (Great Britain)",
-   "country": "Great Britain",
+   "name": "Laura Weightman (United Kingdom)",
+   "country": "United Kingdom",
    "event": "1500m",
    "gender": "female",
    "year": 2015
@@ -6857,8 +6857,8 @@
  },
  {
    "time": "04:04.8",
-   "name": "Amela Terzić (Serbia)",
-   "country": "Serbia",
+   "name": "Amela Terzić (Republic of Serbia)",
+   "country": "Republic of Serbia",
    "event": "1500m",
    "gender": "female",
    "year": 2015
@@ -6874,7 +6874,7 @@
  {
    "time": "04:05.1",
    "name": "Emma Coburn (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2015
@@ -6922,7 +6922,7 @@
  {
    "time": "09:15.6",
    "name": "Emma Coburn (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "female",
    "year": 2015
@@ -6986,7 +6986,7 @@
  {
    "time": "09:23.5",
    "name": "Stephanie Garcia (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "female",
    "year": 2015
@@ -7002,7 +7002,7 @@
  {
    "time": "09:24.9",
    "name": "Colleen Quigley (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "female",
    "year": 2015
@@ -7074,7 +7074,7 @@
  {
    "time": "09:31.0",
    "name": "Leah O’Connor (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "female",
    "year": 2015
@@ -7082,7 +7082,7 @@
  {
    "time": "09:31.3",
    "name": "Ashley Higginson (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "female",
    "year": 2015
@@ -7090,7 +7090,7 @@
  {
    "time": "09:31.4",
    "name": "Courtney Frerichs (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "female",
    "year": 2015
@@ -7306,7 +7306,7 @@
  {
    "time": "14:57.2",
    "name": "*Molly Huddle (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "female",
    "year": 2015
@@ -7346,7 +7346,7 @@
  {
    "time": "15:03.8",
    "name": "Abbey D’Agostino (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "female",
    "year": 2015
@@ -7362,7 +7362,7 @@
  {
    "time": "15:05.6",
    "name": "Nicole Tully (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "female",
    "year": 2015
@@ -7378,7 +7378,7 @@
  {
    "time": "15:06.5",
    "name": "Marielle Hall (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "female",
    "year": 2015
@@ -7386,23 +7386,23 @@
  {
    "time": "15:07.2",
    "name": "Emily Infeld (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "female",
    "year": 2015
  },
  {
    "time": "15:07.4",
-   "name": "Susan Kuijken (Holland)",
-   "country": "Holland",
+   "name": "Susan Kuijken (Netherlands)",
+   "country": "Netherlands",
    "event": "5000m",
    "gender": "female",
    "year": 2015
  },
  {
    "time": "15:07.7",
-   "name": "Maureen Koster (Holland)",
-   "country": "Holland",
+   "name": "Maureen Koster (Netherlands)",
+   "country": "Netherlands",
    "event": "5000m",
    "gender": "female",
    "year": 2015
@@ -7434,7 +7434,7 @@
  {
    "time": "15:10.0",
    "name": "Shalane Flanagan (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "female",
    "year": 2015
@@ -7450,7 +7450,7 @@
  {
    "time": "15:12.22i",
    "name": "Emily Sisson (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "female",
    "year": 2015
@@ -7473,8 +7473,8 @@
  },
  {
    "time": "15:13.8",
-   "name": "Steph Twell (Great Britain)",
-   "country": "Great Britain",
+   "name": "Steph Twell (United Kingdom)",
+   "country": "United Kingdom",
    "event": "5000m",
    "gender": "female",
    "year": 2015
@@ -7578,7 +7578,7 @@
  {
    "time": "31:09.0",
    "name": "Shalane Flanagan (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "10000m",
    "gender": "female",
    "year": 2015
@@ -7617,8 +7617,8 @@
  },
  {
    "time": "31:32.0",
-   "name": "Susan Kuijken (Holland)",
-   "country": "Holland",
+   "name": "Susan Kuijken (Netherlands)",
+   "country": "Netherlands",
    "event": "10000m",
    "gender": "female",
    "year": 2015
@@ -7641,8 +7641,8 @@
  },
  {
    "time": "31:35.5",
-   "name": "Jip Vastenburg (Holland)",
-   "country": "Holland",
+   "name": "Jip Vastenburg (Netherlands)",
+   "country": "Netherlands",
    "event": "10000m",
    "gender": "female",
    "year": 2015
@@ -7666,7 +7666,7 @@
  {
    "time": "31:38.0",
    "name": "Emily Sisson (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "10000m",
    "gender": "female",
    "year": 2015
@@ -7674,7 +7674,7 @@
  {
    "time": "31:38.7",
    "name": "Emily Infeld (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "10000m",
    "gender": "female",
    "year": 2015
@@ -7682,15 +7682,15 @@
  {
    "time": "31:39.2",
    "name": "Molly Huddle (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "10000m",
    "gender": "female",
    "year": 2015
  },
  {
    "time": "31:41.4",
-   "name": "Kate Avery (Great Britain)",
-   "country": "Great Britain",
+   "name": "Kate Avery (United Kingdom)",
+   "country": "United Kingdom",
    "event": "10000m",
    "gender": "female",
    "year": 2015
@@ -7778,7 +7778,7 @@
  {
    "time": "31:50.0",
    "name": "Alisha Williams (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "10000m",
    "gender": "female",
    "year": 2015
@@ -7802,7 +7802,7 @@
  {
    "time": "31:54.4",
    "name": "Mattie Suver (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "10000m",
    "gender": "female",
    "year": 2015
@@ -8170,7 +8170,7 @@
  {
    "time": "01:57.7",
    "name": "Ajee’ Wilson (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "female",
    "year": 2014
@@ -8233,8 +8233,8 @@
  },
  {
    "time": "01:58.8",
-   "name": "Lynsey Sharp (Great Britain)",
-   "country": "Great Britain",
+   "name": "Lynsey Sharp (United Kingdom)",
+   "country": "United Kingdom",
    "event": "800m",
    "gender": "female",
    "year": 2014
@@ -8242,7 +8242,7 @@
  {
    "time": "01:58.8",
    "name": "Brenda Martinez (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "female",
    "year": 2014
@@ -8258,7 +8258,7 @@
  {
    "time": "01:59.0",
    "name": "Laura Roesler (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "female",
    "year": 2014
@@ -8282,15 +8282,15 @@
  {
    "time": "01:59.3",
    "name": "Molly Beckwith-Ludlow (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "female",
    "year": 2014
  },
  {
    "time": "01:59.3",
-   "name": "Jenny Meadows (Great Britain)",
-   "country": "Great Britain",
+   "name": "Jenny Meadows (United Kingdom)",
+   "country": "United Kingdom",
    "event": "800m",
    "gender": "female",
    "year": 2014
@@ -8346,15 +8346,15 @@
  {
    "time": "01:59.8",
    "name": "Chanelle Price (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "female",
    "year": 2014
  },
  {
    "time": "01:59.8",
-   "name": "Jessica Judd (Great Britain)",
-   "country": "Great Britain",
+   "name": "Jessica Judd (United Kingdom)",
+   "country": "United Kingdom",
    "event": "800m",
    "gender": "female",
    "year": 2014
@@ -8385,8 +8385,8 @@
  },
  {
    "time": "02:00.0",
-   "name": "Sifan Hassan (Holland)",
-   "country": "Holland",
+   "name": "Sifan Hassan (Netherlands)",
+   "country": "Netherlands",
    "event": "800m",
    "gender": "female",
    "year": 2014
@@ -8394,7 +8394,7 @@
  {
    "time": "02:00.0",
    "name": "Maggie Vessey (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "female",
    "year": 2014
@@ -8409,8 +8409,8 @@
  },
  {
    "time": "02:00.1",
-   "name": "Alison Leonard (Great Britain)",
-   "country": "Great Britain",
+   "name": "Alison Leonard (United Kingdom)",
+   "country": "United Kingdom",
    "event": "800m",
    "gender": "female",
    "year": 2014
@@ -8434,7 +8434,7 @@
  {
    "time": "02:00.3",
    "name": "Morgan Uceny (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "female",
    "year": 2014
@@ -8458,15 +8458,15 @@
  {
    "time": "02:00.5",
    "name": "Margaret Wambui (Kenya)",
-   "country": "k",
+   "country": "Kenya",
    "event": "800m",
    "gender": "female",
    "year": 2014
  },
  {
    "time": "02:00.5",
-   "name": "Hannah England (Great Britain)",
-   "country": "Great Britain",
+   "name": "Hannah England (United Kingdom)",
+   "country": "United Kingdom",
    "event": "800m",
    "gender": "female",
    "year": 2014
@@ -8481,8 +8481,8 @@
  },
  {
    "time": "02:00.6",
-   "name": "Sanne Verstegen (Holland)",
-   "country": "Holland",
+   "name": "Sanne Verstegen (Netherlands)",
+   "country": "Netherlands",
    "event": "800m",
    "gender": "female",
    "year": 2014
@@ -8497,8 +8497,8 @@
  },
  {
    "time": "03:57.0",
-   "name": "Sifan Hassan (Holland)",
-   "country": "Holland",
+   "name": "Sifan Hassan (Netherlands)",
+   "country": "Netherlands",
    "event": "1500m",
    "gender": "female",
    "year": 2014
@@ -8514,7 +8514,7 @@
  {
    "time": "03:57.2",
    "name": "Jenny Simpson (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2014
@@ -8538,7 +8538,7 @@
  {
    "time": "03:59.5",
    "name": "Shannon Rowbury (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2014
@@ -8553,8 +8553,8 @@
  },
  {
    "time": "04:00.1",
-   "name": "Laura Muir (Great Britain)",
-   "country": "Great Britain",
+   "name": "Laura Muir (United Kingdom)",
+   "country": "United Kingdom",
    "event": "1500m",
    "gender": "female",
    "year": 2014
@@ -8569,8 +8569,8 @@
  },
  {
    "time": "04:00.2",
-   "name": "Laura Weightman (Great Britain)",
-   "country": "Great Britain",
+   "name": "Laura Weightman (United Kingdom)",
+   "country": "United Kingdom",
    "event": "1500m",
    "gender": "female",
    "year": 2014
@@ -8594,7 +8594,7 @@
  {
    "time": "04:01.4",
    "name": "Brenda Martinez (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2014
@@ -8682,7 +8682,7 @@
  {
    "time": "04:04.2",
    "name": "Treniere Moser (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2014
@@ -8706,7 +8706,7 @@
  {
    "time": "04:04.8",
    "name": "Morgan Uceny (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2014
@@ -8721,8 +8721,8 @@
  },
  {
    "time": "04:04.9",
-   "name": "Maureen Koster (Holland)",
-   "country": "Holland",
+   "name": "Maureen Koster (Netherlands)",
+   "country": "Netherlands",
    "event": "1500m",
    "gender": "female",
    "year": 2014
@@ -8738,7 +8738,7 @@
  {
    "time": "04:05.2",
    "name": "Gabe Grunewald (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2014
@@ -8753,8 +8753,8 @@
  },
  {
    "time": "04:05.3",
-   "name": "Hannah England (Great Britain)",
-   "country": "Great Britain",
+   "name": "Hannah England (United Kingdom)",
+   "country": "United Kingdom",
    "event": "1500m",
    "gender": "female",
    "year": 2014
@@ -8762,7 +8762,7 @@
  {
    "time": "04:05.3",
    "name": "Emma Coburn (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "female",
    "year": 2014
@@ -8826,7 +8826,7 @@
  {
    "time": "09:11.4",
    "name": "Emma Coburn (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "female",
    "year": 2014
@@ -8906,7 +8906,7 @@
  {
    "time": "09:24.3",
    "name": "Stephanie Garcia (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "female",
    "year": 2014
@@ -8914,7 +8914,7 @@
  {
    "time": "09:24.6",
    "name": "Nicole Bush (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "female",
    "year": 2014
@@ -8938,7 +8938,7 @@
  {
    "time": "09:27.6",
    "name": "Ashley Higginson (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "female",
    "year": 2014
@@ -9050,7 +9050,7 @@
  {
    "time": "09:34.7",
    "name": "Aisha Praught (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "female",
    "year": 2014
@@ -9098,7 +9098,7 @@
  {
    "time": "09:36.4",
    "name": "Leah O’Connor (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "female",
    "year": 2014
@@ -9122,7 +9122,7 @@
  {
    "time": "09:39.1",
    "name": "Shalaya Kipp (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "female",
    "year": 2014
@@ -9170,7 +9170,7 @@
  {
    "time": "14:42.6",
    "name": "Molly Huddle (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "female",
    "year": 2014
@@ -9186,7 +9186,7 @@
  {
    "time": "14:48.7",
    "name": "Shannon Rowbury (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "female",
    "year": 2014
@@ -9209,8 +9209,8 @@
  },
  {
    "time": "14:59.2",
-   "name": "Sifan Hassan (Holland)",
-   "country": "h",
+   "name": "Sifan Hassan (Netherlands)",
+   "country": "Netherlands",
    "event": "5000m",
    "gender": "female",
    "year": 2014
@@ -9258,15 +9258,15 @@
  {
    "time": "15:04.7",
    "name": "Katie Mackey (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "female",
    "year": 2014
  },
  {
    "time": "15:04.9",
-   "name": "Jo Pavey (Great Britain)",
-   "country": "Great Britain",
+   "name": "Jo Pavey (United Kingdom)",
+   "country": "United Kingdom",
    "event": "5000m",
    "gender": "female",
    "year": 2014
@@ -9274,15 +9274,15 @@
  {
    "time": "15:05.0",
    "name": "Laura Thweatt (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "female",
    "year": 2014
  },
  {
    "time": "15:07.5",
-   "name": "Emelia Gorecka (Great Britain)",
-   "country": "Great Britain",
+   "name": "Emelia Gorecka (United Kingdom)",
+   "country": "United Kingdom",
    "event": "5000m",
    "gender": "female",
    "year": 2014
@@ -9306,7 +9306,7 @@
  {
    "time": "15:08.6",
    "name": "Kim Conley (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "female",
    "year": 2014
@@ -9338,7 +9338,7 @@
  {
    "time": "15:11.1",
    "name": "Aisling Cuffe (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "female",
    "year": 2014
@@ -9353,8 +9353,8 @@
  },
  {
    "time": "15:11.7",
-   "name": "Julia Bleasdale (Great Britain)",
-   "country": "Great Britain",
+   "name": "Julia Bleasdale (United Kingdom)",
+   "country": "United Kingdom",
    "event": "5000m",
    "gender": "female",
    "year": 2014
@@ -9370,7 +9370,7 @@
  {
    "time": "15:12.8",
    "name": "Marielle Hall (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "female",
    "year": 2014
@@ -9458,7 +9458,7 @@
  {
    "time": "30:47.6",
    "name": "Molly Huddle (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "10000m",
    "gender": "female",
    "year": 2014
@@ -9482,7 +9482,7 @@
  {
    "time": "31:39.7",
    "name": "Jordan Hasay (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "10000m",
    "gender": "female",
    "year": 2014
@@ -9497,8 +9497,8 @@
  },
  {
    "time": "31:42.0",
-   "name": "Julia Bleasdale (Great Britain)",
-   "country": "Great Britain",
+   "name": "Julia Bleasdale (United Kingdom)",
+   "country": "United Kingdom",
    "event": "10000m",
    "gender": "female",
    "year": 2014
@@ -9530,7 +9530,7 @@
  {
    "time": "31:48.7",
    "name": "Kim Conley (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "10000m",
    "gender": "female",
    "year": 2014
@@ -9665,8 +9665,8 @@
  },
  {
    "time": "32:11.0",
-   "name": "Jo Pavey (Great Britain)",
-   "country": "Great Britain",
+   "name": "Jo Pavey (United Kingdom)",
+   "country": "United Kingdom",
    "event": "10000m",
    "gender": "female",
    "year": 2014
@@ -9689,8 +9689,8 @@
  },
  {
    "time": "32:11.9",
-   "name": "Jip Vastenburg (Holland)",
-   "country": "Holland",
+   "name": "Jip Vastenburg (Netherlands)",
+   "country": "Netherlands",
    "event": "10000m",
    "gender": "female",
    "year": 2014
@@ -9746,15 +9746,15 @@
  {
    "time": "32:15.9",
    "name": "Rachel Ward (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "10000m",
    "gender": "female",
    "year": 2014
  },
  {
    "time": "32:17.0",
-   "name": "Elinor Kirk (Great Britain)",
-   "country": "Great Britain",
+   "name": "Elinor Kirk (United Kingdom)",
+   "country": "United Kingdom",
    "event": "10000m",
    "gender": "female",
    "year": 2014
@@ -9810,7 +9810,7 @@
  {
    "time": "2:21:14",
    "name": "Shalane Flanagan (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "marathon",
    "gender": "female",
    "year": 2014
@@ -9890,7 +9890,7 @@
  {
    "time": "2:23:44",
    "name": "Sharon Cherop (Kenya)",
-   "country": "k",
+   "country": "Kenya",
    "event": "marathon",
    "gender": "female",
    "year": 2014
@@ -10114,7 +10114,7 @@
  {
    "time": "01:43.1",
    "name": "Clayton Murphy (Nike Ore. Proj.)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "male",
    "year": 2018
@@ -10210,7 +10210,7 @@
  {
    "time": "01:44.4",
    "name": "Isaiah Harris (PennSt)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "male",
    "year": 2018
@@ -10234,7 +10234,7 @@
  {
    "time": "01:44.6",
    "name": "Jake Wightman (GB)",
-   "country": "Great Briatin",
+   "country": "United Kingdom",
    "event": "800m",
    "gender": "male",
    "year": 2018
@@ -10250,7 +10250,7 @@
  {
    "time": "01:44.7",
    "name": "Guy Learmonth (GB)",
-   "country": "Great Briatin",
+   "country": "United Kingdom",
    "event": "800m",
    "gender": "male",
    "year": 2018
@@ -10274,7 +10274,7 @@
  {
    "time": "01:45.0",
    "name": "Daniel Rowden (GB)",
-   "country": "Great Briatin",
+   "country": "United Kingdom",
    "event": "800m",
    "gender": "male",
    "year": 2018
@@ -10298,7 +10298,7 @@
  {
    "time": "01:45.0",
    "name": "Elliot Giles (GB)",
-   "country": "Great Briatin",
+   "country": "United Kingdom",
    "event": "800m",
    "gender": "male",
    "year": 2018
@@ -10314,7 +10314,7 @@
  {
    "time": "01:45.1",
    "name": "*Erik Sowinski (Nike)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "male",
    "year": 2018
@@ -10322,7 +10322,7 @@
  {
    "time": "01:45.1",
    "name": "Andrew Osagie (GB)",
-   "country": "Great Briatin",
+   "country": "United Kingdom",
    "event": "800m",
    "gender": "male",
    "year": 2018
@@ -10338,7 +10338,7 @@
  {
    "time": "01:45.1",
    "name": "Donavan Brazier (Nike)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "male",
    "year": 2018
@@ -10362,7 +10362,7 @@
  {
    "time": "01:45.2",
    "name": "Kyle Langford (GB)",
-   "country": "Great Briatin",
+   "country": "United Kingdom",
    "event": "800m",
    "gender": "male",
    "year": 2018
@@ -10426,7 +10426,7 @@
  {
    "time": "01:45.5",
    "name": "Drew Windle (Brk)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "male",
    "year": 2018
@@ -10450,7 +10450,7 @@
  {
    "time": "01:45.6",
    "name": "Thomas Staines (GB)",
-   "country": "Great Briatin",
+   "country": "United Kingdom",
    "event": "800m",
    "gender": "male",
    "year": 2018
@@ -10466,7 +10466,7 @@
  {
    "time": "01:45.6",
    "name": "Devin Dixon (TxAM)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "male",
    "year": 2018
@@ -10490,7 +10490,7 @@
  {
    "time": "01:45.7",
    "name": "Bryce Hoppel (Ks)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "male",
    "year": 2018
@@ -10562,7 +10562,7 @@
  {
    "time": "03:31.8",
    "name": "Matthew Centrowitz (Nike Ore. Proj.)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "male",
    "year": 2018
@@ -10578,7 +10578,7 @@
  {
    "time": "03:32.1",
    "name": "Chris O’Hare (GB)",
-   "country": "Great Briatin",
+   "country": "United Kingdom",
    "event": "1500m",
    "gender": "male",
    "year": 2018
@@ -10626,7 +10626,7 @@
  {
    "time": "03:34.0",
    "name": "Jake Wightman (GB)",
-   "country": "Great Briatin",
+   "country": "United Kingdom",
    "event": "1500m",
    "gender": "male",
    "year": 2018
@@ -10634,7 +10634,7 @@
  {
    "time": "03:34.2",
    "name": "Charlie Da’Vall Grice (GB)",
-   "country": "Great Briatin",
+   "country": "United Kingdom",
    "event": "1500m",
    "gender": "male",
    "year": 2018
@@ -10690,7 +10690,7 @@
  {
    "time": "03:35.0",
    "name": "Josh Kerr (GB)",
-   "country": "Great Briatin",
+   "country": "United Kingdom",
    "event": "1500m",
    "gender": "male",
    "year": 2018
@@ -10746,7 +10746,7 @@
  {
    "time": "03:35.5",
    "name": "George Manangoi (Ken)",
-   "country": "0-Jan",
+   "country": "Kenya",
    "event": "1500m",
    "gender": "male",
    "year": 2018
@@ -10802,7 +10802,7 @@
  {
    "time": "03:35.9",
    "name": "*Drew Hunter (adidas)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "male",
    "year": 2018
@@ -10810,7 +10810,7 @@
  {
    "time": "03:36.0",
    "name": "Neil Gourley (GB)",
-   "country": "Great Briatin",
+   "country": "United Kingdom",
    "event": "1500m",
    "gender": "male",
    "year": 2018
@@ -10826,7 +10826,7 @@
  {
    "time": "03:36.0",
    "name": "Robby Andrews (adidas)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "male",
    "year": 2018
@@ -10874,7 +10874,7 @@
  {
    "time": "03:36.3",
    "name": "Robert Domanic (Ms)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "male",
    "year": 2018
@@ -10890,7 +10890,7 @@
  {
    "time": "03:36.4",
    "name": "Eric Avila (adidas)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "male",
    "year": 2018
@@ -10906,7 +10906,7 @@
  {
    "time": "08:01.0",
    "name": "Evan Jager (BowTC)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "male",
    "year": 2018
@@ -10946,7 +10946,7 @@
  {
    "time": "08:12.2",
    "name": "Hillary Bor (USAr)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "male",
    "year": 2018
@@ -11202,7 +11202,7 @@
  {
    "time": "08:24.7",
    "name": "Andy Bayer (Nike)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "male",
    "year": 2018
@@ -11226,7 +11226,7 @@
  {
    "time": "08:25.4",
    "name": "Isaac Updike (TRE)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "male",
    "year": 2018
@@ -11274,7 +11274,7 @@
  {
    "time": "08:26.5",
    "name": "Zak Seddon (GB)",
-   "country": "Great Briatin",
+   "country": "United Kingdom",
    "event": "3000m Steeplechase",
    "gender": "male",
    "year": 2018
@@ -11338,7 +11338,7 @@
  {
    "time": "12:57.5",
    "name": "Paul Chelimo (USAr)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "male",
    "year": 2018
@@ -11378,7 +11378,7 @@
  {
    "time": "13:04.1",
    "name": "Ben True (Sauc)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "male",
    "year": 2018
@@ -11546,7 +11546,7 @@
  {
    "time": "13:17.0",
    "name": "Riley Masters (Nike)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "male",
    "year": 2018
@@ -11682,7 +11682,7 @@
  {
    "time": "13:19.8",
    "name": "Hassan Mead (OTC)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "male",
    "year": 2018
@@ -11834,7 +11834,7 @@
  {
    "time": "27:39.7",
    "name": "Shadrack Kipchirchir (Nike)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "10000m",
    "gender": "male",
    "year": 2018
@@ -11994,7 +11994,7 @@
  {
    "time": "27:51.9",
    "name": "Alexander Yee (GB)",
-   "country": "Great Briatin",
+   "country": "United Kingdom",
    "event": "10000m",
    "gender": "male",
    "year": 2018
@@ -12002,7 +12002,7 @@
  {
    "time": "27:52.3",
    "name": "Andy Vernon (GB)",
-   "country": "Great Briatin",
+   "country": "United Kingdom",
    "event": "10000m",
    "gender": "male",
    "year": 2018
@@ -12018,7 +12018,7 @@
  {
    "time": "27:52.6",
    "name": "Chris Thompson (GB)",
-   "country": "Great Briatin",
+   "country": "United Kingdom",
    "event": "10000m",
    "gender": "male",
    "year": 2018
@@ -12066,7 +12066,7 @@
  {
    "time": "27:56.1",
    "name": "Garrett Heath (Brooks Beasts)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "10000m",
    "gender": "male",
    "year": 2018
@@ -12210,7 +12210,7 @@
  {
    "time": "2:05:11",
    "name": "Mo Farah (GB)",
-   "country": "Great Briatin",
+   "country": "United Kingdom",
    "event": "marathon",
    "gender": "male",
    "year": 2018
@@ -12306,7 +12306,7 @@
  {
    "time": "2:06:07",
    "name": "Galen Rupp (Nike Ore. Proj.)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "marathon",
    "gender": "male",
    "year": 2018
@@ -12514,7 +12514,7 @@
  {
    "time": "01:43.6",
    "name": "Clayton Murphy (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "male",
    "year": 2017
@@ -12530,7 +12530,7 @@
  {
    "time": "01:44.0",
    "name": "Donavan Brazier (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "male",
    "year": 2017
@@ -12578,7 +12578,7 @@
  {
    "time": "01:44.5",
    "name": "Isaiah Harris (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "male",
    "year": 2017
@@ -12602,7 +12602,7 @@
  {
    "time": "01:44.6",
    "name": "Drew Windle (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "male",
    "year": 2017
@@ -12610,7 +12610,7 @@
  {
    "time": "01:44.7",
    "name": "Erik Sowinski (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "male",
    "year": 2017
@@ -12706,7 +12706,7 @@
  {
    "time": "01:45.0",
    "name": "Elliot Giles (GB)",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "800m",
    "gender": "male",
    "year": 2017
@@ -12714,7 +12714,7 @@
  {
    "time": "01:45.0",
    "name": "Thijmen Kupers (Hol)",
-   "country": "Holland",
+   "country": "Netherlands",
    "event": "800m",
    "gender": "male",
    "year": 2017
@@ -12762,7 +12762,7 @@
  {
    "time": "01:45.0",
    "name": "Jesse Garn (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "male",
    "year": 2017
@@ -12794,7 +12794,7 @@
  {
    "time": "01:45.1",
    "name": "Guy Learmonth (GB)",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "800m",
    "gender": "male",
    "year": 2017
@@ -12842,7 +12842,7 @@
  {
    "time": "03:31.3",
    "name": "Sadik Mikhou (Bhr)",
-   "country": "bahrain",
+   "country": "Bahrain",
    "event": "1500m",
    "gender": "male",
    "year": 2017
@@ -12922,7 +12922,7 @@
  {
    "time": "03:33.4",
    "name": "Matthew Centrowitz (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "male",
    "year": 2017
@@ -12938,7 +12938,7 @@
  {
    "time": "03:33.6",
    "name": "Chris O’Hare (GB)",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "1500m",
    "gender": "male",
    "year": 2017
@@ -12978,7 +12978,7 @@
  {
    "time": "03:34.2",
    "name": "Jake Wightman (GB)",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "1500m",
    "gender": "male",
    "year": 2017
@@ -12986,7 +12986,7 @@
  {
    "time": "03:34.2",
    "name": "Mo Farah (GB)",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "1500m",
    "gender": "male",
    "year": 2017
@@ -13098,7 +13098,7 @@
  {
    "time": "03:35.0",
    "name": "Johnny Gregorek (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "male",
    "year": 2017
@@ -13114,7 +13114,7 @@
  {
    "time": "03:35.2",
    "name": "Benson Seurei (Bhr)",
-   "country": "bahrain",
+   "country": "Bahrain",
    "event": "1500m",
    "gender": "male",
    "year": 2017
@@ -13122,7 +13122,7 @@
  {
    "time": "03:35.3",
    "name": "Robby Andrews (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "male",
    "year": 2017
@@ -13130,7 +13130,7 @@
  {
    "time": "03:35.3",
    "name": "Thiago André (Bra)",
-   "country": "bahrain",
+   "country": "Bahrain",
    "event": "1500m",
    "gender": "male",
    "year": 2017
@@ -13138,7 +13138,7 @@
  {
    "time": "08:01.3",
    "name": "Evan Jager (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "male",
    "year": 2017
@@ -13170,7 +13170,7 @@
  {
    "time": "08:08.3",
    "name": "Stanley Kebenei (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "male",
    "year": 2017
@@ -13210,7 +13210,7 @@
  {
    "time": "08:11.8",
    "name": "Hillary Bor (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "male",
    "year": 2017
@@ -13274,7 +13274,7 @@
  {
    "time": "08:14.5",
    "name": "Andy Bayer (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "male",
    "year": 2017
@@ -13322,7 +13322,7 @@
  {
    "time": "08:19.2",
    "name": "Maksim Yakushev (Rus)",
-   "country": "r",
+   "country": "Russia",
    "event": "3000m Steeplechase",
    "gender": "male",
    "year": 2017
@@ -13482,7 +13482,7 @@
  {
    "time": "13:00.7",
    "name": "Mo Farah (GB)",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "5000m",
    "gender": "male",
    "year": 2017
@@ -13522,7 +13522,7 @@
  {
    "time": "13:04.8",
    "name": "Albert Rop (Bhr)",
-   "country": "bahrain",
+   "country": "Bahrain",
    "event": "5000m",
    "gender": "male",
    "year": 2017
@@ -13530,7 +13530,7 @@
  {
    "time": "13:05.9",
    "name": "Eric Jenkins (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "male",
    "year": 2017
@@ -13538,7 +13538,7 @@
  {
    "time": "13:06.7",
    "name": "Ben True (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "male",
    "year": 2017
@@ -13554,7 +13554,7 @@
  {
    "time": "13:07.6",
    "name": "Ryan Hill (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "male",
    "year": 2017
@@ -13562,7 +13562,7 @@
  {
    "time": "13:08.6",
    "name": "Paul Chelimo (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "male",
    "year": 2017
@@ -13570,7 +13570,7 @@
  {
    "time": "13:09.9",
    "name": "Birhanu Yemataw (Bhr)",
-   "country": "bahrain",
+   "country": "Bahrain",
    "event": "5000m",
    "gender": "male",
    "year": 2017
@@ -13602,7 +13602,7 @@
  {
    "time": "13:11.2",
    "name": "Hassan Mead (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "male",
    "year": 2017
@@ -13610,7 +13610,7 @@
  {
    "time": "13:11.4",
    "name": "Andrew Butchart (GB)",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "5000m",
    "gender": "male",
    "year": 2017
@@ -13642,7 +13642,7 @@
  {
    "time": "13:12.2",
    "name": "Woody Kincaid (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "male",
    "year": 2017
@@ -13650,7 +13650,7 @@
  {
    "time": "13:12.3",
    "name": "Lopez Lomong (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "male",
    "year": 2017
@@ -13682,7 +13682,7 @@
  {
    "time": "13:13.2",
    "name": "Emanuel Gniki (Tan)",
-   "country": "Tansania",
+   "country": "United Republic of Tanzania",
    "event": "5000m",
    "gender": "male",
    "year": 2017
@@ -13770,7 +13770,7 @@
  {
    "time": "13:15.2",
    "name": "Dawit Fikadu (Bhr)",
-   "country": "bahrain",
+   "country": "Bahrain",
    "event": "5000m",
    "gender": "male",
    "year": 2017
@@ -13778,7 +13778,7 @@
  {
    "time": "26:49.5",
    "name": "Mo Farah (GB)",
-   "country": "Great Britain",
+   "country": "United Kingdom",
    "event": "10000m",
    "gender": "male",
    "year": 2017
@@ -13842,7 +13842,7 @@
  {
    "time": "27:07.6",
    "name": "Shadrack Kipchirchir (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "10000m",
    "gender": "male",
    "year": 2017
@@ -13866,7 +13866,7 @@
  {
    "time": "27:11.1",
    "name": "Abraham Cheroben (Bhr)",
-   "country": "bahrain",
+   "country": "Bahrain",
    "event": "10000m",
    "gender": "male",
    "year": 2017
@@ -13890,7 +13890,7 @@
  {
    "time": "27:20.2",
    "name": "Leonard Korir (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "10000m",
    "gender": "male",
    "year": 2017
@@ -13946,7 +13946,7 @@
  {
    "time": "27:32.5",
    "name": "Hassan Mead (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "10000m",
    "gender": "male",
    "year": 2017
@@ -14058,7 +14058,7 @@
  {
    "time": "27:45.8",
    "name": "Biya Simbassa (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "10000m",
    "gender": "male",
    "year": 2017
@@ -14442,7 +14442,7 @@
  {
    "time": "01:42.9",
    "name": "Clayton Murphy (Akr)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "male",
    "year": 2016
@@ -14490,7 +14490,7 @@
  {
    "time": "01:43.6",
    "name": "Donavan Brazier (TxAM)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "male",
    "year": 2016
@@ -14546,7 +14546,7 @@
  {
    "time": "01:44.2",
    "name": "*Boris Berian (New Balance)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "male",
    "year": 2016
@@ -14562,7 +14562,7 @@
  {
    "time": "01:44.5",
    "name": "Amel Tuka (Bos)",
-   "country": "Bosnia",
+   "country": "Bosnia and Herzegovina",
    "event": "800m",
    "gender": "male",
    "year": 2016
@@ -14602,7 +14602,7 @@
  {
    "time": "01:44.8",
    "name": "Wesley Vázquez (PR)",
-   "country": "Peurto Rico",
+   "country": "Puerto Rico",
    "event": "800m",
    "gender": "male",
    "year": 2016
@@ -14626,7 +14626,7 @@
  {
    "time": "01:44.9",
    "name": "Michael Rimmer (GB)",
-   "country": "Great Briatin",
+   "country": "United Kingdom",
    "event": "800m",
    "gender": "male",
    "year": 2016
@@ -14634,7 +14634,7 @@
  {
    "time": "01:45.0",
    "name": "Shaquille Walker (BYU)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "male",
    "year": 2016
@@ -14698,7 +14698,7 @@
  {
    "time": "01:45.2",
    "name": "Thijmen Kupers (Hol)",
-   "country": "Holland",
+   "country": "Netherlands",
    "event": "800m",
    "gender": "male",
    "year": 2016
@@ -14794,7 +14794,7 @@
  {
    "time": "03:31.7",
    "name": "Mohamed Farah (GB)",
-   "country": "Great Briatin",
+   "country": "United Kingdom",
    "event": "1500m",
    "gender": "male",
    "year": 2016
@@ -14858,7 +14858,7 @@
  {
    "time": "03:33.6",
    "name": "Charlie Grice (GB)",
-   "country": "Great Briatin",
+   "country": "United Kingdom",
    "event": "1500m",
    "gender": "male",
    "year": 2016
@@ -14898,7 +14898,7 @@
  {
    "time": "03:34.1",
    "name": "Matthew Centrowitz (NikOP)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "male",
    "year": 2016
@@ -14914,7 +14914,7 @@
  {
    "time": "03:34.3",
    "name": "Ben Blankenship (OTC)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "male",
    "year": 2016
@@ -14954,7 +14954,7 @@
  {
    "time": "03:34.9",
    "name": "Colby Alexander (Hoka)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "male",
    "year": 2016
@@ -14962,7 +14962,7 @@
  {
    "time": "03:34.9",
    "name": "Robby Andrews (adidas)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "male",
    "year": 2016
@@ -15034,7 +15034,7 @@
  {
    "time": "03:35.4",
    "name": "Chris O’Hare (GB)",
-   "country": "Great Briatin",
+   "country": "United Kingdom",
    "event": "1500m",
    "gender": "male",
    "year": 2016
@@ -15074,7 +15074,7 @@
  {
    "time": "08:04.0",
    "name": "Evan Jager (BowTC)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "male",
    "year": 2016
@@ -15138,7 +15138,7 @@
  {
    "time": "08:13.7",
    "name": "Hillary Bor (USAr)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "male",
    "year": 2016
@@ -15170,7 +15170,7 @@
  {
    "time": "08:16.1",
    "name": "Andy Bayer (BowTC)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "male",
    "year": 2016
@@ -15234,7 +15234,7 @@
  {
    "time": "08:18.5",
    "name": "Stanley Kebenei (Nike)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "male",
    "year": 2016
@@ -15242,7 +15242,7 @@
  {
    "time": "08:18.6",
    "name": "Dan Huling (Nike)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "male",
    "year": 2016
@@ -15258,7 +15258,7 @@
  {
    "time": "08:19.1",
    "name": "Cory Leslie (Nike)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "male",
    "year": 2016
@@ -15338,7 +15338,7 @@
  {
    "time": "08:20.7",
    "name": "Donn Cabral (Nike)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "male",
    "year": 2016
@@ -15378,7 +15378,7 @@
  {
    "time": "12:59.3",
    "name": "Mo Farah (GB)",
-   "country": "Great Briatin",
+   "country": "United Kingdom",
    "event": "5000m",
    "gender": "male",
    "year": 2016
@@ -15474,7 +15474,7 @@
  {
    "time": "13:03.9",
    "name": "Paul Chelimo (USAr)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "male",
    "year": 2016
@@ -15490,7 +15490,7 @@
  {
    "time": "13:04.2",
    "name": "Hassan Mead (OTC)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "male",
    "year": 2016
@@ -15554,7 +15554,7 @@
  {
    "time": "13:06.8",
    "name": "Bernard Lagat (Nike)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "male",
    "year": 2016
@@ -15570,7 +15570,7 @@
  {
    "time": "13:08.6",
    "name": "Andrew Butchart (GB)",
-   "country": "Great Briatin",
+   "country": "United Kingdom",
    "event": "5000m",
    "gender": "male",
    "year": 2016
@@ -15626,7 +15626,7 @@
  {
    "time": "13:12.7",
    "name": "Ben True (Saucony)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "male",
    "year": 2016
@@ -15706,7 +15706,7 @@
  {
    "time": "26:53.7",
    "name": "Mo Farah (GB)",
-   "country": "Great Briatin",
+   "country": "United Kingdom",
    "event": "10000m",
    "gender": "male",
    "year": 2016
@@ -15786,7 +15786,7 @@
  {
    "time": "27:08.9",
    "name": "*Galen Rupp (NikOP)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "10000m",
    "gender": "male",
    "year": 2016
@@ -16337,8 +16337,8 @@
  },
  {
    "time": "01:42.5",
-   "name": "Amel Tuka (Bosnia Herzegovina)",
-   "country": "Bosnia",
+   "name": "Amel Tuka (Bosnia and Herzegovina Herzegovina)",
+   "country": "Bosnia and Herzegovina",
    "event": "800m",
    "gender": "male",
    "year": 2015
@@ -16362,7 +16362,7 @@
  {
    "time": "01:43.3",
    "name": "Boris Berian (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "male",
    "year": 2015
@@ -16490,7 +16490,7 @@
  {
    "time": "01:44.5",
    "name": "Nick Symmonds (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "male",
    "year": 2015
@@ -16514,7 +16514,7 @@
  {
    "time": "01:44.6",
    "name": "Matthew Centrowitz (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "male",
    "year": 2015
@@ -16530,7 +16530,7 @@
  {
    "time": "01:44.8",
    "name": "Erik Sowinski (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "male",
    "year": 2015
@@ -16538,7 +16538,7 @@
  {
    "time": "01:44.9",
    "name": "Casimir Loxsom (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "male",
    "year": 2015
@@ -16602,7 +16602,7 @@
  {
    "time": "01:45.2",
    "name": "Leo Manzano (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "male",
    "year": 2015
@@ -16617,8 +16617,8 @@
  },
  {
    "time": "01:45.3",
-   "name": "Thijmen Kupers (Holland)",
-   "country": "Holland",
+   "name": "Thijmen Kupers (Netherlands)",
+   "country": "Netherlands",
    "event": "800m",
    "gender": "male",
    "year": 2015
@@ -16681,8 +16681,8 @@
  },
  {
    "time": "03:28.9",
-   "name": "Mo Farah (Great Britain)",
-   "country": "Great Britain",
+   "name": "Mo Farah (United Kingdom)",
+   "country": "United Kingdom",
    "event": "1500m",
    "gender": "male",
    "year": 2015
@@ -16746,7 +16746,7 @@
  {
    "time": "03:30.4",
    "name": "Matthew Centrowitz (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "male",
    "year": 2015
@@ -16786,7 +16786,7 @@
  {
    "time": "03:33.0",
    "name": "Evan Jager (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "male",
    "year": 2015
@@ -16810,7 +16810,7 @@
  {
    "time": "03:34.1",
    "name": "Garrett Heath (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "male",
    "year": 2015
@@ -16858,7 +16858,7 @@
  {
    "time": "03:34.5",
    "name": "Kyle Merber (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "male",
    "year": 2015
@@ -16873,8 +16873,8 @@
  },
  {
    "time": "03:34.8",
-   "name": "Chris O’Hare (Great Britain)",
-   "country": "Great Britain",
+   "name": "Chris O’Hare (United Kingdom)",
+   "country": "United Kingdom",
    "event": "1500m",
    "gender": "male",
    "year": 2015
@@ -16930,7 +16930,7 @@
  {
    "time": "03:35.3",
    "name": "Ben Blankenship (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "male",
    "year": 2015
@@ -16945,8 +16945,8 @@
  },
  {
    "time": "03:35.3",
-   "name": "Charlie Grice (Great Britain)",
-   "country": "Great Britain",
+   "name": "Charlie Grice (United Kingdom)",
+   "country": "United Kingdom",
    "event": "1500m",
    "gender": "male",
    "year": 2015
@@ -16962,7 +16962,7 @@
  {
    "time": "03:35.4",
    "name": "Cory Leslie (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "male",
    "year": 2015
@@ -16986,7 +16986,7 @@
  {
    "time": "08:00.5",
    "name": "Evan Jager (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "male",
    "year": 2015
@@ -17050,7 +17050,7 @@
  {
    "time": "08:13.4",
    "name": "Donn Cabral (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "male",
    "year": 2015
@@ -17058,7 +17058,7 @@
  {
    "time": "08:14.1",
    "name": "Dan Huling (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "male",
    "year": 2015
@@ -17098,7 +17098,7 @@
  {
    "time": "08:18.1",
    "name": "Andy Bayer (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "male",
    "year": 2015
@@ -17290,7 +17290,7 @@
  {
    "time": "08:23.9",
    "name": "Stanley Kebenei (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "male",
    "year": 2015
@@ -17386,7 +17386,7 @@
  {
    "time": "13:05.5",
    "name": "Ben True (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "male",
    "year": 2015
@@ -17402,7 +17402,7 @@
  {
    "time": "13:05.7",
    "name": "Ryan Hill (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "male",
    "year": 2015
@@ -17426,7 +17426,7 @@
  {
    "time": "13:07.3",
    "name": "Eric Jenkins (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "male",
    "year": 2015
@@ -17450,7 +17450,7 @@
  {
    "time": "13:08.4",
    "name": "Galen Rupp (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "male",
    "year": 2015
@@ -17482,15 +17482,15 @@
  {
    "time": "13:10.4",
    "name": "Hassan Mead (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "male",
    "year": 2015
  },
  {
    "time": "13:10.5",
-   "name": "Thomas Farrell (Great Britain)",
-   "country": "Great Britain",
+   "name": "Thomas Farrell (United Kingdom)",
+   "country": "United Kingdom",
    "event": "5000m",
    "gender": "male",
    "year": 2015
@@ -17537,8 +17537,8 @@
  },
  {
    "time": "13:11.8",
-   "name": "Mo Farah (Great Britain)",
-   "country": "Great Britain",
+   "name": "Mo Farah (United Kingdom)",
+   "country": "United Kingdom",
    "event": "5000m",
    "gender": "male",
    "year": 2015
@@ -17617,8 +17617,8 @@
  },
  {
    "time": "26:51.0",
-   "name": "Mo Farah (Great Britain)",
-   "country": "Great Britain",
+   "name": "Mo Farah (United Kingdom)",
+   "country": "United Kingdom",
    "event": "10000m",
    "gender": "male",
    "year": 2015
@@ -17658,7 +17658,7 @@
  {
    "time": "27:08.9",
    "name": "Galen Rupp (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "10000m",
    "gender": "male",
    "year": 2015
@@ -17802,7 +17802,7 @@
  {
    "time": "27:30.5",
    "name": "Diego Estrada (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "10000m",
    "gender": "male",
    "year": 2015
@@ -17818,7 +17818,7 @@
  {
    "time": "27:33.0",
    "name": "Hassan Mead (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "10000m",
    "gender": "male",
    "year": 2015
@@ -17929,8 +17929,8 @@
  },
  {
    "time": "27:42.6",
-   "name": "Andy Vernon (Great Britain)",
-   "country": "Great Britain",
+   "name": "Andy Vernon (United Kingdom)",
+   "country": "United Kingdom",
    "event": "10000m",
    "gender": "male",
    "year": 2015
@@ -18338,7 +18338,7 @@
  {
    "time": "01:43.9",
    "name": "Duane Solomon (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "male",
    "year": 2014
@@ -18418,7 +18418,7 @@
  {
    "time": "01:44.6",
    "name": "Erik Sowinski (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "male",
    "year": 2014
@@ -18474,7 +18474,7 @@
  {
    "time": "01:44.9",
    "name": "Elijah Greer (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "800m",
    "gender": "male",
    "year": 2014
@@ -18505,8 +18505,8 @@
  },
  {
    "time": "01:45.2",
-   "name": "Andrew Osagie (Great Britain)",
-   "country": "Great Britain",
+   "name": "Andrew Osagie (United Kingdom)",
+   "country": "United Kingdom",
    "event": "800m",
    "gender": "male",
    "year": 2014
@@ -18650,7 +18650,7 @@
  {
    "time": "03:31.0",
    "name": "Leo Manzano (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "male",
    "year": 2014
@@ -18658,7 +18658,7 @@
  {
    "time": "03:31.1",
    "name": "Matthew Centrowitz (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "male",
    "year": 2014
@@ -18738,7 +18738,7 @@
  {
    "time": "03:34.2",
    "name": "Galen Rupp (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "male",
    "year": 2014
@@ -18762,7 +18762,7 @@
  {
    "time": "03:34.3",
    "name": "Will Leer (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "male",
    "year": 2014
@@ -18825,8 +18825,8 @@
  },
  {
    "time": "03:35.1",
-   "name": "Chris O’Hare (Great Britain)",
-   "country": "Great Britain",
+   "name": "Chris O’Hare (United Kingdom)",
+   "country": "United Kingdom",
    "event": "1500m",
    "gender": "male",
    "year": 2014
@@ -18866,7 +18866,7 @@
  {
    "time": "03:35.3",
    "name": "*Pat Casey (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "1500m",
    "gender": "male",
    "year": 2014
@@ -18881,8 +18881,8 @@
  },
  {
    "time": "03:35.5",
-   "name": "Jake Wightman (Great Britain)",
-   "country": "Great Britain",
+   "name": "Jake Wightman (United Kingdom)",
+   "country": "United Kingdom",
    "event": "1500m",
    "gender": "male",
    "year": 2014
@@ -18930,7 +18930,7 @@
  {
    "time": "08:04.7",
    "name": "Evan Jager (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "male",
    "year": 2014
@@ -19010,7 +19010,7 @@
  {
    "time": "08:15.6",
    "name": "Dan Huling (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "male",
    "year": 2014
@@ -19098,7 +19098,7 @@
  {
    "time": "08:20.0",
    "name": "Donn Cabral (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "male",
    "year": 2014
@@ -19161,8 +19161,8 @@
  },
  {
    "time": "08:22.8",
-   "name": "James Wilkinson (Great Britain)",
-   "country": "Great Britain",
+   "name": "James Wilkinson (United Kingdom)",
+   "country": "United Kingdom",
    "event": "3000m Steeplechase",
    "gender": "male",
    "year": 2014
@@ -19178,7 +19178,7 @@
  {
    "time": "08:24.1",
    "name": "Craig Forys (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "3000m Steeplechase",
    "gender": "male",
    "year": 2014
@@ -19266,7 +19266,7 @@
  {
    "time": "13:01.0",
    "name": "Galen Rupp (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "male",
    "year": 2014
@@ -19274,7 +19274,7 @@
  {
    "time": "13:02.7",
    "name": "Ben True (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "male",
    "year": 2014
@@ -19282,7 +19282,7 @@
  {
    "time": "13:02.8",
    "name": "Hassan Mead (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "male",
    "year": 2014
@@ -19322,7 +19322,7 @@
  {
    "time": "13:06.7",
    "name": "Bernard Lagat (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "male",
    "year": 2014
@@ -19354,7 +19354,7 @@
  {
    "time": "13:08.0",
    "name": "Lopez Lomong (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "male",
    "year": 2014
@@ -19362,7 +19362,7 @@
  {
    "time": "13:08.2",
    "name": "Chris Derrick (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "male",
    "year": 2014
@@ -19370,7 +19370,7 @@
  {
    "time": "13:08.6",
    "name": "Evan Jager (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "male",
    "year": 2014
@@ -19417,8 +19417,8 @@
  },
  {
    "time": "13:11.5",
-   "name": "Andy Vernon (Great Britain)",
-   "country": "Great Britain",
+   "name": "Andy Vernon (United Kingdom)",
+   "country": "United Kingdom",
    "event": "5000m",
    "gender": "male",
    "year": 2014
@@ -19490,7 +19490,7 @@
  {
    "time": "13:13.7",
    "name": "Andrew Bumbalough (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "male",
    "year": 2014
@@ -19498,7 +19498,7 @@
  {
    "time": "13:14.3",
    "name": "Ryan Hill (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "5000m",
    "gender": "male",
    "year": 2014
@@ -19538,7 +19538,7 @@
  {
    "time": "26:44.4",
    "name": "Galen Rupp (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "10000m",
    "gender": "male",
    "year": 2014
@@ -19778,7 +19778,7 @@
  {
    "time": "27:46.3",
    "name": "Bobby Curtis (US)",
-   "country": "United States",
+   "country": "United States of America",
    "event": "10000m",
    "gender": "male",
    "year": 2014

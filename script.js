@@ -1,13 +1,53 @@
 var dataP = d3.json("distanceDataJson.json")
-var mapP = d3.json("world-eckert3-highres.geo.json")
+var mapP = d3.json("countries.geojson")
 
 
-Promise.all([dataP, mapP]).then(function(data)
+Promise.all([dataP, mapP]).then(function(values)
 {
   var runData = values[0]
   var geoData = values[1]
 
   console.log("data", runData);
+  console.log("map", geoData);
+
+  runData.forEach(function(d,i)
+  {
+    var countryFound = false;
+    var count = 0;
+    var currSpot;
+    var country;
+
+    //console.log("len", geoData.features.length)
+
+
+
+    while (countryFound == false)
+    {
+      if (count==geoData.features.length)
+      {
+        console.log("map whoops");
+        console.log("data name: ", d.country)
+      }
+      //console.log("currSpot", geoData.features[count])
+      currSpot = geoData.features[count];
+      currCountry = currSpot.properties.ADMIN;
+      //console.log("name: ", currCountry)
+
+      if (d.country == currCountry)
+      {
+        countryFound = true;
+        d.mapInfo = currSpot;
+      }
+      else
+      {
+        count++;
+      }
+    }
+
+  })
+
+//console.log("all done")
+
 
   var map = makeMap();
 
