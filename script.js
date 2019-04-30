@@ -14,10 +14,10 @@ Promise.all([dataP, mapP]).then(function(values)
   console.log("data", runData);
   console.log("map", geoData);
 
-  var map = makeMap();
+  var map = makeMap(geoData);
 
-  var womenByEvent = getWomen(data);
-  var menByEvent = getMen(data);
+  var womenByEvent = getWomen(runData);
+  var menByEvent = getMen(runData);
 
   console.log(womenByEvent)
   console.log(menByEvent)
@@ -27,6 +27,236 @@ Promise.all([dataP, mapP]).then(function(values)
 {
   console.log(err);
 });
+
+
+
+
+var makeMap = function(geoData)
+{
+  var w = 1400;
+  var h = 600;
+
+  var zoom = d3
+     .zoom()
+     .on("zoom", zoomed)
+     //.passive = true;
+
+  var svg = d3.select("body").append("svg")
+                             .attr("width", w)
+                             .attr("height", h)
+                             .attr("fill", "lightskyblue")
+                             .call(zoom)
+
+  var projection = d3
+   .geoEquirectangular()
+   .center([0, 15])
+   .scale([w/(2*Math.PI)])
+   .translate([w/2,h/2])
+
+   var path = d3
+      .geoPath()
+      .projection(projection)
+
+  var countriesGroup = svg.append("g")
+                      .attr("id", "map")
+
+  countriesGroup.append("rect")
+               .attr("x", 0)
+               .attr("y", 0)
+               .attr("width", w)
+               .attr("height", h)
+
+function initiateZoom()
+               {
+                  // Define a "min zoom"
+                  minZoom = Math.max(w/w,h/h);
+                  // Define a "max zoom"
+                  maxZoom = 20*minZoom;
+                  //apply these limits of
+                  zoom
+                     .scaleExtent([minZoom, maxZoom]) // set min/max extent of zoom
+                     .translateExtent([[0, 0], [w, h]]) // set extent of panning
+                  ;
+                  // define X and Y offset for centre of map
+                  midX = ($("#map-holder").width() - (minZoom*w))/2;
+                  midY = ($("#map-holder").height() - (minZoom*h))/2;
+                 // change zoom transform to min zoom and centre offsets
+                  svg.call(zoom.transform,d3.zoomIdentity.translate(midX, midY).scale(minZoom));
+
+                  // on window resize
+               $(window).resize(function() {
+                  // Resize SVG
+                  svg
+                     .attr("width", $("#map-holder").width())
+                     .attr("height", $("#map-holder").height())
+                     //.attr("fill", "lightskyblue")
+                  ;
+                  initiateZoom();
+               });
+               }
+
+               // zoom to show a bounding box, with optional additional padding as percentage of box size
+           function boxZoom(box, centroid, paddingPerc)
+           {
+             minZoom = Math.max(w/w,h/h);
+             maxZoom = 20*minZoom;
+             minXY = box[0];
+             maxXY = box[1];
+             // find size of map area defined
+             zoomWidth = Math.abs(minXY[0] - maxXY[0]);
+             zoomHeight = Math.abs(minXY[1] - maxXY[1]);
+             // find midpoint of map area defined
+             zoomMidX = centroid[0];
+             zoomMidY = centroid[1];
+             // increase map area to include padding
+             zoomWidth = zoomWidth * (1 + paddingPerc / 100);
+             zoomHeight = zoomHeight * (1 + paddingPerc / 100);
+             // find scale required for area to fill svg
+             maxXscale = w / zoomWidth;
+             maxYscale = h/ zoomHeight;
+             zoomScale = Math.min(maxXscale, maxYscale);
+             // handle some edge cases
+             // limit to max zoom (handles tiny countries)
+             zoomScale = Math.min(zoomScale, maxZoom);
+             // limit to min zoom (handles large countries and countries that span the date line)
+             zoomScale = Math.max(zoomScale, minZoom);
+             // Find screen pixel equivalent once scaled
+             offsetX = zoomScale * zoomMidX;
+             offsetY = zoomScale * zoomMidY;
+             // Find offset to centre, making sure no gap at left or top of holder
+             dleft = Math.min(0, w/ 2 - offsetX);
+             dtop = Math.min(0, h / 2 - offsetY);
+             // Make sure no gap at bottom or right of holder
+             dleft = Math.max(w - w * zoomScale, dleft);
+             dtop = Math.max(h - h * zoomScale, dtop);
+             // set zoom
+             svg
+               .transition()
+               .duration(500)
+               .call(
+                 zoom.transform,
+                 d3.zoomIdentity.translate(dleft, dtop).scale(zoomScale)
+               );
+           }
+
+
+   countries = countriesGroup.selectAll("path")
+                              .data(geoData.features)
+                              .enter()
+                              .append("path")
+                              .attr("d", path)
+                              .attr("id", function(d, i)
+                              {
+                                 return "country" + d.properties.ADMIN;
+                              })
+                              .attr("class", "country")
+                              .attr("fill", "PaleGreen")
+                              .attr("stroke", "Black")
+                              .attr("stroke-width", .1)
+                              // add a mouseover action to show name label for feature/country
+                              .on("mouseover", function(d, i)
+                              {
+                                 d3.select("#countryLabel" + d.properties.ADMIN)
+                                    .style("display", "block");
+                              })
+                              .on("mouseout", function(d, i)
+                              {
+                                 d3.select("#countryLabel" + d.properties.ADMIN)
+                                 .style("display", "none");
+                              })
+                              // add an onclick action to zoom into clicked country
+                              .on("click", function(d, i)
+                              {
+                                 d3.selectAll(".country").classed("country-on", false);
+                                 d3.select(this).classed("country-on", true);
+                                 boxZoom(path.bounds(d), path.centroid(d), 20);
+                              })
+
+  countryLabels = countriesGroup.selectAll("g")
+                                 .data(geoData.features)
+                                 .enter()
+                                 .append("g")
+                                 .attr("class", "countryLabel")
+                                 .attr("id", function(d)
+                                 {
+                                    return "countryLabel" + d.properties.ADMIN;
+                                 })
+                                 .attr("transform", function(d)
+                                 {
+                                    return ("translate(" + path.centroid(d)[0] + "," + path
+                                                              .centroid(d)[1] + ")");
+                                 })
+                                 // add mouseover functionality to the label
+                                 .on("mouseover", function(d, i)
+                                 {
+                                    d3.select(this).style("display", "block");
+                                 })
+                                 .on("mouseout", function(d, i)
+                                 {
+                                     d3.select(this).style("display", "none");
+                                 })
+                                 // add an onlcick action to zoom into clicked country
+                                 .on("click", function(d, i)
+                                 {
+                                    d3.selectAll(".country")
+                                      .classed("country-on", false);
+                                    d3.select("#country" + d.properties.ADMIN)
+                                      .classed("country-on", true);
+                                    boxZoom(path.bounds(d), path.centroid(d), 20);
+                                 })
+
+   function zoomed()
+   {
+      t = d3
+         .event
+         .transform
+      ;
+      countriesGroup.attr(
+         "transform","translate(" + [t.x, t.y] + ")scale(" + t.k + ")"
+      );
+
+   }
+
+      // add the text to the label group showing country name
+      countryLabels.append("text")
+                   .attr("class", "countryName")
+                   .style("text-anchor", "middle")
+                   .attr("dx", 0)
+                   .attr("dy", 0)
+                   .text(function(d)
+                   {
+                      return d.properties.name;
+                   })
+                   .call(getTextBox)
+
+      // add a background rectangle the same size as the text
+      countryLabels.insert("rect", "text")
+                   .attr("class", "countryBg")
+                   //.attr("fill", "blue")
+                   .attr("transform", function(d)
+                   {
+                    return "translate(" + (d.bbox.x - 2) + "," + d.bbox.y + ")";
+                   })
+                   .attr("width", function(d)
+                   {
+                      return d.bbox.width + 4;
+                   })
+                   .attr("height", function(d)
+                   {
+                     return d.bbox.height;
+                  })
+
+}
+
+
+var getTextBox = function(selection)
+{
+  selection.each(function(d) {
+    d.bbox = this.getBBox();
+  });
+}
+
+
 
 
 var putMapDataInRunData = function(runData, geoData)
