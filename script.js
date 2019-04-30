@@ -156,11 +156,18 @@ function initiateZoom()
                               // add a mouseover action to show name label for feature/country
                               .on("mouseover", function(d, i)
                               {
+
+                                var e = d3.select("#"+d.properties.ADMIN+"text");
+                                //console.log("e", e)
+                               e.attr("fill", "black");
                                  d3.select("#countryLabel" + d.properties.ADMIN)
                                     .style("display", "block");
                               })
                               .on("mouseout", function(d, i)
                               {
+                                var e = d3.select("#"+d.properties.ADMIN+"text");
+                                //console.log("e", e)
+                               e.attr("fill", "transparent");
                                  d3.select("#countryLabel" + d.properties.ADMIN)
                                  .style("display", "none");
                               })
@@ -189,11 +196,22 @@ function initiateZoom()
                                  // add mouseover functionality to the label
                                  .on("mouseover", function(d, i)
                                  {
-                                    d3.select(this).style("display", "block");
+                                   //d3.select(this).attr("fill","black");
+                                   //console.log(d.properties.ADMIN+"text")
+                                   var e = d3.select("#"+d.properties.ADMIN+"text");
+                                   //console.log("e", e)
+                                  e.attr("fill", "black");
+                                    //d3.select(this).attr("font-size", 7);
+                                    d3.select(this).style("display", "block")
+
                                  })
                                  .on("mouseout", function(d, i)
                                  {
-                                     d3.select(this).style("display", "none");
+                                   var e = d3.select("#"+d.properties.ADMIN+"text");
+                                   //console.log("e", e)
+                                  e.attr("fill", "transparent");
+                                     d3.select(this).style("display", "none")
+
                                  })
                                  // add an onlcick action to zoom into clicked country
                                  .on("click", function(d, i)
@@ -217,22 +235,35 @@ function initiateZoom()
 
    }
 
+function getTextBox(selection)
+   {
+     selection.each(function(d)
+     {
+       d.bbox = this.getBBox();
+     });
+   }
       // add the text to the label group showing country name
       countryLabels.append("text")
                    .attr("class", "countryName")
+                   .attr("id", function(d)
+                   {
+                      return d.properties.ADMIN+"text";
+                   })
                    .style("text-anchor", "middle")
                    .attr("dx", 0)
                    .attr("dy", 0)
+                   .attr("fill", "transparent")
+                   .attr("font-size", 7)
                    .text(function(d)
                    {
-                      return d.properties.name;
+                      return d.properties.ADMIN;
                    })
                    .call(getTextBox)
 
       // add a background rectangle the same size as the text
       countryLabels.insert("rect", "text")
                    .attr("class", "countryBg")
-                   //.attr("fill", "blue")
+                   .attr("fill", "none")
                    .attr("transform", function(d)
                    {
                     return "translate(" + (d.bbox.x - 2) + "," + d.bbox.y + ")";
@@ -249,12 +280,7 @@ function initiateZoom()
 }
 
 
-var getTextBox = function(selection)
-{
-  selection.each(function(d) {
-    d.bbox = this.getBBox();
-  });
-}
+
 
 
 
