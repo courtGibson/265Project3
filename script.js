@@ -25,7 +25,7 @@ Promise.all([dataP, mapP]).then(function(values)
   console.log(womenByEvent)
   console.log(menByEvent)
 
-  drawCircles(womenByEvent, menByEvent, runData);
+  drawCircles(runData, byCountry);
 },
   function(err)
 {
@@ -34,12 +34,48 @@ Promise.all([dataP, mapP]).then(function(values)
 
 var getByCountry = function(runData)
 {
+  var countries = []
+  runData.forEach(function(d)
+{
+  if(!countries.includes(d.country))
+  {
+    countries.push(d.country);
+  }
+})
 
+console.log("countries", countries)
+
+var bigarray = []
+  countries.forEach(function(d)
+{
+  /// add center point to data
+  var smallarray = []
+  smallarray.push(d);
+  var athletes = []
+  runData.forEach(function(runD)
+{
+  if(runD.country == d)
+  {
+    athletes.push(runD);
+  }
+})
+smallarray.push(athletes);
+bigarray.push(smallarray);
+})
+
+console.log("bigarray", bigarray)
+return bigarray;
 }
 
-var drawCircles = function(byCountry)
+var drawCircles = function(runData, byCountry)
 {
+  var svg = d3.select("svg")
 
+  svg.selectAll("circle")
+      .data(byCountry)
+      .enter()
+      .append("circle")
+      .attr("cx", )
 }
 
 var makeMap = function(geoData)
