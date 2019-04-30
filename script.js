@@ -21,12 +21,12 @@ Promise.all([dataP, mapP/*, keyedDataP*/]).then(function(values)
 
   var womenByEvent = getWomen(runData);
   var menByEvent = getMen(runData);
-  var formatted= format(runData);
+  var formatted = format(runData);
 
 
   //console.log(womenByEvent)
   //console.log(menByEvent)
-  drawCircles(runData, byCountry);
+  drawCircles(formatted);
 },
   function(err)
 {
@@ -98,21 +98,26 @@ runData.forEach(function(d)
   }
 
   console.log("newData", newData)
+  return newData;
 
 }
 
-var drawCircles = function(runData, data)
+var drawCircles = function(data)
 {
   var svg = d3.select("svg")
+// group year
+//  ^group country
+//    ^group event
+//      ^group female
+//      ^group male
+//  data.years.forEach(function)
 
-//data.forEach(functionsvg.append("g")
+  var yearG = svg.selectAll("g")
+                  .data(data.years)
+                  .enter()
+                  .append("g")
 
 
-  svg.selectAll("circle")
-      .data(data)
-      .enter()
-      .append("circle")
-      .attr("cx", )
 }
 
 var makeMap = function(geoData)
@@ -231,7 +236,7 @@ function initiateZoom()
                               .attr("d", path)
                               .attr("id", function(d, i)
                               {
-                                 return "country" + [d.properties.ADMIN];
+                                 return "country" + [d.properties.id];
                               })
                               .attr("class", "country")
                               .attr("fill", "rgb(48, 52, 67)")
@@ -241,18 +246,20 @@ function initiateZoom()
                               .on("mouseover", function(d, i)
                               {
 
-                                var e = d3.select("#"+[d.properties.ADMIN]+"text");
+                                var e = d3.select("#"+[d.properties.id]+"text");
                                 //console.log("e", e)
                                e.attr("fill", "GreenYellow");
-                                 d3.select("#countryLabel" + [d.properties.ADMIN])
+                                 d3.select("#countryLabel" + [d.properties.id])
                                     .style("display", "block");
+                                console.log(d.properties.id)
+
                               })
                               .on("mouseout", function(d, i)
                               {
-                                var e = d3.select("#"+[d.properties.ADMIN]+"text");
+                                var e = d3.select("#"+[d.properties.id]+"text");
                                 //console.log("e", e)
                                e.attr("fill", "transparent");
-                                 d3.select("#countryLabel" + [d.properties.ADMIN])
+                                 d3.select("#countryLabel" + [d.properties.id])
                                  .style("display", "none");
                               })
                               // add an onclick action to zoom into clicked country
@@ -270,7 +277,7 @@ function initiateZoom()
                                  .attr("class", "countryLabel")
                                  .attr("id", function(d)
                                  {
-                                    return "countryLabel" + [d.properties.ADMIN];
+                                    return "countryLabel" + [d.properties.id];
                                  })
                                  .attr("transform", function(d)
                                  {
@@ -282,16 +289,17 @@ function initiateZoom()
                                  {
                                    //d3.select(this).attr("fill","black");
                                    //console.log(d.properties.ADMIN+"text")
-                                   var e = d3.select("#"+[d.properties.ADMIN]+"text");
+                                   var e = d3.select("#"+[d.properties.id]+"text");
                                    //console.log("e", e)
                                   e.attr("fill", "GreenYellow");
                                     //d3.select(this).attr("font-size", 7);
                                     d3.select(this).style("display", "block")
 
+
                                  })
                                  .on("mouseout", function(d, i)
                                  {
-                                   var e = d3.select("#"+[d.properties.ADMIN]+"text");
+                                   var e = d3.select("#"+[d.properties.id]+"text");
                                    //console.log("e", e)
                                   e.attr("fill", "transparent");
                                      d3.select(this).style("display", "none")
@@ -302,7 +310,7 @@ function initiateZoom()
                                  {
                                     d3.selectAll(".country")
                                       .classed("country-on", false);
-                                    d3.select("#country" + [d.properties.ADMIN])
+                                    d3.select("#country" + [d.properties.id])
                                       .classed("country-on", true);
                                     boxZoom(path.bounds(d), path.centroid(d), 20);
                                  })
@@ -331,7 +339,7 @@ function getTextBox(selection)
                    .attr("class", "countryName")
                    .attr("id", function(d)
                    {
-                      return [d.properties.ADMIN]+"text";
+                      return [d.properties.id]+"text";
                    })
                    .style("text-anchor", "middle")
                    .attr("dx", 0)
@@ -389,13 +397,16 @@ var putMapDataInRunData = function(runData, geoData)
       }
       //console.log("currSpot", geoData.features[count])
       currSpot = geoData.features[count];
-      currCountry = [currSpot.properties.ADMIN];
+      currCountry = currSpot.properties.ADMIN;
       //console.log("name: ", currCountry)
 
       if (d.country == currCountry)
       {
         countryFound = true;
         d.mapInfo = currSpot;
+        currSpot.properties.id = d.country.split(" ").join("_")
+        console.log("ADMIN= ", currCountry, "     id= ", currSpot.properties.id)
+
       }
       else
       {
