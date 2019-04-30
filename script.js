@@ -7,9 +7,30 @@ Promise.all([dataP, mapP]).then(function(values)
   var runData = values[0]
   var geoData = values[1]
 
+
+  putMapDataInRunData(runData, geoData);
+
+  //console.log("all done")
   console.log("data", runData);
   console.log("map", geoData);
 
+  var map = makeMap();
+
+  var womenByEvent = getWomen(data);
+  var menByEvent = getMen(data);
+
+  console.log(womenByEvent)
+  console.log(menByEvent)
+
+},
+  function(err)
+{
+  console.log(err);
+});
+
+
+var putMapDataInRunData = function(runData, geoData)
+{
   runData.forEach(function(d,i)
   {
     var countryFound = false;
@@ -18,8 +39,6 @@ Promise.all([dataP, mapP]).then(function(values)
     var country;
 
     //console.log("len", geoData.features.length)
-
-
 
     while (countryFound == false)
     {
@@ -46,23 +65,7 @@ Promise.all([dataP, mapP]).then(function(values)
 
   })
 
-//console.log("all done")
-
-
-  var map = makeMap();
-
-  var womenByEvent = getWomen(data);
-  var menByEvent = getMen(data);
-
-  console.log(womenByEvent)
-  console.log(menByEvent)
-
-},
-  function(err)
-{
-  console.log(err);
-});
-
+}
 
 
 var getWomen = function(data)
