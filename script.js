@@ -16,20 +16,31 @@ Promise.all([dataP, mapP]).then(function(values)
 
   var map = makeMap(geoData);
 
+
   var womenByEvent = getWomen(runData);
   var menByEvent = getMen(runData);
+  var byCountry = getByCountry(runData);
+
 
   console.log(womenByEvent)
   console.log(menByEvent)
 
+  drawCircles(womenByEvent, menByEvent, runData);
 },
   function(err)
 {
   console.log(err);
 });
 
+var getByCountry = function(runData)
+{
 
+}
 
+var drawCircles = function(byCountry)
+{
+
+}
 
 var makeMap = function(geoData)
 {
@@ -44,7 +55,7 @@ var makeMap = function(geoData)
   var svg = d3.select("body").append("svg")
                              .attr("width", w)
                              .attr("height", h)
-                             .attr("fill", "lightskyblue")
+                             .attr("fill", "rgb(26, 30, 52)")
                              .call(zoom)
 
   var projection = d3
@@ -150,7 +161,7 @@ function initiateZoom()
                                  return "country" + d.properties.ADMIN;
                               })
                               .attr("class", "country")
-                              .attr("fill", "PaleGreen")
+                              .attr("fill", "rgb(55, 65, 111)")
                               .attr("stroke", "Black")
                               .attr("stroke-width", .1)
                               // add a mouseover action to show name label for feature/country
@@ -159,7 +170,7 @@ function initiateZoom()
 
                                 var e = d3.select("#"+d.properties.ADMIN+"text");
                                 //console.log("e", e)
-                               e.attr("fill", "black");
+                               e.attr("fill", "GreenYellow");
                                  d3.select("#countryLabel" + d.properties.ADMIN)
                                     .style("display", "block");
                               })
@@ -200,7 +211,7 @@ function initiateZoom()
                                    //console.log(d.properties.ADMIN+"text")
                                    var e = d3.select("#"+d.properties.ADMIN+"text");
                                    //console.log("e", e)
-                                  e.attr("fill", "black");
+                                  e.attr("fill", "GreenYellow");
                                     //d3.select(this).attr("font-size", 7);
                                     d3.select(this).style("display", "block")
 
