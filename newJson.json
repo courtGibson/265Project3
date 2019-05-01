@@ -16,7 +16,7 @@
       },
       {
          "country": "Algeria",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Amina Betiche (Algeria)",
          "time": "09:29.2"
@@ -37,14 +37,14 @@
       },
       {
          "country": "Australia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Genevieve LaCaze (Australia)",
          "time": "09:33.2"
       },
       {
          "country": "Australia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Madeleine Heiner (Australia)",
          "time": "09:34.0"
@@ -100,7 +100,7 @@
       },
       {
          "country": "Bahrain",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Ruth Chebet (Bahrain)",
          "time": "09:20.5"
@@ -149,7 +149,7 @@
       },
       {
          "country": "Belarus",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Sviatlana Kudzelich (Belarus)",
          "time": "09:28.0"
@@ -212,7 +212,7 @@
       },
       {
          "country": "Bulgaria",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Mitko Tsenov (Bulgaria)",
          "time": "08:20.9"
@@ -240,14 +240,14 @@
       },
       {
          "country": "Canada",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Jessica Furlan (Canada)",
          "time": "09:33.5"
       },
       {
          "country": "Canada",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Matt Hughes (Canada)",
          "time": "08:12.8"
@@ -282,7 +282,7 @@
       },
       {
          "country": "China",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Zhenzhu Li (China)",
          "time": "09:35.2"
@@ -478,49 +478,49 @@
       },
       {
          "country": "Ethiopia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Hiwot Ayalew (Ethiopia)",
          "time": "09:10.6"
       },
       {
          "country": "Ethiopia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Sofia Assefa (Ethiopia)",
          "time": "09:11.4"
       },
       {
          "country": "Ethiopia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Etenesh Diro (Ethiopia)",
          "time": "09:19.7"
       },
       {
          "country": "Ethiopia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Birtukan Adamu (Ethiopia)",
          "time": "09:27.3"
       },
       {
          "country": "Ethiopia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Tigist Mekonen (Ethiopia)",
          "time": "09:28.4"
       },
       {
          "country": "Ethiopia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Birtukan Fente (Ethiopia)",
          "time": "09:30.8"
       },
       {
          "country": "Ethiopia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Chala Beyo (Ethiopia)",
          "time": "08:25.4"
@@ -905,7 +905,7 @@
       },
       {
          "country": "Finland",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Sandra Eriksson (Finland)",
          "time": "09:24.7"
@@ -933,7 +933,7 @@
       },
       {
          "country": "France",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Mahiedine Mekhissi (France)",
          "time": "08:03.2"
@@ -1017,21 +1017,21 @@
       },
       {
          "country": "Germany",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Antje M�ldner-Schmidt (Germany)",
          "time": "09:29.4"
       },
       {
          "country": "Germany",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Gesa-Felicitas Krause (Germany)",
          "time": "09:35.5"
       },
       {
          "country": "Germany",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Martin Grau (Germany)",
          "time": "08:24.3"
@@ -1080,14 +1080,14 @@
       },
       {
          "country": "India",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Lalita Babar (India)",
          "time": "09:35.4"
       },
       {
          "country": "India",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Sudha Singh (India)",
          "time": "09:35.6"
@@ -1122,7 +1122,7 @@
       },
       {
          "country": "Italy",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Jamel Chatbi (Italy)",
          "time": "08:25.4"
@@ -1612,161 +1612,161 @@
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Milcah Chemos (Kenya)",
          "time": "09:21.9"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Hyven Jepkemoi (Kenya)",
          "time": "09:22.6"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Purity Kirui (Kenya)",
          "time": "09:23.4"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Lydia Chepkurui (Kenya)",
          "time": "09:24.1"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Joan Rotich (Kenya)",
          "time": "09:33.3"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Jairus Birech (Kenya)",
          "time": "07:58.4"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Ezekiel Kemboi (Kenya)",
          "time": "08:04.1"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Brimin Kipruto (Kenya)",
          "time": "08:04.6"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Paul K. Koech (Kenya)",
          "time": "08:05.5"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Hillary Yego (Kenya)",
          "time": "08:09.1"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Conseslus Kipruto (Kenya)",
          "time": "08:09.8"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Jonathan Ndiku (Kenya)",
          "time": "08:10.4"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Gilbert Kirui (Kenya)",
          "time": "08:11.9"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Bernard Nganga (Kenya)",
          "time": "08:15.0"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Abel Mutai (Kenya)",
          "time": "08:15.8"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Clement Kemboi (Kenya)",
          "time": "08:17.0"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Barnabas Kipyego (Kenya)",
          "time": "08:17.0"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Haron Lagat (Kenya)",
          "time": "08:19.0"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Lawrence Kemboi (Kenya)",
          "time": "08:19.6"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "John Koech (Kenya)",
          "time": "08:20.0"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Titus Kibiego (Kenya)",
          "time": "08:22.5"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Hillary Kemboi (Kenya)",
          "time": "08:23.6"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Nelson Kipkogei (Kenya)",
          "time": "08:24.4"
@@ -2333,28 +2333,28 @@
       },
       {
          "country": "Morocco",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Salima Alami (Morocco)",
          "time": "09:21.2"
       },
       {
          "country": "Morocco",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Hamid Ezzine (Morocco)",
          "time": "08:14.3"
       },
       {
          "country": "Morocco",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Brahim Taleb (Morocco)",
          "time": "08:15.5"
       },
       {
          "country": "Morocco",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Jaouad Chemlal (Morocco)",
          "time": "08:20.9"
@@ -2431,21 +2431,21 @@
       },
       {
          "country": "Poland",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Katarzyna Kowalska (Poland)",
          "time": "09:36.6"
       },
       {
          "country": "Poland",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Krystian Zalewski (Poland)",
          "time": "08:16.2"
       },
       {
          "country": "Poland",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Mateusz Demczyszak (Poland)",
          "time": "08:22.4"
@@ -2522,7 +2522,7 @@
       },
       {
          "country": "Qatar",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Ali Abubaker Kamal (Qatar)",
          "time": "08:17.3"
@@ -2557,35 +2557,35 @@
       },
       {
          "country": "Russia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Natalya Aristarkhova (Russia)",
          "time": "09:33.0"
       },
       {
          "country": "Russia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Yekaterina Sokolenko (Russia)",
          "time": "09:34.1"
       },
       {
          "country": "Russia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Natalya Vlasova (Russia)",
          "time": "09:34.2"
       },
       {
          "country": "Russia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Yekaterina Doseykina (Russia)",
          "time": "09:35.3"
       },
       {
          "country": "Russia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Ilgizar Safiulin (Russia)",
          "time": "08:20.3"
@@ -2676,21 +2676,21 @@
       },
       {
          "country": "Spain",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Diana Mart�n (Spain)",
          "time": "09:30.7"
       },
       {
          "country": "Spain",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "V�ctor Garc�a (Spain)",
          "time": "08:17.4"
       },
       {
          "country": "Spain",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Sebasti�n Martos (Spain)",
          "time": "08:18.3"
@@ -2718,7 +2718,7 @@
       },
       {
          "country": "Sweden",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Charlotta Fougberg (Sweden)",
          "time": "09:24.0"
@@ -2732,14 +2732,14 @@
       },
       {
          "country": "Switzerland",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Fabienne Schlumpf (Switzerland)",
          "time": "09:37.8"
       },
       {
          "country": "Tunisia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Habiba Ghribi (Tunisia)",
          "time": "09:15.2"
@@ -2774,7 +2774,7 @@
       },
       {
          "country": "Uganda",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Jacob Araptany (Uganda)",
          "time": "08:20.8"
@@ -2879,7 +2879,7 @@
       },
       {
          "country": "United Kingdom",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "James Wilkinson (United Kingdom)",
          "time": "08:22.8"
@@ -3082,77 +3082,77 @@
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Emma Coburn (US)",
          "time": "09:11.4"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Stephanie Garcia (US)",
          "time": "09:24.3"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Nicole Bush (US)",
          "time": "09:24.6"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Ashley Higginson (US)",
          "time": "09:27.6"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Aisha Praught (US)",
          "time": "09:34.7"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Leah O�Connor (US)",
          "time": "09:36.4"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Shalaya Kipp (US)",
          "time": "09:39.1"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Evan Jager (US)",
          "time": "08:04.7"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Dan Huling (US)",
          "time": "08:15.6"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Donn Cabral (US)",
          "time": "08:20.0"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Craig Forys (US)",
          "time": "08:24.1"
@@ -3355,7 +3355,7 @@
       },
       {
          "country": "Venezuela",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Marvin Blanco (Venezuela)",
          "time": "08:21.8"
@@ -3378,14 +3378,14 @@
       },
       {
          "country": "Algeria",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Amina Betiche (Algeria)",
          "time": "09:36.1"
       },
       {
          "country": "Algeria",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Bilal Tabti (Algeria)",
          "time": "08:21.2"
@@ -3399,21 +3399,21 @@
       },
       {
          "country": "Australia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Madeleine Heiner (Australia)",
          "time": "09:21.6"
       },
       {
          "country": "Australia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Genevieve LaCaze (Australia)",
          "time": "09:35.2"
       },
       {
          "country": "Australia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Victoria Mitchell (Australia)",
          "time": "09:36.5"
@@ -3469,21 +3469,21 @@
       },
       {
          "country": "Bahrain",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Tigist Mekonen (Bahrain)",
          "time": "09:20.7"
       },
       {
          "country": "Bahrain",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Ruth Chebet (Bahrain)",
          "time": "09:21.4"
       },
       {
          "country": "Bahrain",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "John Koech (Bahrain)",
          "time": "08:14.8"
@@ -3525,7 +3525,7 @@
       },
       {
          "country": "Belarus",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Sviatlana Kudzelich (Belarus)",
          "time": "09:31.7"
@@ -3567,14 +3567,14 @@
       },
       {
          "country": "Bulgaria",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Silvia Danekova (Bulgaria)",
          "time": "09:33.4"
       },
       {
          "country": "Bulgaria",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Mitko Tsenov (Bulgaria)",
          "time": "08:21.9"
@@ -3630,21 +3630,21 @@
       },
       {
          "country": "Canada",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Genevi�ve Lalonde (Canada)",
          "time": "09:35.7"
       },
       {
          "country": "Canada",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Matt Hughes (Canada)",
          "time": "08:18.6"
       },
       {
          "country": "Canada",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Taylor Milne (Canada)",
          "time": "08:19.9"
@@ -3910,35 +3910,35 @@
       },
       {
          "country": "Ethiopia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Sofia Assefa (Ethiopia)",
          "time": "09:12.6"
       },
       {
          "country": "Ethiopia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Hiwot Ayalew (Ethiopia)",
          "time": "09:14.7"
       },
       {
          "country": "Ethiopia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Birtukan Fente (Ethiopia)",
          "time": "09:24.9"
       },
       {
          "country": "Ethiopia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Etenesh Diro (Ethiopia)",
          "time": "09:29.1"
       },
       {
          "country": "Ethiopia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Tolosa Nurgi (Ethiopia)",
          "time": "08:22.9"
@@ -4337,14 +4337,14 @@
       },
       {
          "country": "France",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Oph�lie Claude-Boxberger (France)",
          "time": "09:35.6"
       },
       {
          "country": "France",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Yoann Kowal (France)",
          "time": "08:18.4"
@@ -4372,7 +4372,7 @@
       },
       {
          "country": "Germany",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Gesa-Felicitas Krause (Germany)",
          "time": "09:19.3"
@@ -4456,7 +4456,7 @@
       },
       {
          "country": "India",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Lalita Babar (India)",
          "time": "09:27.9"
@@ -4918,154 +4918,154 @@
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Hyvin Jepkemoi (Kenya)",
          "time": "09:10.2"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Virginia Nyambura (Kenya)",
          "time": "09:13.9"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Purity Kirui (Kenya)",
          "time": "09:17.7"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Lydia Chepkurui (Kenya)",
          "time": "09:20.4"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Rosefline Chepngetich (Kenya)",
          "time": "09:25.9"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Magdalene Masai (Kenya)",
          "time": "09:29.2"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Caroline Chepkurui (Kenya)",
          "time": "09:34.2"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Jairus Birech (Kenya)",
          "time": "07:58.8"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Ezekiel Kemboi (Kenya)",
          "time": "08:01.7"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Conseslus Kipruto (Kenya)",
          "time": "08:05.2"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Brimin Kipruto (Kenya)",
          "time": "08:10.1"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Paul K. Koech (Kenya)",
          "time": "08:10.2"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Jonathan Ndiku (Kenya)",
          "time": "08:11.6"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Clement Kemboi (Kenya)",
          "time": "08:12.7"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Hillary Yego (Kenya)",
          "time": "08:13.1"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Bernard Nganga (Kenya)",
          "time": "08:15.7"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Lawrence Kemboi (Kenya)",
          "time": "08:18.5"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Nicholas Bett (Kenya)",
          "time": "08:19.3"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Abel Mutai (Kenya)",
          "time": "08:20.4"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Barnabas Kipyego (Kenya)",
          "time": "08:21.9"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Abraham Kibiwot (Kenya)",
          "time": "08:22.1"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Hillary Kemboi (Kenya)",
          "time": "08:23.0"
@@ -5660,42 +5660,42 @@
       },
       {
          "country": "Morocco",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Salima Alami (Morocco)",
          "time": "09:20.6"
       },
       {
          "country": "Morocco",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Fadwa Sidi Madane (Morocco)",
          "time": "09:27.9"
       },
       {
          "country": "Morocco",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Hanane Ouhaddou (Morocco)",
          "time": "09:30.9"
       },
       {
          "country": "Morocco",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Hicham Sigueni (Morocco)",
          "time": "08:16.5"
       },
       {
          "country": "Morocco",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Brahim Taleb (Morocco)",
          "time": "08:16.6"
       },
       {
          "country": "Morocco",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Hamid Ezzine (Morocco)",
          "time": "08:18.8"
@@ -5814,7 +5814,7 @@
       },
       {
          "country": "Poland",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Krystian Zalewski (Poland)",
          "time": "08:21.2"
@@ -5898,42 +5898,42 @@
       },
       {
          "country": "Russia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Yekaterina Sokolenko (Russia)",
          "time": "09:25.8"
       },
       {
          "country": "Russia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Natalya Aristarkhova (Russia)",
          "time": "09:35.1"
       },
       {
          "country": "Russia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Natalya Vlasova (Russia)",
          "time": "09:36.0"
       },
       {
          "country": "Russia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Lyudmila Lebedeva (Russia)",
          "time": "09:36.6"
       },
       {
          "country": "Russia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Ilgizar Safiulin (Russia)",
          "time": "08:18.5"
       },
       {
          "country": "Russia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Nikolay Chavkin (Russia)",
          "time": "08:23.0"
@@ -5975,7 +5975,7 @@
       },
       {
          "country": "Slovenia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Maru�a Mi�ma� (Slovenia)",
          "time": "09:35.1"
@@ -5996,28 +5996,28 @@
       },
       {
          "country": "Spain",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Roberto Alaiz (Spain)",
          "time": "08:19.9"
       },
       {
          "country": "Spain",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Fernando Carro (Spain)",
          "time": "08:21.8"
       },
       {
          "country": "Spain",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Sebasti�n Martos (Spain)",
          "time": "08:22.4"
       },
       {
          "country": "Spain",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Victor Garc�a (Spain)",
          "time": "08:22.5"
@@ -6059,14 +6059,14 @@
       },
       {
          "country": "Tunisia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Habiba Ghribi (Tunisia)",
          "time": "09:05.4"
       },
       {
          "country": "Tunisia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Amor Benyahia (Tunisia)",
          "time": "08:19.3"
@@ -6087,28 +6087,28 @@
       },
       {
          "country": "Turkey",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "�zlem Kaya (Turkey)",
          "time": "09:30.2"
       },
       {
          "country": "Turkey",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Tu?ba G�ven� (Turkey)",
          "time": "09:33.3"
       },
       {
          "country": "Turkey",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Tarik Langat Akdag (Turkey)",
          "time": "08:21.6"
       },
       {
          "country": "Turkey",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Halil Akkas (Turkey)",
          "time": "08:22.5"
@@ -6472,77 +6472,77 @@
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Emma Coburn (US)",
          "time": "09:15.6"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Stephanie Garcia (US)",
          "time": "09:23.5"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Colleen Quigley (US)",
          "time": "09:24.9"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Leah O�Connor (US)",
          "time": "09:31.0"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Ashley Higginson (US)",
          "time": "09:31.3"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Courtney Frerichs (US)",
          "time": "09:31.4"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Evan Jager (US)",
          "time": "08:00.5"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Donn Cabral (US)",
          "time": "08:13.4"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Dan Huling (US)",
          "time": "08:14.1"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Andy Bayer (US)",
          "time": "08:18.1"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Stanley Kebenei (US)",
          "time": "08:23.9"
@@ -6733,7 +6733,7 @@
    "2016": [
       {
          "country": "Albania",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Luiza Gega (Alb)",
          "time": "09:28.5"
@@ -6747,7 +6747,7 @@
       },
       {
          "country": "Algeria",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Bilal Tabti (Alg)",
          "time": "08:20.3"
@@ -6810,14 +6810,14 @@
       },
       {
          "country": "Australia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Genevieve LaCaze",
          "time": "09:14.3"
       },
       {
          "country": "Australia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Madeline Hills",
          "time": "09:20.4"
@@ -6880,28 +6880,28 @@
       },
       {
          "country": "Bahrain",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Ruth Jebet",
          "time": "08:52.8"
       },
       {
          "country": "Bahrain",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Tigest Getent (Brn)",
          "time": "09:31.8"
       },
       {
          "country": "Bahrain",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Tigist Mekonen (Bhr)",
          "time": "09:31.8"
       },
       {
          "country": "Bahrain",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "John Koech (Bhr)",
          "time": "08:09.6"
@@ -7034,14 +7034,14 @@
       },
       {
          "country": "Canada",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Genevi�ve Lalonde (Can)",
          "time": "09:30.2"
       },
       {
          "country": "Canada",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Matt Hughes (Can)",
          "time": "08:20.6"
@@ -7069,7 +7069,7 @@
       },
       {
          "country": "China",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Xinyan Zhang (Chn)",
          "time": "09:28.5"
@@ -7412,56 +7412,56 @@
       },
       {
          "country": "Ethiopia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Sofia Assefa",
          "time": "09:13.1"
       },
       {
          "country": "Ethiopia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Etenesh Diro",
          "time": "09:16.9"
       },
       {
          "country": "Ethiopia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Tesfaye Girma (Eth)",
          "time": "08:16.1"
       },
       {
          "country": "Ethiopia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Tafese Soboka (Eth)",
          "time": "08:17.8"
       },
       {
          "country": "Ethiopia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Chala Beyo (Eth)",
          "time": "08:17.8"
       },
       {
          "country": "Ethiopia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Hailemariyam Amare (Eth)",
          "time": "08:21.1"
       },
       {
          "country": "Ethiopia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Birhan Getahun (Eth)",
          "time": "08:21.3"
       },
       {
          "country": "Ethiopia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Tolosa Nurgi (Eth)",
          "time": "08:21.3"
@@ -7853,7 +7853,7 @@
       },
       {
          "country": "Finland",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Sandra Eriksson (Fin)",
          "time": "09:31.9"
@@ -7867,14 +7867,14 @@
       },
       {
          "country": "France",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Mahiedine Mekhissi-Benabbad (Fra)",
          "time": "08:08.2"
       },
       {
          "country": "France",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Yoann Kowal (Fra)",
          "time": "08:16.2"
@@ -7916,7 +7916,7 @@
       },
       {
          "country": "Germany",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Gesa-Felicitas Krause",
          "time": "09:18.4"
@@ -7979,14 +7979,14 @@
       },
       {
          "country": "India",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Lalita Babar",
          "time": "09:19.8"
       },
       {
          "country": "India",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Sudha Singh (Ind)",
          "time": "09:26.6"
@@ -8021,7 +8021,7 @@
       },
       {
          "country": "Jamaica",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Aisha Praught (Jam)",
          "time": "09:31.8"
@@ -8392,182 +8392,182 @@
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Hyvin Jepkemoi",
          "time": "09:00.0"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Beatrice Chepkoech",
          "time": "09:10.9"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Virginia Nyambura",
          "time": "09:19.0"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Purity Kirui",
          "time": "09:22.5"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Lydia Chepkurui",
          "time": "09:22.8"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Lydia Rotich",
          "time": "09:23.5"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Celphine Chespol",
          "time": "09:24.7"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Norah Tanui (Ken)",
          "time": "09:25.1"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Gladys Kipkemboi (Ken)",
          "time": "09:26.4"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Agnes Chesang (Ken)",
          "time": "09:27.2"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Caroline Chepkurui (Ken)",
          "time": "09:28.8"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Conseslus Kipruto (Ken)",
          "time": "08:00.1"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Jairus Birech (Ken)",
          "time": "08:03.9"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Paul Kipsiele Koech (Ken)",
          "time": "08:08.3"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Barnabas Kipyego (Ken)",
          "time": "08:09.1"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Abraham Kibiwot (Ken)",
          "time": "08:09.3"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Nicholas Bett (Ken)",
          "time": "08:10.1"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Clement Kemboi (Ken)",
          "time": "08:10.7"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Ezekiel Kemboi (Ken)",
          "time": "08:14.2"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Hillary Yego (Ken)",
          "time": "08:15.1"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Abel Mutai (Ken)",
          "time": "08:16.8"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Lawrence Kemboi (Ken)",
          "time": "08:17.8"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Alex Kibet (Ken)",
          "time": "08:18.3"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Brimin Kipruto (Ken)",
          "time": "08:18.8"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Amos Kirui (Ken)",
          "time": "08:20.4"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Phenus Kipleting (Ken)",
          "time": "08:21.2"
@@ -9190,21 +9190,21 @@
       },
       {
          "country": "Morocco",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Soufiane El Bakkali (Mor)",
          "time": "08:14.4"
       },
       {
          "country": "Morocco",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Hamid Ezzine (Mor)",
          "time": "08:19.3"
       },
       {
          "country": "Morocco",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Hicham Sigueni (Mor)",
          "time": "08:20.5"
@@ -9316,7 +9316,7 @@
       },
       {
          "country": "Poland",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Krystian Zalewski (Pol)",
          "time": "08:19.9"
@@ -9365,14 +9365,14 @@
       },
       {
          "country": "Russia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Yekaterina Ivonina",
          "time": "09:24.7"
       },
       {
          "country": "Russia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Yekaterina Sokolenko (Rus)",
          "time": "09:29.0"
@@ -9414,7 +9414,7 @@
       },
       {
          "country": "Spain",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Sebasti�n Martos (Spa)",
          "time": "08:19.3"
@@ -9449,7 +9449,7 @@
       },
       {
          "country": "Sweden",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Charlotta Fougberg (Swe)",
          "time": "09:30.1"
@@ -9470,7 +9470,7 @@
       },
       {
          "country": "Switzerland",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Fabienne Schlumpf (Swi)",
          "time": "09:30.5"
@@ -9491,14 +9491,14 @@
       },
       {
          "country": "Tunisia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Habiba Ghribi",
          "time": "09:18.7"
       },
       {
          "country": "Tunisia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Amor Benyahia (Tun)",
          "time": "08:20.7"
@@ -9554,14 +9554,14 @@
       },
       {
          "country": "Uganda",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Peruth Chemutai (Uga)",
          "time": "09:31.0"
       },
       {
          "country": "Uganda",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Benjamin Kiplagat (Uga)",
          "time": "08:20.3"
@@ -9582,7 +9582,7 @@
       },
       {
          "country": "Ukraine",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Mariya Shatalova (Ukr)",
          "time": "09:30.9"
@@ -9848,98 +9848,98 @@
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Emma Coburn",
          "time": "09:07.6"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Leah O�Connor",
          "time": "09:18.8"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Stephanie Garcia",
          "time": "09:19.5"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Colleen Quigley",
          "time": "09:20.0"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Courtney Frerichs",
          "time": "09:20.9"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Shalaya Kipp (Oiselle)",
          "time": "09:28.7"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Ashley Higginson (Saucony)",
          "time": "09:29.8"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Evan Jager (BowTC)",
          "time": "08:04.0"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Hillary Bor (USAr)",
          "time": "08:13.7"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Andy Bayer (BowTC)",
          "time": "08:16.1"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Stanley Kebenei (Nike)",
          "time": "08:18.5"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Dan Huling (Nike)",
          "time": "08:18.6"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Cory Leslie (Nike)",
          "time": "08:19.1"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Donn Cabral (Nike)",
          "time": "08:20.7"
@@ -10095,28 +10095,28 @@
    "2017": [
       {
          "country": "Albania",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Luiza Gega",
          "time": "09:26.1"
       },
       {
          "country": "Algeria",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Amina Betiche",
          "time": "09:25.9"
       },
       {
          "country": "Algeria",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Bel�n Casetta",
          "time": "09:26.0"
       },
       {
          "country": "Algeria",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Bilal Tabti (Alg)",
          "time": "08:20.2"
@@ -10151,7 +10151,7 @@
       },
       {
          "country": "Australia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Genevieve LaCaze",
          "time": "09:24.5"
@@ -10221,21 +10221,21 @@
       },
       {
          "country": "Bahrain",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Ruth Jebet",
          "time": "08:55.3"
       },
       {
          "country": "Bahrain",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Winfred Yavi",
          "time": "09:22.7"
       },
       {
          "country": "Bahrain",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Tigist Mekonen",
          "time": "09:26.0"
@@ -10326,7 +10326,7 @@
       },
       {
          "country": "Brazil",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Altobelli da Silva (Bra)",
          "time": "08:23.7"
@@ -10375,14 +10375,14 @@
       },
       {
          "country": "Canada",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Genevi�ve Lalonde",
          "time": "09:30.0"
       },
       {
          "country": "Canada",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Matt Hughes (Can)",
          "time": "08:21.8"
@@ -10424,7 +10424,7 @@
       },
       {
          "country": "Denmark",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Anna Emilie M�ller",
          "time": "09:34.3"
@@ -10466,7 +10466,7 @@
       },
       {
          "country": "Eritrea",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Yemane Hailesilassie (Eri)",
          "time": "08:11.2"
@@ -10669,91 +10669,91 @@
       },
       {
          "country": "Ethiopia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Sofia Assefa",
          "time": "09:07.1"
       },
       {
          "country": "Ethiopia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Etenesh Diro",
          "time": "09:13.2"
       },
       {
          "country": "Ethiopia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Birtukan Adamu",
          "time": "09:25.0"
       },
       {
          "country": "Ethiopia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Woynshet Ansa",
          "time": "09:30.0"
       },
       {
          "country": "Ethiopia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Birtukan Fente",
          "time": "09:34.0"
       },
       {
          "country": "Ethiopia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Getnet Wale (Eth)",
          "time": "08:12.3"
       },
       {
          "country": "Ethiopia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Tafese Soboka (Eth)",
          "time": "08:13.2"
       },
       {
          "country": "Ethiopia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Chala Beyo (Eth)",
          "time": "08:13.2"
       },
       {
          "country": "Ethiopia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Tesfaye Deriba (Eth)",
          "time": "08:13.3"
       },
       {
          "country": "Ethiopia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Hailemariyam Amare (Eth)",
          "time": "08:13.4"
       },
       {
          "country": "Ethiopia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Tesfaye Girma (Eth)",
          "time": "08:19.7"
       },
       {
          "country": "Ethiopia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Takele Nigatu (Eth)",
          "time": "08:20.8"
       },
       {
          "country": "Ethiopia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Tolosa Nurgi (Eth)",
          "time": "08:23.1"
@@ -11096,14 +11096,14 @@
       },
       {
          "country": "France",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Mahiedine Mekhissi (Fra)",
          "time": "08:14.7"
       },
       {
          "country": "France",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Yoann Kowal (Fra)",
          "time": "08:15.6"
@@ -11152,7 +11152,7 @@
       },
       {
          "country": "Germany",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Gesa-Felicitas Krause",
          "time": "09:11.9"
@@ -11264,14 +11264,14 @@
       },
       {
          "country": "Italy",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Abdoullah Bamoussa (Ita)",
          "time": "08:22.0"
       },
       {
          "country": "Italy",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Osama Zoghlami (Ita)",
          "time": "08:22.9"
@@ -11285,7 +11285,7 @@
       },
       {
          "country": "Jamaica",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Aisha Praught Leer",
          "time": "09:19.3"
@@ -11614,140 +11614,140 @@
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Celphine Chespol",
          "time": "08:58.8"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Beatrice Chepkoech",
          "time": "08:59.8"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Hyvin Jepkemoi",
          "time": "09:00.1"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Norah Tanui",
          "time": "09:03.7"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Daisy Jepkemei",
          "time": "09:19.7"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Purity Kirui",
          "time": "09:20.1"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Joan Chepkemoi",
          "time": "09:20.2"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Rosefline Chepngetich",
          "time": "09:20.7"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Caroline Chepkurui",
          "time": "09:31.1"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Conseslus Kipruto (Ken)",
          "time": "08:04.6"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Jairus Birech (Ken)",
          "time": "08:07.7"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Amos Kirui (Ken)",
          "time": "08:08.4"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Abraham Kibiwot (Ken)",
          "time": "08:10.6"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Benjamin Kigen (Ken)",
          "time": "08:11.4"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Nicholas Bett (Ken)",
          "time": "08:12.2"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Barnabas Kipyego (Ken)",
          "time": "08:14.1"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Justus Lagat (Ken)",
          "time": "08:18.5"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Brimin Kipruto (Ken)",
          "time": "08:19.9"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Ezekiel Kemboi (Ken)",
          "time": "08:20.6"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Emmanuel Bett (Ken)",
          "time": "08:23.2"
@@ -12384,35 +12384,35 @@
       },
       {
          "country": "Morocco",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Fadwa Sidi Madane",
          "time": "09:24.0"
       },
       {
          "country": "Morocco",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Soufiane El Bakkali (Mor)",
          "time": "08:04.8"
       },
       {
          "country": "Morocco",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Ibrahim Ezzaydouny (Mor)",
          "time": "08:18.5"
       },
       {
          "country": "Morocco",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Hicham Sigueni (Mor)",
          "time": "08:18.8"
       },
       {
          "country": "Morocco",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Mohammed Tindoufti (Mor)",
          "time": "08:20.3"
@@ -12454,7 +12454,7 @@
       },
       {
          "country": "Norway",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Karoline Bjerkeli Gr�vdal",
          "time": "09:13.4"
@@ -12552,7 +12552,7 @@
       },
       {
          "country": "r",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Maksim Yakushev (Rus)",
          "time": "08:19.2"
@@ -12573,14 +12573,14 @@
       },
       {
          "country": "Russia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Yekaterina Sokolenko",
          "time": "09:34.7"
       },
       {
          "country": "Russia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Viktor Bakharev (Rus)",
          "time": "08:20.6"
@@ -12636,7 +12636,7 @@
       },
       {
          "country": "Spain",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Sebasti�n Martos (Spa)",
          "time": "08:20.4"
@@ -12685,7 +12685,7 @@
       },
       {
          "country": "Switzerland",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Fabienne Schlumpf",
          "time": "09:21.7"
@@ -12706,7 +12706,7 @@
       },
       {
          "country": "Tunisia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Habiba Ghribi",
          "time": "09:20.0"
@@ -12734,7 +12734,7 @@
       },
       {
          "country": "Turkey",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Tugba G�ven�",
          "time": "09:26.1"
@@ -12804,21 +12804,21 @@
       },
       {
          "country": "Uganda",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Peruth Chemutai",
          "time": "09:27.7"
       },
       {
          "country": "Uganda",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Jacob Araptany (Uga)",
          "time": "08:21.9"
       },
       {
          "country": "Uganda",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Albert Chemutai (Uga)",
          "time": "08:23.2"
@@ -12951,7 +12951,7 @@
       },
       {
          "country": "United Kingdom",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Rosie Clarke",
          "time": "09:32.1"
@@ -13189,77 +13189,77 @@
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Emma Coburn",
          "time": "09:02.6"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Courtney Frerichs",
          "time": "09:03.8"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Colleen Quigley",
          "time": "09:16.0"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Stephanie Garcia",
          "time": "09:25.0"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Marisa Howard",
          "time": "09:30.9"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Leah O�Connor",
          "time": "09:31.6"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Mel Lawrence",
          "time": "09:34.9"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Evan Jager (US)",
          "time": "08:01.3"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Stanley Kebenei (US)",
          "time": "08:08.3"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Hillary Bor (US)",
          "time": "08:11.8"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Andy Bayer (US)",
          "time": "08:14.5"
@@ -13457,7 +13457,7 @@
    "2018": [
       {
          "country": "Albania",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Luiza Gega",
          "time": "09:22.0"
@@ -13513,7 +13513,7 @@
       },
       {
          "country": "Australia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Genevieve LaCaze",
          "time": "09:23.7"
@@ -13611,14 +13611,14 @@
       },
       {
          "country": "Bahrain",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Winfred Yavi",
          "time": "09:10.7"
       },
       {
          "country": "Bahrain",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "John Koech (Bhr)",
          "time": "08:22.0"
@@ -13779,21 +13779,21 @@
       },
       {
          "country": "Canada",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Genevi�ve Lalonde",
          "time": "09:35.2"
       },
       {
          "country": "Canada",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Regan Yee",
          "time": "09:37.3"
       },
       {
          "country": "Canada",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Matt Hughes (Can)",
          "time": "08:12.3"
@@ -13877,7 +13877,7 @@
       },
       {
          "country": "Denmark",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Anna Emilie M�ller",
          "time": "09:31.7"
@@ -13898,7 +13898,7 @@
       },
       {
          "country": "Djibouti",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Mohamed Ismail Ibrahim (Dji)",
          "time": "08:23.7"
@@ -13912,7 +13912,7 @@
       },
       {
          "country": "Eritrea",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Yemane Hailesilassie (Eri)",
          "time": "08:19.6"
@@ -14059,56 +14059,56 @@
       },
       {
          "country": "Ethiopia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Woynshet Ansa",
          "time": "09:27.0"
       },
       {
          "country": "Ethiopia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Chala Beyo (Eth)",
          "time": "08:07.3"
       },
       {
          "country": "Ethiopia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Tesfaye Deriba (Eth)",
          "time": "08:17.5"
       },
       {
          "country": "Ethiopia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Hailemariyam Amare (Eth)",
          "time": "08:21.2"
       },
       {
          "country": "Ethiopia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Tafese Soboka (Eth)",
          "time": "08:21.3"
       },
       {
          "country": "Ethiopia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Getnet Wale (Eth)",
          "time": "08:22.7"
       },
       {
          "country": "Ethiopia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Tolosa Nurgi (Eth)",
          "time": "08:23.8"
       },
       {
          "country": "Ethiopia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Takele Nigate (Eth)",
          "time": "08:25.4"
@@ -14626,28 +14626,28 @@
       },
       {
          "country": "France",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Oph�lie Claude-Boxberger",
          "time": "09:31.8"
       },
       {
          "country": "France",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Emma Oudiou",
          "time": "09:36.2"
       },
       {
          "country": "France",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Mahiedine Mekhissi (Fra)",
          "time": "08:17.0"
       },
       {
          "country": "France",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Djilali Bedrani (Fra)",
          "time": "08:20.5"
@@ -14717,35 +14717,35 @@
       },
       {
          "country": "Germany",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Gesa-Felicitas Krause",
          "time": "09:19.8"
       },
       {
          "country": "Germany",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Elena Burkard",
          "time": "09:29.8"
       },
       {
          "country": "Germany",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Jana Sussmann",
          "time": "09:36.3"
       },
       {
          "country": "Germany",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Antje M�ldner-Schmidt",
          "time": "09:39.3"
       },
       {
          "country": "Germany",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Martin Grau (Ger)",
          "time": "08:26.2"
@@ -14780,14 +14780,14 @@
       },
       {
          "country": "Hungary",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Vikt�ria Gy�rk�s",
          "time": "09:35.4"
       },
       {
          "country": "India",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Sudha Singh",
          "time": "09:39.6"
@@ -14801,7 +14801,7 @@
       },
       {
          "country": "Iran",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Hossein Keyhani (Irn)",
          "time": "08:22.8"
@@ -14822,7 +14822,7 @@
       },
       {
          "country": "Israel",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Adva Cohen",
          "time": "09:29.7"
@@ -14836,14 +14836,14 @@
       },
       {
          "country": "Italy",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Isabel Mattuzzi",
          "time": "09:34.0"
       },
       {
          "country": "Italy",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Ahmed Abdelwahed (Ita)",
          "time": "08:26.0"
@@ -14864,7 +14864,7 @@
       },
       {
          "country": "Jamaica",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Aisha Praught Leer",
          "time": "09:14.1"
@@ -15403,217 +15403,217 @@
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Beatrice Chepkoech",
          "time": "08:44.3"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Norah Tanui",
          "time": "08:59.6"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Hyvin Jepkemoi",
          "time": "09:01.6"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Celliphine Chespol",
          "time": "09:01.8"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Roseline Chepngetich",
          "time": "09:08.2"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Daisy Jepkemei",
          "time": "09:10.7"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Purity Kirui",
          "time": "09:21.3"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Joan Chepkemoi",
          "time": "09:22.9"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Mary Wanjiru",
          "time": "09:23.4"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Fancy Cherono",
          "time": "09:23.9"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Mercy Chepkurui",
          "time": "09:29.4"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Caroline Chepkurui",
          "time": "09:30.6"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Mercy Wanjiru",
          "time": "09:39.9"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Benjamin Kigen (Ken)",
          "time": "08:06.2"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Conseslus Kipruto (Ken)",
          "time": "08:08.4"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Abraham Kibiwot (Ken)",
          "time": "08:10.6"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Amos Kirui (Ken)",
          "time": "08:12.2"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Nicholas Bett (Ken)",
          "time": "08:13.2"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Lawrence Kemboi (Ken)",
          "time": "08:15.1"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Emmanuel Bett (Ken)",
          "time": "08:16.2"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Leonard Bett (Ken)",
          "time": "08:17.0"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Barnabas Kipyego (Ken)",
          "time": "08:17.1"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Kennedy Njiru (Ken)",
          "time": "08:18.0"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Jairus Birech (Ken)",
          "time": "08:18.8"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Justus Lagat (Ken)",
          "time": "08:19.5"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Wilberforce Koros (Ken)",
          "time": "08:22.6"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Paul Koech II (Ken)",
          "time": "08:23.2"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Hillary Yego (Ken)",
          "time": "08:25.3"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Clement Kemboi (Ken)",
          "time": "08:25.5"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Joash Kiplimo (Ken)",
          "time": "08:26.2"
       },
       {
          "country": "Kenya",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Philemon Kiplagat (Ken)",
          "time": "08:26.5"
@@ -16292,35 +16292,35 @@
       },
       {
          "country": "Morocco",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Soufiane El Bakkali (Mor)",
          "time": "07:58.1"
       },
       {
          "country": "Morocco",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Ibrahim Ezzaydouny (Mor)",
          "time": "08:14.6"
       },
       {
          "country": "Morocco",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Hicham Sigueni (Mor)",
          "time": "08:19.5"
       },
       {
          "country": "Morocco",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Mohammed Tindoufti (Mor)",
          "time": "08:20.3"
       },
       {
          "country": "Morocco",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Abdelkarim Ben Zahra (Mor)",
          "time": "08:21.1"
@@ -16467,7 +16467,7 @@
       },
       {
          "country": "Norway",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Karoline Bjerkeli Gr�vdal",
          "time": "09:18.4"
@@ -16502,14 +16502,14 @@
       },
       {
          "country": "Poland",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Katarzyna Kowalska",
          "time": "09:37.9"
       },
       {
          "country": "Poland",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Alicja Konieczek",
          "time": "09:41.2"
@@ -16607,21 +16607,21 @@
       },
       {
          "country": "Russia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Yekaterina Ivonina",
          "time": "09:16.7"
       },
       {
          "country": "Russia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Natalya Koloskova",
          "time": "09:39.1"
       },
       {
          "country": "Russia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Maksim Yakushev (Rus)",
          "time": "08:22.4"
@@ -16642,7 +16642,7 @@
       },
       {
          "country": "Slovenia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Marusa Mismas",
          "time": "09:28.6"
@@ -16698,21 +16698,21 @@
       },
       {
          "country": "Spain",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Irene S�nchez",
          "time": "09:31.8"
       },
       {
          "country": "Spain",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Fernando Carro (Spa)",
          "time": "08:19.3"
       },
       {
          "country": "Spain",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Sebasti�n Martos (Spa)",
          "time": "08:26.9"
@@ -16740,7 +16740,7 @@
       },
       {
          "country": "Sweden",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Napoleon Solomon (Swe)",
          "time": "08:23.5"
@@ -16768,7 +16768,7 @@
       },
       {
          "country": "Switzerland",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Fabienne Schlumpf",
          "time": "09:22.3"
@@ -16782,28 +16782,28 @@
       },
       {
          "country": "Tunisia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Habiba Ghribi",
          "time": "09:31.4"
       },
       {
          "country": "Tunisia",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Amor Benyahia (Tun)",
          "time": "08:26.1"
       },
       {
          "country": "Turkey",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "�zlem Kaya",
          "time": "09:35.5"
       },
       {
          "country": "Turkey",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Tugba G�ven�",
          "time": "09:39.7"
@@ -16880,14 +16880,14 @@
       },
       {
          "country": "Uganda",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Peruth Chemutai",
          "time": "09:07.9"
       },
       {
          "country": "Uganda",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Albert Chemutai (Uga)",
          "time": "08:17.2"
@@ -16929,7 +16929,7 @@
       },
       {
          "country": "Ukraine",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Nataliya Strebkova",
          "time": "09:37.3"
@@ -17062,14 +17062,14 @@
       },
       {
          "country": "United Kingdom",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Rosie Clarke",
          "time": "09:32.1"
       },
       {
          "country": "United Kingdom",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Zak Seddon (GB)",
          "time": "08:26.5"
@@ -17370,63 +17370,63 @@
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Courtney Frerichs",
          "time": "09:00.9"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Emma Coburn",
          "time": "09:05.1"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Colleen Quigley",
          "time": "09:10.3"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Mel Lawrence",
          "time": "09:32.7"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "female",
          "name": "Allie Ostrander",
          "time": "09:38.6"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Evan Jager (BowTC)",
          "time": "08:01.0"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Hillary Bor (USAr)",
          "time": "08:12.2"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Andy Bayer (Nike)",
          "time": "08:24.7"
       },
       {
          "country": "United States Of America",
-         "event": "3000m Steeplechase",
+         "event": "3000mSteeplechase",
          "gender": "male",
          "name": "Isaac Updike (TRE)",
          "time": "08:25.4"

@@ -27,6 +27,9 @@ Promise.all([dataP, mapP/*, keyedDataP*/]).then(function(values)
   //console.log(womenByEvent)
   //console.log(menByEvent)
   drawCircles(formatted);
+
+
+  //window.alert("Map Navigation:\n- Click and drag to move\n- Two finger scroll to zoom in/out\n- Click country to zoom to country")
 },
   function(err)
 {
@@ -90,10 +93,42 @@ runData.forEach(function(d)
                 newData.years[currYear].countries[currCountry].events[currEvent].gender.male.push(athlete);
               }
             }
+
+            var location = {x: runData[i].mapInfo.bbox.x, y: runData[i].mapInfo.bbox.y};
+            newData.years[currYear].countries[currCountry].location = location;
           }
 
+
+
+          var totalMale = newData.years[currYear].countries[currCountry].events[currEvent].gender.male.length
+          var totalFemale = newData.years[currYear].countries[currCountry].events[currEvent].gender.female.length
+          var totalAthletes = totalMale + totalFemale;
+
+          newData.years[currYear].countries[currCountry].events[currEvent].totalMale = totalMale;
+          newData.years[currYear].countries[currCountry].events[currEvent].totalFemale = totalFemale;
+          newData.years[currYear].countries[currCountry].events[currEvent].totalAthletesInEvent = totalAthletes;
+
         }
+
+
+        var listEvents = []
+        var totalAthletesInCountry = 0;
+        newData.years[currYear].countries[currCountry].events.forEach(function(d)
+        {
+          if(d.gender.male.length > 0 || d.gender.female.length > 0)
+          {
+            listEvents.push(d.event)
+          }
+          totalAthletesInCountry = totalAthletesInCountry + d.totalAthletesInEvent
+
+        })
+        newData.years[currYear].countries[currCountry].totalAthletesInCountry = totalAthletesInCountry;
+        newData.years[currYear].countries[currCountry].activeEvents = listEvents;
     }
+
+
+
+
 
   }
 
@@ -106,17 +141,67 @@ var drawCircles = function(data)
 {
   var svg = d3.select("svg")
 // group year
-//  ^group country
-//    ^group event
-//      ^group female
-//      ^group male
-//  data.years.forEach(function)
+//   ^group event
+//     ^group female
+//     ^group male
 
-  var yearG = svg.selectAll("g")
-                  .data(data.years)
-                  .enter()
-                  .append("g")
+  data.years.forEach(function(d)
+  {
+    var currYearGroup = svg.append("g")
+                          .attr("id", "group"+d.year.toString());
 
+
+
+    d.countries.forEach(function(currC)
+    {
+
+      // make circle for each country for current year
+      // (id, year data, svg, total number athletes in country)
+      makeCirc("#group"+d.year.toString(), d, svg, currC.totalAthletesInCountry);
+
+      currC.activeEvents.forEach(function(currE)
+      {
+        var currEventGroup = svg.select("#"+"group"+d.year.toString())
+                                .append("g")
+                                .attr("id", "group"+d.year.toString()+currC.country.toString().split(" ").join("_")+currC.events[currC.events.findIndex(currE.event)].event.toString());
+        //add circle for # people in that event to this group
+
+        var currMaleGroup = svg.select("#"+"group"+d.year.toString()+currC.country.toString().split(" ").join("_")+currC.events[currC.events.findIndex(currE.event)].event.toString())
+                                .append("g")
+                                .attr("id", "Malegroup"+d.year.toString()+currC.country.toString().split(" ").join("_")+currC.events[currC.events.findIndex(currE.event)].event.toString());
+        var currMaleGroup = svg.select("#"+"group"+d.year.toString()+currC.country.toString().split(" ").join("_")+currC.events[currC.events.findIndex(currE.event)].event.toString())
+                              .append("g")
+                              .attr("id", "Femalegroup"+d.year.toString()+currC.country.toString().split(" ").join("_")+currC.events[currC.events.findIndex(currE.event)].event.toString());
+
+      })
+    })
+
+
+  })
+
+  //console.log("all done");
+
+
+}
+
+var makeCirc = function(id, data, svg, size, loc)
+{
+     svg.select(id)
+        .selectAll("circle")
+        .data(data)
+        .enter()
+        .append("circle")
+        .attr("transform", function(d)
+        {
+           return ("translate(" + path.centroid(d)[0] + "," + path
+                                     .centroid(d)[1] + ")");
+        })
+        .attr("cx", 100)
+        .attr("cy", 100)
+        .attr("r", 300)
+        .style("stroke", "white")
+        .style("stroke-width", 3)
+        .style("fill", "white")
 
 }
 
@@ -251,7 +336,7 @@ function initiateZoom()
                                e.attr("fill", "GreenYellow");
                                  d3.select("#countryLabel" + [d.properties.id])
                                     .style("display", "block");
-                                console.log(d.properties.id)
+                                //console.log(d.properties.id)
 
                               })
                               .on("mouseout", function(d, i)
@@ -405,7 +490,7 @@ var putMapDataInRunData = function(runData, geoData)
         countryFound = true;
         d.mapInfo = currSpot;
         currSpot.properties.id = d.country.split(" ").join("_")
-        console.log("ADMIN= ", currCountry, "     id= ", currSpot.properties.id)
+        //console.log("ADMIN= ", currCountry, "     id= ", currSpot.properties.id)
 
       }
       else
@@ -415,6 +500,11 @@ var putMapDataInRunData = function(runData, geoData)
     }
 
   })
+
+  geoData.features.forEach(function(d)
+{
+  d.properties.id = d.properties.ADMIN.split(" ").join("_");
+})
 
 }
 
@@ -442,7 +532,7 @@ var getWomen = function(data)
     {
       fifteen.push(d)
     }
-    else if (d.event == "3000m Steeplechase")
+    else if (d.event == "3000mSteeplechase")
     {
       steeple.push(d)
     }
@@ -504,7 +594,7 @@ var getMen = function(data)
     {
       fifteen.push(d)
     }
-    else if (d.event == "3000m Steeplechase")
+    else if (d.event == "3000mSteeplechase")
     {
       steeple.push(d)
     }
