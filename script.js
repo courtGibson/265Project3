@@ -94,7 +94,7 @@ var makeCirc = function(id, data, svg, size, loc, year)
         {
           //var dataLoc = d.data;
 
-          console.log("here", d)
+          //console.log("here", d)
           var spotX = d.properties.spotData.xLoc;
           var spotY = d.properties.spotData.yLoc;
           //var location = d.locale.split("d").join(dataLoc);
@@ -104,16 +104,16 @@ var makeCirc = function(id, data, svg, size, loc, year)
         })
         .attr("r", function(d)
         {
-          console.log("total", d.runData.years[0])
+        //  console.log("total", d.runData.years[0])
           return Number(Math.sqrt((d.runData.years[0].totalAthletesInCountry+40)/3.1415));
         })
-        .style("opacity", .5)
+        .style("opacity", .8)
         .style("stroke", "white")
         .style("stroke-width", function(d)
       {
-        return Number(Math.sqrt((d.runData.years[0].totalAthletesInCountry+40)/3.1415)*0.05);
+        return Number(Math.sqrt((d.runData.years[0].totalAthletesInCountry+40)/3.1415)*0.1);
       })
-        .attr("fill", "orange")
+        .attr("fill", "Gold")
 
 }
 
@@ -292,7 +292,8 @@ function initiateZoom()
                                    //console.log(d.properties.ADMIN+"text")
                                    var e = d3.select("#"+[d.id]+"text");
                                    //console.log("e", e)
-                                  e.attr("fill", "GreenYellow");
+                                  e.attr("fill", "Lime")
+                                    .style("text-shadow","black 2px 5px");
                                     //d3.select(this).attr("font-size", 7);
                                     d3.select(this).style("display", "block")
 
@@ -356,7 +357,7 @@ function getTextBox(selection)
       // add a background rectangle the same size as the text
       countryLabels.insert("rect", "text")
                    .attr("class", "countryBg")
-                   .attr("fill", "none")
+                   .attr("fill", "transparent")
                    .attr("transform", function(d)
                    {
                     return "translate(" + (d.bbox.x - 2) + "," + d.bbox.y + ")";
@@ -374,7 +375,18 @@ function getTextBox(selection)
 
 var getColor = function(c)
 {
-  return "rgb(48, 52, 67)";
+  //# d3.interpolatePuBu(t) <>
+  //# d3.schemePuBu[k]
+  var colorThing = d3.scaleSequential(d3.interpolateRdBu);
+
+  var linearScale = d3.scaleLinear()
+                            .domain([80000, 0])
+                            .range([0,1]);
+
+
+    //  console.log("color", colorThing(linearScale(c)));
+  var returnColor = colorThing(linearScale(c));
+  return returnColor;
 }
 
 
@@ -495,7 +507,10 @@ var putRunDataInMapData = function(runData, geoData, gdpData)
       {
         //if (d.properties.ADMIN == "Aruba"){console.log("Hello Aruba"); console.log("aruba data", gdpData);}
         //console.log("gdpData before", gdpData);
-         d.runData.years[cY].gdp = getGDP(d.properties.ADMIN, years[cY], gdpData);
+         var currGDP = getGDP(d.properties.ADMIN, years[cY], gdpData);
+         //console.log("returned GDP", currGDP)
+         d.runData.years[cY].gdp = currGDP;
+         //console.log("gdp after", d.runData.years[cY].gdp)
 
       }
 
@@ -515,40 +530,44 @@ var getGDP = function(cName, year, gdpData)
   //console.log("year", year)
 
 
+  var sendGDP = 0;
 
   gdpData.forEach(function(d)
   {
 
+
     if (d.Country == cName)
     {
-
+      //console.log("year here", year)
       if (year == "2014")
       {
-        //if (typeof(d.d2014) !== 'undefined') {console.log("its undefined here      -------------------")}
-        //console.log("curr gdp", d.d2014.split(",").join(""))
-        return d.d2014.toString().split(",").join("");
+        //if (typeof(d.d2014) == 'undefined') {console.log("its undefined here      -------------------")}
+        //console.log("curr gdp", d.d2014)
+        sendGDP = d.d2014;
       }
       else if (year == "2015")
       {
-        //console.log("curr gdp", d.d2015.split(",").join(""))
-        return d.d2015.toString().split(",").join("");
+        //console.log("curr gdp", d.d2015)
+        sendGDP = d.d2015;
       }
       else if (year == "2016")
       {
-        //console.log("curr gdp", d.d2016.split(",").join(""))
-        return d.d2016.toString().split(",").join("");
+        //console.log("curr gdp", d.d2016)
+        sendGDP = d.d2016;
       }
       else if (year == "2017")
       {
-        //console.log("curr gdp", d.d2017.split(",").join(""))
-        return d.d2017.toString().split(",").join("");
+        //console.log("curr gdp", d.d2017)
+        sendGDP = d.d2017;
       }
       else if (year == "2018")
       {
-        //console.log("curr gdp", d.d2018.split(",").join(""))
-        return d.d2018.toString().split(",").join("");
+        //console.log("curr gdp", d.d2018)
+        sendGDP = d.d2018;
       }
 
     }
   })
+
+  return sendGDP;
 }

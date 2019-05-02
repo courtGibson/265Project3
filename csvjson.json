@@ -328,7 +328,7 @@
     "d2018": 1451.865747
   },
   {
-    "Country": "Democratic Republic of Congo",
+    "Country": "Democratic Republic of the Congo",
     "d2014": 487.0814869,
     "d2015": 497.6297557,
     "d2016": 471.6359456,
@@ -336,7 +336,7 @@
     "d2018": 462.7795441
   },
   {
-    "Country": "Congo, Rep.",
+    "Country": "Republic of Congo",
     "d2014": 2910.520226,
     "d2015": 1712.121146,
     "d2016": 1762.809913,
@@ -520,7 +520,7 @@
     "d2018": 6273.488892
   },
   {
-    "Country": "Egypt, Arab Rep.",
+    "Country": "Egypt",
     "d2014": 3327.754247,
     "d2015": 3547.713012,
     "d2016": 3479.281246,
@@ -1536,7 +1536,7 @@
     "d2018": 10819.24402
   },
   {
-    "Country": "Russian Federation",
+    "Country": "Russia",
     "d2014": 14125.90873,
     "d2015": 9314.544997,
     "d2016": 8744.964198,
@@ -1832,7 +1832,7 @@
     "d2018": 3549.974741
   },
   {
-    "Country": "Tanzania",
+    "Country": "United Republic of Tanzania",
     "d2014": 985.2280595,
     "d2015": 905.7562921,
     "d2016": 922.623927,
@@ -1872,7 +1872,7 @@
     "d2018": 16245.59837
   },
   {
-    "Country": "United States",
+    "Country": "United States of America",
     "d2014": 55032.95946,
     "d2015": 56803.47061,
     "d2016": 57904.20433,
