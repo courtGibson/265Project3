@@ -2,6 +2,7 @@ var dataP = d3.json("distanceDataJson.json")
 var mapP = d3.json("countries.geojson")
 var gdpDataP = d3.json("csvjson.json")
 
+var YEAR_INDEX = 0;
 
 Promise.all([dataP, mapP, gdpDataP]).then(function(values)
 {
@@ -22,7 +23,9 @@ Promise.all([dataP, mapP, gdpDataP]).then(function(values)
 
   //var formatted = format(runData);
 
-  drawCircles(geoData, 0);
+  drawCircles(geoData);
+
+  makeButtons(geoData)
 
 
   //window.alert("Map Navigation:\n- Click and drag to move\n- Two finger scroll to zoom in/out\n- Click country to zoom to country")
@@ -33,7 +36,50 @@ Promise.all([dataP, mapP, gdpDataP]).then(function(values)
 });
 
 
-var drawCircles = function(data, currYear)
+
+var makeButtons = function(data)
+{
+  d3.select("body").selectAll("button")
+    .data(data.features[0].runData.years)
+    .enter()
+    .append("button")
+    .text(function(d){ return d.year;})
+    .on("click", function(d)
+    {
+      if(d.year == "2014")
+      {
+        //console.log("inside 2014")
+        YEAR_INDEX = 0;
+      }
+      else if (d.year == "2015")
+      {
+        //console.log("inside 2015")
+        YEAR_INDEX = 1;
+      }
+      else if (d.year == "2016")
+      {
+        //console.log("inside 2016")
+        YEAR_INDEX = 2;
+      }
+      else if (d.year == "2017")
+      {
+        //console.log("inside 2017")
+        YEAR_INDEX = 3;
+      }
+      else if (d.year== "2018")
+      {
+        //console.log("inside 2018")
+        YEAR_INDEX = 4;
+      }
+      console.log("select", d3.select("svg").selectAll("circle"))
+      d3.select("svg").selectAll("circle").remove();
+      console.log(d.year+ " button clicked");
+      //console.log("year index", YEAR_INDEX)
+      drawCircles(data);
+    })
+}
+
+var drawCircles = function(data)
 {
   var svg = d3.select("svg")
 // group year
@@ -43,34 +89,34 @@ var drawCircles = function(data, currYear)
 
   data.features.forEach(function(d)
   {
-    var currYearGroup = svg.select("#map").append("g")
-                          .attr("id", "group"+d.id);
+    var currCountryGroup = svg.select("#map").append("g")
+                            .attr("id", "group"+d.id);
 
       // make circle for each country for current year
       // (id, year data, svg, total number athletes in country)
       //console.log("select1", svg.select("#group"+d.year.toString()))
-      if (d.runData.years[currYear].events != null)
+      if (d.runData.years[YEAR_INDEX].events != null)
       {
-        makeCirc("#group"+d.id, d, svg, d.runData.years[currYear].totalAthletesInCountry, currYear);
+        makeCirc("#group"+d.id, d, svg, d.runData.years[YEAR_INDEX].totalAthletesInCountry, YEAR_INDEX);
 
 
-      d.runData.years[currYear].events.forEach(function(currE)
+      d.runData.years[YEAR_INDEX].events.forEach(function(currE)
       {
-        if(d.runData.years[currYear].activeEvents.includes(currE.event))
+        if(d.runData.years[YEAR_INDEX].activeEvents.includes(currE.event))
         {
-          //console.log("id thing", "#"+"group"+(d.runData.years[currYear].year.toString()))
+          //console.log("id thing", "#"+"group"+(d.runData.years[YEAR_INDEX].year.toString()))
 
-          var currEventGroup = svg.select("#"+"group"+d.runData.years[currYear].year.toString())
+          var currEventGroup = svg.select("#"+"group"+d.runData.years[YEAR_INDEX].year.toString())
                                   .append("g")
-                                  .attr("id", "group"+ d.runData.years[currYear].year.toString()+d.id+currE.event.toString());
+                                  .attr("id", "group"+ d.runData.years[YEAR_INDEX].year.toString()+d.id+currE.event.toString());
           //add circle for # people in that event to this group
 
-          var currMaleGroup = svg.select("#"+"group"+d.runData.years[currYear].year.toString()+d.id+currE.event.toString())
+          var currMaleGroup = svg.select("#"+"group"+d.runData.years[YEAR_INDEX].year.toString()+d.id+currE.event.toString())
                                   .append("g")
-                                  .attr("id", "Malegroup"+d.runData.years[currYear].year.toString()+d.id+currE.event.toString());
-          var currMaleGroup = svg.select("#"+"group"+d.runData.years[currYear].year.toString()+d.id+currE.event.toString())
+                                  .attr("id", "Malegroup"+d.runData.years[YEAR_INDEX].year.toString()+d.id+currE.event.toString());
+          var currMaleGroup = svg.select("#"+"group"+d.runData.years[YEAR_INDEX].year.toString()+d.id+currE.event.toString())
                                 .append("g")
-                                .attr("id", "Femalegroup"+d.runData.years[currYear].year.toString()+d.id+currE.event.toString());
+                                .attr("id", "Femalegroup"+d.runData.years[YEAR_INDEX].year.toString()+d.id+currE.event.toString());
       }
       })
     }
@@ -113,7 +159,35 @@ var makeCirc = function(id, data, svg, size, loc, year)
       {
         return Number(Math.sqrt((d.runData.years[0].totalAthletesInCountry+40)/3.1415)*0.1);
       })
-        .attr("fill", "Gold")
+        .attr("fill", "gold")
+        .on("mouseover", function(d, i)
+        {
+
+          var e = d3.select("#"+[d.id]+"text");
+          //console.log("e", e)
+         e.attr("fill", "GreenYellow")
+            .style("text-shadow","0px 0px 8px Black");
+           d3.select("#countryLabel" + [d.id])
+              .style("display", "block");
+          //console.log(d.properties.id)
+
+        })
+        .on("mouseout", function(d, i)
+        {
+          var e = d3.select("#"+[d.id]+"text");
+          //console.log("e", e)
+         e.attr("fill", "transparent");
+           d3.select("#countryLabel" + [d.id])
+           .style("display", "none");
+        })
+        // add an onclick action to zoom into clicked country
+        .on("click", function(d, i)
+        {
+           d3.selectAll(".country").classed("country-on", false);
+           d3.select(this).classed("country-on", true);
+           boxZoom(path.bounds(d), path.centroid(d), 20);
+        })
+
 
 }
 
@@ -238,7 +312,7 @@ function initiateZoom()
                               .attr("class", "country")
                               .attr("fill", /*"rgb(48, 52, 67)"*/ function(d)
                             {
-                                var color =  getColor(d.runData.years[0].gdp)
+                                var color =  getColor(d.runData.years[YEAR_INDEX].gdp)
                                 return color;
                             })
                               .attr("stroke", "Black")
@@ -249,7 +323,8 @@ function initiateZoom()
 
                                 var e = d3.select("#"+[d.id]+"text");
                                 //console.log("e", e)
-                               e.attr("fill", "GreenYellow");
+                               e.attr("fill", "GreenYellow")
+                                  .style("text-shadow","0px 0px 8px Black");
                                  d3.select("#countryLabel" + [d.id])
                                     .style("display", "block");
                                 //console.log(d.properties.id)
@@ -292,8 +367,8 @@ function initiateZoom()
                                    //console.log(d.properties.ADMIN+"text")
                                    var e = d3.select("#"+[d.id]+"text");
                                    //console.log("e", e)
-                                  e.attr("fill", "Lime")
-                                    .style("text-shadow","black 2px 5px");
+                                  e.attr("fill", "GreenYellow")
+
                                     //d3.select(this).attr("font-size", 7);
                                     d3.select(this).style("display", "block")
 
@@ -377,7 +452,12 @@ var getColor = function(c)
 {
   //# d3.interpolatePuBu(t) <>
   //# d3.schemePuBu[k]
-  var colorThing = d3.scaleSequential(d3.interpolateRdBu);
+  //var colorThing = d3.scaleSequential(d3.interpolateRdBu);
+
+  var colorThing = d3.scaleLinear().domain([1,length])
+                    .interpolate(d3.interpolateHcl)
+                    .range([d3.rgb("rgb(102, 103, 119)"), d3.rgb("rgb(57, 60, 119)")]);
+
 
   var linearScale = d3.scaleLinear()
                             .domain([80000, 0])
