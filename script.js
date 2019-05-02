@@ -18,14 +18,8 @@ Promise.all([dataP, mapP/*, keyedDataP*/]).then(function(values)
 
   var map = makeMap(geoData);
 
-
-  var womenByEvent = getWomen(runData);
-  var menByEvent = getMen(runData);
   var formatted = format(runData);
 
-
-  //console.log(womenByEvent)
-  //console.log(menByEvent)
   drawCircles(formatted);
 
 
@@ -71,6 +65,7 @@ runData.forEach(function(d)
 
     for (var currCountry = 0; currCountry<countries.length; currCountry++)
     {
+        //newData.countries[currCountry].local.X = runData
         var newCObj = {country: countries[currCountry], id : countries[currCountry].split(" ").join("_"), events: []}
         newData.years[currYear].countries.push(newCObj);
 
@@ -94,8 +89,13 @@ runData.forEach(function(d)
               }
             }
 
-            var location = {x: runData[i].mapInfo.bbox.x, y: runData[i].mapInfo.bbox.y};
-            newData.years[currYear].countries[currCountry].location = location;
+            //var location = {x: runData[i].mapInfo.bbox.x, y: runData[i].mapInfo.bbox.y};
+            //newData.years[currYear].countries[currCountry].location = location;
+            newData.years[currYear].countries[currCountry].locale = runData[i].mapInfo.properties.loc;
+            newData.years[currYear].countries[currCountry].locData = runData[i].mapInfo.properties.data;
+            newData.years[currYear].countries[currCountry].spotData = runData[i].mapInfo.properties.spot;
+            //console.log("data in format", newData.years[currYear].countries[currCountry].spotData)
+            //console.log("data in map", runData[i].mapInfo.properties.spot)
           }
 
 
@@ -124,6 +124,7 @@ runData.forEach(function(d)
         })
         newData.years[currYear].countries[currCountry].totalAthletesInCountry = totalAthletesInCountry;
         newData.years[currYear].countries[currCountry].activeEvents = listEvents;
+
     }
 
 
@@ -147,7 +148,7 @@ var drawCircles = function(data)
 
   data.years.forEach(function(d)
   {
-    var currYearGroup = svg.append("g")
+    var currYearGroup = svg.select("#map").append("g")
                           .attr("id", "group"+d.year.toString());
 
 
@@ -157,22 +158,26 @@ var drawCircles = function(data)
 
       // make circle for each country for current year
       // (id, year data, svg, total number athletes in country)
+      //console.log("select1", svg.select("#group"+d.year.toString()))
       makeCirc("#group"+d.year.toString(), d, svg, currC.totalAthletesInCountry);
 
-      currC.activeEvents.forEach(function(currE)
+      currC.events.forEach(function(currE)
       {
-        var currEventGroup = svg.select("#"+"group"+d.year.toString())
-                                .append("g")
-                                .attr("id", "group"+d.year.toString()+currC.country.toString().split(" ").join("_")+currC.events[currC.events.findIndex(currE.event)].event.toString());
-        //add circle for # people in that event to this group
+        if(currC.activeEvents.includes(currE.event))
+        {
 
-        var currMaleGroup = svg.select("#"+"group"+d.year.toString()+currC.country.toString().split(" ").join("_")+currC.events[currC.events.findIndex(currE.event)].event.toString())
-                                .append("g")
-                                .attr("id", "Malegroup"+d.year.toString()+currC.country.toString().split(" ").join("_")+currC.events[currC.events.findIndex(currE.event)].event.toString());
-        var currMaleGroup = svg.select("#"+"group"+d.year.toString()+currC.country.toString().split(" ").join("_")+currC.events[currC.events.findIndex(currE.event)].event.toString())
-                              .append("g")
-                              .attr("id", "Femalegroup"+d.year.toString()+currC.country.toString().split(" ").join("_")+currC.events[currC.events.findIndex(currE.event)].event.toString());
+          var currEventGroup = svg.select("#"+"group"+d.year.toString())
+                                  .append("g")
+                                  .attr("id", "group"+d.year.toString()+currC.country.toString().split(" ").join("_")+currE.event.toString());
+          //add circle for # people in that event to this group
 
+          var currMaleGroup = svg.select("#"+"group"+d.year.toString()+currC.country.toString().split(" ").join("_")+currE.event.toString())
+                                  .append("g")
+                                  .attr("id", "Malegroup"+d.year.toString()+currC.country.toString().split(" ").join("_")+currE.event.toString());
+          var currMaleGroup = svg.select("#"+"group"+d.year.toString()+currC.country.toString().split(" ").join("_")+currE.event.toString())
+                                .append("g")
+                                .attr("id", "Femalegroup"+d.year.toString()+currC.country.toString().split(" ").join("_")+currE.event.toString());
+      }
       })
     })
 
@@ -186,22 +191,27 @@ var drawCircles = function(data)
 
 var makeCirc = function(id, data, svg, size, loc)
 {
-     svg.select(id)
-        .selectAll("circle")
-        .data(data)
+
+  //console.log("select", d3.select("body"))
+
+     //.select(id)
+     d3.select(id).selectAll("circle")
+        .data(data.countries)
         .enter()
         .append("circle")
         .attr("transform", function(d)
         {
-           return ("translate(" + path.centroid(d)[0] + "," + path
-                                     .centroid(d)[1] + ")");
+          var dataLoc = d.data;
+          var spotX = d.spotData.x;
+          var spotY = d.spotData.y;
+          //var location = d.locale.split("d").join(dataLoc);
+        //  console.log("location", location)
+           return ("translate(" + spotX+ "," + spotY + ")");
         })
-        .attr("cx", 100)
-        .attr("cy", 100)
-        .attr("r", 300)
+        .attr("r", 100)
         .style("stroke", "white")
         .style("stroke-width", 3)
-        .style("fill", "white")
+        .attr("fill", "salmon")
 
 }
 
@@ -366,6 +376,16 @@ function initiateZoom()
                                  })
                                  .attr("transform", function(d)
                                  {
+                                   //console.log("data", d)
+                                   //console.log("spot", ("translate(" + path.centroid(d)[0] + "," + path
+                                    //                         .centroid(d)[1] + ")"))
+                                   d.properties.data = d;
+                                   d.properties.spot = {x: (path.centroid(d)[0]).toString(), y:  (path.centroid(d)[1]).toString()}
+                                   //d.properties.X = path.centroid(d)[0];
+                                   //d.properties.Y = path.centroid(d)[1];
+                                   d.properties.loc = ("translate(" + path.centroid(d)[0] + "," + path
+                                                             .centroid(d)[1] + ")");
+
                                     return ("translate(" + path.centroid(d)[0] + "," + path
                                                               .centroid(d)[1] + ")");
                                  })
@@ -490,6 +510,7 @@ var putMapDataInRunData = function(runData, geoData)
         countryFound = true;
         d.mapInfo = currSpot;
         currSpot.properties.id = d.country.split(" ").join("_")
+        //d.country.local = currSpot.properties.loc;
         //console.log("ADMIN= ", currCountry, "     id= ", currSpot.properties.id)
 
       }
@@ -506,132 +527,4 @@ var putMapDataInRunData = function(runData, geoData)
   d.properties.id = d.properties.ADMIN.split(" ").join("_");
 })
 
-}
-
-
-var getWomen = function(data)
-{
-  var events = []
-
-  var eight = []
-  var fifteen = []
-  var steeple = []
-  var fivek = []
-  var tenk = []
-  var marathon = []
-
-  data.forEach(function(d,i)
-{
-  if (d.gender == "female")
-  {
-    if (d.event == "800m")
-    {
-      eight.push(d)
-    }
-    else if (d.event == "1500m")
-    {
-      fifteen.push(d)
-    }
-    else if (d.event == "3000mSteeplechase")
-    {
-      steeple.push(d)
-    }
-    else if (d.event == "5000m")
-    {
-      fivek.push(d)
-    }
-    else if (d.event == "10000m")
-    {
-      tenk.push(d)
-    }
-    else if (d.event == "marathon")
-    {
-      marathon.push(d)
-    }
-    else
-    {
-      console.log("whoops")
-    }
-  }
-
-})
-/*  console.log("women 800m", eight)
-  console.log("women 1500m", fifteen)
-  console.log("women steeple", steeple)
-  console.log("women 5k", fivek)
-  console.log("women 10k", tenk)
-  console.log("women marathon", marathon)*/
-
-  events.push(eight)
-  events.push(fifteen)
-  events.push(steeple)
-  events.push(fivek)
-  events.push(tenk)
-  events.push(marathon)
-  return events;
-}
-
-var getMen = function(data)
-{
-  var events = []
-
-  var eight = []
-  var fifteen = []
-  var steeple = []
-  var fivek = []
-  var tenk = []
-  var marathon = []
-
-  data.forEach(function(d,i)
-{
-  if (d.gender == "male")
-  {
-    if (d.event == "800m")
-    {
-      eight.push(d)
-    }
-    else if (d.event == "1500m")
-    {
-      fifteen.push(d)
-    }
-    else if (d.event == "3000mSteeplechase")
-    {
-      steeple.push(d)
-    }
-    else if (d.event == "5000m")
-    {
-      fivek.push(d)
-    }
-    else if (d.event == "10000m")
-    {
-      tenk.push(d)
-    }
-    else if (d.event == "marathon")
-    {
-      marathon.push(d)
-    }
-    else
-    {
-      console.log("whoops")
-    }
-  }
-
-})
-
-
-/*console.log("men 800m", eight)
-console.log("men 1500m", fifteen)
-console.log("men steeple", steeple)
-console.log("men 5k", fivek)
-console.log("men 10k", tenk)
-console.log("men marathon", marathon)*/
-
-  events.push(eight)
-  events.push(fifteen)
-  events.push(steeple)
-  events.push(fivek)
-  events.push(tenk)
-  events.push(marathon)
-
-  return events;
 }
