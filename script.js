@@ -14,6 +14,7 @@ Promise.all([dataP, mapP, gdpDataP]).then(function(values)
   putRunDataInMapData(runData, geoData, gdpData);
 
   //console.log("all done")
+  console.log("gdp", gdpData)
   console.log("data", runData);
   console.log("map", geoData);
 
@@ -21,7 +22,7 @@ Promise.all([dataP, mapP, gdpDataP]).then(function(values)
 
   //var formatted = format(runData);
 
-  drawCircles(formatted);
+  drawCircles(geoData, 0);
 
 
   //window.alert("Map Navigation:\n- Click and drag to move\n- Two finger scroll to zoom in/out\n- Click country to zoom to country")
@@ -32,7 +33,7 @@ Promise.all([dataP, mapP, gdpDataP]).then(function(values)
 });
 
 
-var drawCircles = function(data)
+var drawCircles = function(data, currYear)
 {
   var svg = d3.select("svg")
 // group year
@@ -40,42 +41,39 @@ var drawCircles = function(data)
 //     ^group female
 //     ^group male
 
-  data.years.forEach(function(d)
+  data.features.forEach(function(d)
   {
     var currYearGroup = svg.select("#map").append("g")
-                          .attr("id", "group"+d.year.toString());
-
-
-
-    d.countries.forEach(function(currC)
-    {
+                          .attr("id", "group"+d.id);
 
       // make circle for each country for current year
       // (id, year data, svg, total number athletes in country)
       //console.log("select1", svg.select("#group"+d.year.toString()))
-      makeCirc("#group"+d.year.toString(), d, svg, currC.totalAthletesInCountry);
-
-      currC.events.forEach(function(currE)
+      if (d.runData.years[currYear].events != null)
       {
-        if(currC.activeEvents.includes(currE.event))
-        {
+        makeCirc("#group"+d.id, d, svg, d.runData.years[currYear].totalAthletesInCountry, currYear);
 
-          var currEventGroup = svg.select("#"+"group"+d.year.toString())
+
+      d.runData.years[currYear].events.forEach(function(currE)
+      {
+        if(d.runData.years[currYear].activeEvents.includes(currE.event))
+        {
+          //console.log("id thing", "#"+"group"+(d.runData.years[currYear].year.toString()))
+
+          var currEventGroup = svg.select("#"+"group"+d.runData.years[currYear].year.toString())
                                   .append("g")
-                                  .attr("id", "group"+d.year.toString()+currC.country.toString().split(" ").join("_")+currE.event.toString());
+                                  .attr("id", "group"+ d.runData.years[currYear].year.toString()+d.id+currE.event.toString());
           //add circle for # people in that event to this group
 
-          var currMaleGroup = svg.select("#"+"group"+d.year.toString()+currC.country.toString().split(" ").join("_")+currE.event.toString())
+          var currMaleGroup = svg.select("#"+"group"+d.runData.years[currYear].year.toString()+d.id+currE.event.toString())
                                   .append("g")
-                                  .attr("id", "Malegroup"+d.year.toString()+currC.country.toString().split(" ").join("_")+currE.event.toString());
-          var currMaleGroup = svg.select("#"+"group"+d.year.toString()+currC.country.toString().split(" ").join("_")+currE.event.toString())
+                                  .attr("id", "Malegroup"+d.runData.years[currYear].year.toString()+d.id+currE.event.toString());
+          var currMaleGroup = svg.select("#"+"group"+d.runData.years[currYear].year.toString()+d.id+currE.event.toString())
                                 .append("g")
-                                .attr("id", "Femalegroup"+d.year.toString()+currC.country.toString().split(" ").join("_")+currE.event.toString());
+                                .attr("id", "Femalegroup"+d.runData.years[currYear].year.toString()+d.id+currE.event.toString());
       }
       })
-    })
-
-
+    }
   })
 
   //console.log("all done");
@@ -83,164 +81,37 @@ var drawCircles = function(data)
 
 }
 
-var makeCirc = function(id, data, svg, size, loc)
+var makeCirc = function(id, data, svg, size, loc, year)
 {
 
   //console.log("select", d3.select("body"))
 
      //.select(id)
-     d3.select(id).selectAll("circle")
-        .data(data.countries)
-        .enter()
+     d3.select(id)
+        .datum(data)
         .append("circle")
-        .attr("transform", function(d)
+        .attr("transform", function(d, year)
         {
           //var dataLoc = d.data;
 
-
-          // spent over 8 hours trying to fix this problem. . .
-          // decided to hard code out of frustration
-          // console.logs showed it should not have been a problem.
-          // For some reason it works for some countries and not others.
-          if(d.country == "Burkina Faso")
-          {
-            var xL="693.1729479724455";
-            var yL="310.6184014665162";
-
-            d.spotData = {xLoc: xL, yLoc: yL};
-            /*console.log("B_F spotData to make circle", d.spotData);*/
-          }
-          else if (d.country == "Luxembourg")
-          {
-            d.spotData = {xLoc: 723.6124154266108, yLoc: 164.79568337146478};
-          }
-          else if (d.country == "Slovenia")
-          {
-            d.spotData = {xLoc: 757.587015633938, yLoc: 178.99290138204546};
-          }
-          else if (d.country == "Israel")
-          {
-            d.spotData = {xLoc: 836.0956877282948, yLoc: 236.05126729381396};
-          }
-          else if (d.country == "Hungary")
-          {
-            d.spotData = {xLoc: 775.4318415950419, yLoc: 174.9207189965249};
-          }
-          else if (d.country == "South Africa")
-          {
-            d.spotData = {xLoc: 797.5619728036181, yLoc: 471.1151251376089};
-          }
-          else if (d.country == "Romania")
-          {
-            d.spotData = {xLoc: 797.1169962301684, yLoc: 180.01430630343904};
-          }
-          else if (d.country == "Kiribati")
-          {
-            d.spotData = {xLoc: 499.6256455872072, yLoc: 355.9408855124802};
-          }
-          else if (d.country == "Rwanda")
-          {
-            d.spotData = {xLoc: 816.3519027367568, yLoc: 366.08291871813367};
-          }
-          else if (d.country == "Iceland")
-          {
-            d.spotData = {xLoc: 627.6804880584277, yLoc: 105.56210514259887};
-          }
-          else if (d.country == "United Republic of Tanzania")
-          {
-            d.spotData = {xLoc: 835.3861694132053, yLoc: 382.73649020426814};
-          }
-          else if (d.country == "Greece")
-          {
-            d.spotData = {xLoc: 789.3465183191397, yLoc: 206.4676287960682};
-          }
-          else if (d.country == "Burundi")
-          {
-            d.spotData = {xLoc: 816.1808771436675, yLoc: 371.3899874187575};
-          }
-          else if (d.country == "Republic of Serbia")
-          {
-            d.spotData = {xLoc: 780.851565262343, yLoc: 186.36131607717792};
-          }
-          else if (d.country == "Austria")
-          {
-            d.spotData = {xLoc: 754.952616708411, yLoc: 173.27800085555168};
-          }
-          else if (d.country == "Peru")
-          {
-            d.spotData = {xLoc: 410.7519711138336, yLoc: 393.9337329898923};
-          }
-          else if (d.country == "Iran")
-          {
-            d.spotData = {xLoc: 911.0770148885363, yLoc: 231.66958514263897};
-          }
-          else if (d.country == "Bosnia and Herzegovina")
-          {
-            d.spotData = {xLoc: 769.1188089909155, yLoc: 186.55436745241033};
-          }
-          else if (d.country == "Ghana")
-          {
-            d.spotData = {xLoc: 695.269074112958, yLoc: 327.40128702030387};
-          }
-          else if (d.country == "Egypt")
-          {
-            d.spotData = {xLoc: 816.126922759685, yLoc: 255.30531264746853};
-          }
-          else if (d.country == "Benin")
-          {
-            d.spotData = {xLoc: 709.0562140102215, yLoc: 320.83971256304835};
-          }
-          else if (d.country == "Ireland")
-          {
-            d.spotData = {xLoc: 668.3248264871987, yLoc: 151.52913903356736};
-          }
-          else if (d.country == "Denmark")
-          {
-            d.spotData = {xLoc: 739.0887380624838, yLoc: 140.69019852710227};
-          }
-          else if (d.country == "China")
-          {
-            d.spotData = {xLoc: 1103.7894456730664, yLoc: 216.15510773743645};
-          }
-          else if (d.country == "Finland")
-          {
-            d.spotData = {xLoc: 802.1642030718106, yLoc: 107.51804861523622};
-          }
-          else if (d.country == "Kazakhstan")
-          {
-            d.spotData = {xLoc: 961.7065292653507, yLoc: 171.04190959031033};
-          }
-          else if (d.country == "Uzbekistan")
-          {
-            d.spotData = {xLoc: 945.5440901289833, yLoc: 195.94874920459029};
-          }
-          else if (d.country == "Brazil")
-          {
-            d.spotData = {xLoc: 493.52923525738106, yLoc: 400.25889544574005};
-          }
-
-          //
-          else
-          {
-            //console.log("current country", d.country)
-          }
-          console.log("current country", d.country)
-          var spotX = d.spotData.xLoc;
-          var spotY = d.spotData.yLoc;
+          console.log("here", d)
+          var spotX = d.properties.spotData.xLoc;
+          var spotY = d.properties.spotData.yLoc;
           //var location = d.locale.split("d").join(dataLoc);
          //console.log("in spot x", spotX)
          //console.log("in spot Y", spotY)
            return ("translate(" + Number(spotX)+ "," + Number(spotY) + ")");
         })
         .attr("r", function(d)
-      {
-        return Math.sqrt(d.totalAthletesInCountry/3.1415)+3;
-      })
+        {
+          console.log("total", d.runData.years[0])
+          return Number(Math.sqrt((d.runData.years[0].totalAthletesInCountry+40)/3.1415));
+        })
         .style("opacity", .5)
         .style("stroke", "white")
         .style("stroke-width", function(d)
       {
-        return (Math.sqrt(d.totalAthletesInCountry/3.1415)+3)*0.05;
+        return Number(Math.sqrt((d.runData.years[0].totalAthletesInCountry+40)/3.1415)*0.05);
       })
         .attr("fill", "orange")
 
@@ -362,12 +233,13 @@ function initiateZoom()
                               .attr("d", path)
                               .attr("id", function(d, i)
                               {
-                                 return "country" + [d.properties.id];
+                                 return "country" + [d.id];
                               })
                               .attr("class", "country")
                               .attr("fill", /*"rgb(48, 52, 67)"*/ function(d)
                             {
-                                var gdp = getGDP(d.properties.ADMIN, gdpData);
+                                var color =  getColor(d.runData.years[0].gdp)
+                                return color;
                             })
                               .attr("stroke", "Black")
                               .attr("stroke-width", .1)
@@ -375,20 +247,20 @@ function initiateZoom()
                               .on("mouseover", function(d, i)
                               {
 
-                                var e = d3.select("#"+[d.properties.id]+"text");
+                                var e = d3.select("#"+[d.id]+"text");
                                 //console.log("e", e)
                                e.attr("fill", "GreenYellow");
-                                 d3.select("#countryLabel" + [d.properties.id])
+                                 d3.select("#countryLabel" + [d.id])
                                     .style("display", "block");
                                 //console.log(d.properties.id)
 
                               })
                               .on("mouseout", function(d, i)
                               {
-                                var e = d3.select("#"+[d.properties.id]+"text");
+                                var e = d3.select("#"+[d.id]+"text");
                                 //console.log("e", e)
                                e.attr("fill", "transparent");
-                                 d3.select("#countryLabel" + [d.properties.id])
+                                 d3.select("#countryLabel" + [d.id])
                                  .style("display", "none");
                               })
                               // add an onclick action to zoom into clicked country
@@ -406,28 +278,11 @@ function initiateZoom()
                                  .attr("class", "countryLabel")
                                  .attr("id", function(d)
                                  {
-                                    return "countryLabel" + [d.properties.id];
+                                    return "countryLabel" + [d.id];
                                  })
                                  .attr("transform", function(d)
                                  {
-                                   //console.log("data", d)
-                                   //console.log("spot", ("translate(" + path.centroid(d)[0] + "," + path
-                                    //                         .centroid(d)[1] + ")"))
-                                   //d.properties.data = d;
-
-                                   d.properties.spot = {xLoc: (path.centroid(d)[0])/*.toString()*/, yLoc:  (path.centroid(d)[1])/*.toString()*/}
-
-                                   if (d.properties.ADMIN == "Burkina Faso")
-                                   {
-                                     console.log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
-                                     console.log("original spot grab B_F", d.properties.spot)
-                                   }
-                                   //d.properties.X = path.centroid(d)[0];
-                                   //console.log(d.properties.spot)
-                                   //d.properties.Y = path.centroid(d)[1];
-                                   //d.properties.loc = ("translate(" + path.centroid(d)[0] + "," + path
-                                    //                         .centroid(d)[1] + ")");
-
+                                    d.properties.spotData = {xLoc: path.centroid(d)[0], yLoc: path.centroid(d)[1]};
                                     return ("translate(" + path.centroid(d)[0] + "," + (path.centroid(d)[1]+20) + ")");
                                  })
                                  // add mouseover functionality to the label
@@ -435,7 +290,7 @@ function initiateZoom()
                                  {
                                    //d3.select(this).attr("fill","black");
                                    //console.log(d.properties.ADMIN+"text")
-                                   var e = d3.select("#"+[d.properties.id]+"text");
+                                   var e = d3.select("#"+[d.id]+"text");
                                    //console.log("e", e)
                                   e.attr("fill", "GreenYellow");
                                     //d3.select(this).attr("font-size", 7);
@@ -445,7 +300,7 @@ function initiateZoom()
                                  })
                                  .on("mouseout", function(d, i)
                                  {
-                                   var e = d3.select("#"+[d.properties.id]+"text");
+                                   var e = d3.select("#"+[d.id]+"text");
                                    //console.log("e", e)
                                   e.attr("fill", "transparent");
                                      d3.select(this).style("display", "none")
@@ -456,7 +311,7 @@ function initiateZoom()
                                  {
                                     d3.selectAll(".country")
                                       .classed("country-on", false);
-                                    d3.select("#country" + [d.properties.id])
+                                    d3.select("#country" + [d.id])
                                       .classed("country-on", true);
                                     boxZoom(path.bounds(d), path.centroid(d), 20);
                                  })
@@ -485,7 +340,7 @@ function getTextBox(selection)
                    .attr("class", "countryName")
                    .attr("id", function(d)
                    {
-                      return [d.properties.id]+"text";
+                      return [d.id]+"text";
                    })
                    .style("text-anchor", "middle")
                    .attr("dx", 0)
@@ -494,7 +349,7 @@ function getTextBox(selection)
                    .attr("font-size", 7)
                    .text(function(d)
                    {
-                      return [d.properties.ADMIN];
+                      return [d.countryName];
                    })
                    .call(getTextBox)
 
@@ -517,18 +372,11 @@ function getTextBox(selection)
 
 }
 
-
-
-var getGDP = function(countryName, gdpData)
+var getColor = function(c)
 {
-  gdpData.forEach(function(d)
-{
-  if (countryName == d.Country)
-  {
-
-  }
-})
+  return "rgb(48, 52, 67)";
 }
+
 
 
 var putRunDataInMapData = function(runData, geoData, gdpData)
@@ -564,6 +412,10 @@ var putRunDataInMapData = function(runData, geoData, gdpData)
     geoData.features.forEach(function(d)
     {
       var currCountry = d.properties.ADMIN;
+      d.id = currCountry.split(" ").join("_");
+      d.countryName = currCountry;
+
+
       if (countries.includes(currCountry))
       {
         var newData = {years: []}
@@ -571,8 +423,7 @@ var putRunDataInMapData = function(runData, geoData, gdpData)
         //console.log("currCountry", countries[currCountry])
 
           //newData.countries[currCountry].local.X = runData
-          newData.id = currCountry.split(" ").join("_");
-          newData.countryName = currCountry;
+
 
 
         for (var currYear = 0; currYear<years.length; currYear++)
@@ -638,13 +489,12 @@ var putRunDataInMapData = function(runData, geoData, gdpData)
       else
       {
         d.runData = {years: [{year: 2014, events: null}, {year: 2015, events: null}, {year: 2016, events: null}, {year: 2017, events: null}, {year: 2018, events: null}]};
-        d.id = d.properties.ADMIN.split(" ").join("_");
-        d.countryName = d.properties.ADMIN;
       }
 
       for (var cY = 0; cY < years.length; cY++)
       {
-        if (d.properties.ADMIN == "Aruba"){console.log("Hello Aruba"); console.log("aruba data", gdpData);}
+        //if (d.properties.ADMIN == "Aruba"){console.log("Hello Aruba"); console.log("aruba data", gdpData);}
+        //console.log("gdpData before", gdpData);
          d.runData.years[cY].gdp = getGDP(d.properties.ADMIN, years[cY], gdpData);
 
       }
@@ -654,34 +504,49 @@ var putRunDataInMapData = function(runData, geoData, gdpData)
 
 }
 
-var getGDP = function(cName, year, data)
+var getGDP = function(cName, year, gdpData)
 {
-  console.log("gdp", data)
-  console.log("country", cName)
-
-  data.forEach(function(d)
+  //console.log("country", cName)
+//  console.log("gdpData", gdpData)
+  /*if(cName == "Aruba" || cName == "Afghanistan" || cName == "Angola", "")
   {
+    return 0;
+  }*/
+  //console.log("year", year)
+
+
+
+  gdpData.forEach(function(d)
+  {
+
     if (d.Country == cName)
     {
+
       if (year == "2014")
       {
-        return d.d2014;
+        //if (typeof(d.d2014) !== 'undefined') {console.log("its undefined here      -------------------")}
+        //console.log("curr gdp", d.d2014.split(",").join(""))
+        return d.d2014.toString().split(",").join("");
       }
       else if (year == "2015")
       {
-        return d.d2015;
+        //console.log("curr gdp", d.d2015.split(",").join(""))
+        return d.d2015.toString().split(",").join("");
       }
       else if (year == "2016")
       {
-        return d.d2016;
+        //console.log("curr gdp", d.d2016.split(",").join(""))
+        return d.d2016.toString().split(",").join("");
       }
       else if (year == "2017")
       {
-        return d.d2017;
+        //console.log("curr gdp", d.d2017.split(",").join(""))
+        return d.d2017.toString().split(",").join("");
       }
       else if (year == "2018")
       {
-        return d.d2018;
+        //console.log("curr gdp", d.d2018.split(",").join(""))
+        return d.d2018.toString().split(",").join("");
       }
 
     }
