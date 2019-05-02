@@ -1,16 +1,17 @@
 var dataP = d3.json("distanceDataJson.json")
 var mapP = d3.json("countries.geojson")
-//var keyedDataP = d3.json("newJson.json")
+var gdpDataP = d3.json("csvjson.json")
 
 
-Promise.all([dataP, mapP/*, keyedDataP*/]).then(function(values)
+Promise.all([dataP, mapP, gdpDataP]).then(function(values)
 {
   var runData = values[0]
   var geoData = values[1]
+  var gdpData = values[2]
   //var keyedData = values[2]
 
 
-  putMapDataInRunData(runData, geoData);
+  putRunDataInMapData(runData, geoData, gdpData);
 
   //console.log("all done")
   console.log("data", runData);
@@ -18,7 +19,7 @@ Promise.all([dataP, mapP/*, keyedDataP*/]).then(function(values)
 
   var map = makeMap(geoData);
 
-  var formatted = format(runData);
+  //var formatted = format(runData);
 
   drawCircles(formatted);
 
@@ -30,138 +31,6 @@ Promise.all([dataP, mapP/*, keyedDataP*/]).then(function(values)
   console.log(err);
 });
 
-var format = function(runData)
-{
-
-//console.log("newData", newData)
-  var years = []
-  var countries = []
-  var events = []
-
-
-runData.forEach(function(d)
-{
-  if(!years.includes(d.year))
-  {
-    years.push(d.year);
-  }
-  if (!countries.includes(d.country))
-  {
-    countries.push(d.country);
-  }
-  if (!events.includes(d.event))
-  {
-    events.push(d.event);
-  }
-
-})
-  years.reverse()
-  var newData = {years: []}
-
-  for (var currYear = 0; currYear<years.length; currYear++)
-  {
-    var newYObj = {year: years[currYear], countries: []}
-    newData.years.push(newYObj);
-
-    for (var currCountry = 0; currCountry<countries.length; currCountry++)
-    {
-      //console.log("countries", countries)
-      //console.log("currCountry", countries[currCountry])
-
-        //newData.countries[currCountry].local.X = runData
-        var newCObj = {country: countries[currCountry], id : countries[currCountry].split(" ").join("_"), events: []}
-        newData.years[currYear].countries.push(newCObj);
-
-        for (var currEvent = 0; currEvent<events.length; currEvent++)
-        {
-          var newEObj = {event: events[currEvent], gender: {male: [], female: []}};
-          newData.years[currYear].countries[currCountry].events.push(newEObj);
-
-          for (var i = 0; i<runData.length; i++)
-          {
-
-            if (runData[i].year == years[currYear] && runData[i].country == countries[currCountry] && runData[i].event == events[currEvent])
-            {
-              var athlete = {name: runData[i].name.split(" (")[0], time: runData[i].time, data: runData[i]}
-              if (runData[i].gender == "female")
-              {
-                  newData.years[currYear].countries[currCountry].events[currEvent].gender.female.push(athlete);
-              }
-              else
-              {
-                newData.years[currYear].countries[currCountry].events[currEvent].gender.male.push(athlete);
-              }
-              //if(countries[currCountry] == "Burkina Faso") { console.log("B_F spot", runData[i].mapInfo.properties.spot);};
-
-              if(countries[currCountry] == "Brazil")
-              {
-                console.log("A spot before storing", runData[i].mapInfo.properties.spot)
-                newData.years[currYear].countries[currCountry].spotData = runData[i].mapInfo.properties.spot;
-                //console.log("after")
-                //console.log("B_F spot after storing, from new data", newData.years[currYear].countries[currCountry].spotData)
-              }
-            /*  else if(countries[currCountry] == "Romania")
-              {
-                console.log("R spot before storing", runData[i].mapInfo.properties.spot)
-                newData.years[currYear].countries[currCountry].spotData = runData[i].mapInfo.properties.spot;
-                //console.log("after")
-                //console.log("B_F spot after storing, from new data", newData.years[currYear].countries[currCountry].spotData)
-              }*/
-              else {
-                newData.years[currYear].countries[currCountry].spotData = runData[i].mapInfo.properties.spot;
-
-              }
-            }
-
-            //var location = {x: runData[i].mapInfo.bbox.x, y: runData[i].mapInfo.bbox.y};
-            //newData.years[currYear].countries[currCountry].location = location;
-            //newData.years[currYear].countries[currCountry].locale = runData[i].mapInfo.properties.loc;
-            //newData.years[currYear].countries[currCountry].locData = runData[i].mapInfo.properties.data;
-
-            //console.log("data in format", newData.years[currYear].countries[currCountry].spotData)
-            //console.log("data in map", runData[i].mapInfo.properties.spot)
-
-          }
-
-
-
-          var totalMale = newData.years[currYear].countries[currCountry].events[currEvent].gender.male.length
-          var totalFemale = newData.years[currYear].countries[currCountry].events[currEvent].gender.female.length
-          var totalAthletes = totalMale + totalFemale;
-
-          newData.years[currYear].countries[currCountry].events[currEvent].totalMale = totalMale;
-          newData.years[currYear].countries[currCountry].events[currEvent].totalFemale = totalFemale;
-          newData.years[currYear].countries[currCountry].events[currEvent].totalAthletesInEvent = totalAthletes;
-
-        }
-
-
-        var listEvents = []
-        var totalAthletesInCountry = 0;
-        newData.years[currYear].countries[currCountry].events.forEach(function(d)
-        {
-          if(d.gender.male.length > 0 || d.gender.female.length > 0)
-          {
-            listEvents.push(d.event)
-          }
-          totalAthletesInCountry = totalAthletesInCountry + d.totalAthletesInEvent
-
-        })
-        newData.years[currYear].countries[currCountry].totalAthletesInCountry = totalAthletesInCountry;
-        newData.years[currYear].countries[currCountry].activeEvents = listEvents;
-
-    }
-
-
-
-
-
-  }
-
-  console.log("newData", newData)
-  return newData;
-
-}
 
 var drawCircles = function(data)
 {
@@ -363,15 +232,21 @@ var makeCirc = function(id, data, svg, size, loc)
          //console.log("in spot Y", spotY)
            return ("translate(" + Number(spotX)+ "," + Number(spotY) + ")");
         })
-        .attr("r", 5)
+        .attr("r", function(d)
+      {
+        return Math.sqrt(d.totalAthletesInCountry/3.1415)+3;
+      })
         .style("opacity", .5)
         .style("stroke", "white")
-        .style("stroke-width", .5)
+        .style("stroke-width", function(d)
+      {
+        return (Math.sqrt(d.totalAthletesInCountry/3.1415)+3)*0.05;
+      })
         .attr("fill", "orange")
 
 }
 
-var makeMap = function(geoData)
+var makeMap = function(geoData, gdpData)
 {
   var w = 1400;
   var h = 600;
@@ -490,7 +365,10 @@ function initiateZoom()
                                  return "country" + [d.properties.id];
                               })
                               .attr("class", "country")
-                              .attr("fill", "rgb(48, 52, 67)")
+                              .attr("fill", /*"rgb(48, 52, 67)"*/ function(d)
+                            {
+                                var gdp = getGDP(d.properties.ADMIN, gdpData);
+                            })
                               .attr("stroke", "Black")
                               .attr("stroke-width", .1)
                               // add a mouseover action to show name label for feature/country
@@ -641,53 +519,171 @@ function getTextBox(selection)
 
 
 
-
-
-
-
-var putMapDataInRunData = function(runData, geoData)
+var getGDP = function(countryName, gdpData)
 {
-  runData.forEach(function(d,i)
+  gdpData.forEach(function(d)
+{
+  if (countryName == d.Country)
   {
-    var countryFound = false;
-    var count = 0;
-    var currSpot;
-    var country;
 
-    //console.log("len", geoData.features.length)
+  }
+})
+}
 
-    while (countryFound == false)
+
+var putRunDataInMapData = function(runData, geoData, gdpData)
+{
+  //runData.forEach(function(d,i)
+  //{
+
+    var years = []
+    var countries = []
+    var events = []
+
+
+    runData.forEach(function(d)
     {
-      if (count==geoData.features.length)
+      if(!years.includes(d.year))
       {
-        console.log("map whoops");
-        console.log("data name: ", d.country)
+        years.push(d.year);
       }
-      //console.log("currSpot", geoData.features[count])
-      currSpot = geoData.features[count];
-      currCountry = currSpot.properties.ADMIN;
-      //console.log("name: ", currCountry)
-
-      if (d.country == currCountry)
+      if (!countries.includes(d.country))
       {
-        countryFound = true;
-        d.mapInfo = currSpot;
-        currSpot.properties.id = d.country.split(" ").join("_")
-        d.locationData = currSpot.properties.spot;
-        //console.log("ADMIN= ", currCountry, "     id= ", currSpot.properties.id)
+        countries.push(d.country);
+      }
+      if (!events.includes(d.event))
+      {
+        events.push(d.event);
+      }
+    })
 
+
+
+    years.reverse()
+
+    geoData.features.forEach(function(d)
+    {
+      var currCountry = d.properties.ADMIN;
+      if (countries.includes(currCountry))
+      {
+        var newData = {years: []}
+        //console.log("countries", countries)
+        //console.log("currCountry", countries[currCountry])
+
+          //newData.countries[currCountry].local.X = runData
+          newData.id = currCountry.split(" ").join("_");
+          newData.countryName = currCountry;
+
+
+        for (var currYear = 0; currYear<years.length; currYear++)
+        {
+            var newYObj = {year: years[currYear], events: []}
+            newData.years.push(newYObj);
+
+            for (var currEvent = 0; currEvent<events.length; currEvent++)
+            {
+              var newEObj = {event: events[currEvent], gender: {male: [], female: []}};
+              newData.years[currYear].events.push(newEObj);
+
+              for (var i = 0; i<runData.length; i++)
+              {
+
+                if (runData[i].year == years[currYear] && runData[i].country == currCountry && runData[i].event == events[currEvent])
+                {
+                  var athlete = {name: runData[i].name.split(" (")[0], time: runData[i].time, data: runData[i]}
+                  if (runData[i].gender == "female")
+                  {
+                      newData.years[currYear].events[currEvent].gender.female.push(athlete);
+                  }
+                  else
+                  {
+                    newData.years[currYear].events[currEvent].gender.male.push(athlete);
+                  }
+                }
+
+              }
+
+
+
+              var totalMale = newData.years[currYear].events[currEvent].gender.male.length
+              var totalFemale = newData.years[currYear].events[currEvent].gender.female.length
+              var totalAthletes = totalMale + totalFemale;
+
+              newData.years[currYear].events[currEvent].totalMale = totalMale;
+              newData.years[currYear].events[currEvent].totalFemale = totalFemale;
+              newData.years[currYear].events[currEvent].totalAthletesInEvent = totalAthletes;
+
+            }
+
+
+            var listEvents = []
+            var totalAthletesInCountry = 0;
+            newData.years[currYear].events.forEach(function(d)
+            {
+              if(d.gender.male.length > 0 || d.gender.female.length > 0)
+              {
+                listEvents.push(d.event)
+              }
+              totalAthletesInCountry = totalAthletesInCountry + d.totalAthletesInEvent
+
+            })
+            newData.years[currYear].totalAthletesInCountry = totalAthletesInCountry;
+            newData.years[currYear].activeEvents = listEvents;
+
+
+        }
+
+        d.runData = newData;
       }
       else
       {
-        count++;
+        d.runData = {years: [{year: 2014, events: null}, {year: 2015, events: null}, {year: 2016, events: null}, {year: 2017, events: null}, {year: 2018, events: null}]};
+        d.id = d.properties.ADMIN.split(" ").join("_");
+        d.countryName = d.properties.ADMIN;
       }
-    }
 
-  })
+      for (var cY = 0; cY < years.length; cY++)
+      {
+        if (d.properties.ADMIN == "Aruba"){console.log("Hello Aruba"); console.log("aruba data", gdpData);}
+         d.runData.years[cY].gdp = getGDP(d.properties.ADMIN, years[cY], gdpData);
 
-  geoData.features.forEach(function(d)
+      }
+
+    })
+
+
+}
+
+var getGDP = function(cName, year, data)
 {
-  d.properties.id = d.properties.ADMIN.split(" ").join("_");
-})
+  console.log("gdp", data)
+  console.log("country", cName)
 
+  data.forEach(function(d)
+  {
+    if (d.Country == cName)
+    {
+      if (year == "2014")
+      {
+        return d.d2014;
+      }
+      else if (year == "2015")
+      {
+        return d.d2015;
+      }
+      else if (year == "2016")
+      {
+        return d.d2016;
+      }
+      else if (year == "2017")
+      {
+        return d.d2017;
+      }
+      else if (year == "2018")
+      {
+        return d.d2018;
+      }
+
+    }
+  })
 }
