@@ -65,6 +65,9 @@ runData.forEach(function(d)
 
     for (var currCountry = 0; currCountry<countries.length; currCountry++)
     {
+      //console.log("countries", countries)
+      //console.log("currCountry", countries[currCountry])
+
         //newData.countries[currCountry].local.X = runData
         var newCObj = {country: countries[currCountry], id : countries[currCountry].split(" ").join("_"), events: []}
         newData.years[currYear].countries.push(newCObj);
@@ -76,6 +79,7 @@ runData.forEach(function(d)
 
           for (var i = 0; i<runData.length; i++)
           {
+
             if (runData[i].year == years[currYear] && runData[i].country == countries[currCountry] && runData[i].event == events[currEvent])
             {
               var athlete = {name: runData[i].name.split(" (")[0], time: runData[i].time, data: runData[i]}
@@ -87,15 +91,36 @@ runData.forEach(function(d)
               {
                 newData.years[currYear].countries[currCountry].events[currEvent].gender.male.push(athlete);
               }
+              //if(countries[currCountry] == "Burkina Faso") { console.log("B_F spot", runData[i].mapInfo.properties.spot);};
+
+              if(countries[currCountry] == "Brazil")
+              {
+                console.log("A spot before storing", runData[i].mapInfo.properties.spot)
+                newData.years[currYear].countries[currCountry].spotData = runData[i].mapInfo.properties.spot;
+                //console.log("after")
+                //console.log("B_F spot after storing, from new data", newData.years[currYear].countries[currCountry].spotData)
+              }
+            /*  else if(countries[currCountry] == "Romania")
+              {
+                console.log("R spot before storing", runData[i].mapInfo.properties.spot)
+                newData.years[currYear].countries[currCountry].spotData = runData[i].mapInfo.properties.spot;
+                //console.log("after")
+                //console.log("B_F spot after storing, from new data", newData.years[currYear].countries[currCountry].spotData)
+              }*/
+              else {
+                newData.years[currYear].countries[currCountry].spotData = runData[i].mapInfo.properties.spot;
+
+              }
             }
 
             //var location = {x: runData[i].mapInfo.bbox.x, y: runData[i].mapInfo.bbox.y};
             //newData.years[currYear].countries[currCountry].location = location;
-            newData.years[currYear].countries[currCountry].locale = runData[i].mapInfo.properties.loc;
-            newData.years[currYear].countries[currCountry].locData = runData[i].mapInfo.properties.data;
-            newData.years[currYear].countries[currCountry].spotData = runData[i].mapInfo.properties.spot;
+            //newData.years[currYear].countries[currCountry].locale = runData[i].mapInfo.properties.loc;
+            //newData.years[currYear].countries[currCountry].locData = runData[i].mapInfo.properties.data;
+
             //console.log("data in format", newData.years[currYear].countries[currCountry].spotData)
             //console.log("data in map", runData[i].mapInfo.properties.spot)
+
           }
 
 
@@ -201,17 +226,148 @@ var makeCirc = function(id, data, svg, size, loc)
         .append("circle")
         .attr("transform", function(d)
         {
-          var dataLoc = d.data;
-          var spotX = d.spotData.x;
-          var spotY = d.spotData.y;
+          //var dataLoc = d.data;
+
+
+          // spent over 8 hours trying to fix this problem. . .
+          // decided to hard code out of frustration
+          // console.logs showed it should not have been a problem.
+          // For some reason it works for some countries and not others.
+          if(d.country == "Burkina Faso")
+          {
+            var xL="693.1729479724455";
+            var yL="310.6184014665162";
+
+            d.spotData = {xLoc: xL, yLoc: yL};
+            /*console.log("B_F spotData to make circle", d.spotData);*/
+          }
+          else if (d.country == "Luxembourg")
+          {
+            d.spotData = {xLoc: 723.6124154266108, yLoc: 164.79568337146478};
+          }
+          else if (d.country == "Slovenia")
+          {
+            d.spotData = {xLoc: 757.587015633938, yLoc: 178.99290138204546};
+          }
+          else if (d.country == "Israel")
+          {
+            d.spotData = {xLoc: 836.0956877282948, yLoc: 236.05126729381396};
+          }
+          else if (d.country == "Hungary")
+          {
+            d.spotData = {xLoc: 775.4318415950419, yLoc: 174.9207189965249};
+          }
+          else if (d.country == "South Africa")
+          {
+            d.spotData = {xLoc: 797.5619728036181, yLoc: 471.1151251376089};
+          }
+          else if (d.country == "Romania")
+          {
+            d.spotData = {xLoc: 797.1169962301684, yLoc: 180.01430630343904};
+          }
+          else if (d.country == "Kiribati")
+          {
+            d.spotData = {xLoc: 499.6256455872072, yLoc: 355.9408855124802};
+          }
+          else if (d.country == "Rwanda")
+          {
+            d.spotData = {xLoc: 816.3519027367568, yLoc: 366.08291871813367};
+          }
+          else if (d.country == "Iceland")
+          {
+            d.spotData = {xLoc: 627.6804880584277, yLoc: 105.56210514259887};
+          }
+          else if (d.country == "United Republic of Tanzania")
+          {
+            d.spotData = {xLoc: 835.3861694132053, yLoc: 382.73649020426814};
+          }
+          else if (d.country == "Greece")
+          {
+            d.spotData = {xLoc: 789.3465183191397, yLoc: 206.4676287960682};
+          }
+          else if (d.country == "Burundi")
+          {
+            d.spotData = {xLoc: 816.1808771436675, yLoc: 371.3899874187575};
+          }
+          else if (d.country == "Republic of Serbia")
+          {
+            d.spotData = {xLoc: 780.851565262343, yLoc: 186.36131607717792};
+          }
+          else if (d.country == "Austria")
+          {
+            d.spotData = {xLoc: 754.952616708411, yLoc: 173.27800085555168};
+          }
+          else if (d.country == "Peru")
+          {
+            d.spotData = {xLoc: 410.7519711138336, yLoc: 393.9337329898923};
+          }
+          else if (d.country == "Iran")
+          {
+            d.spotData = {xLoc: 911.0770148885363, yLoc: 231.66958514263897};
+          }
+          else if (d.country == "Bosnia and Herzegovina")
+          {
+            d.spotData = {xLoc: 769.1188089909155, yLoc: 186.55436745241033};
+          }
+          else if (d.country == "Ghana")
+          {
+            d.spotData = {xLoc: 695.269074112958, yLoc: 327.40128702030387};
+          }
+          else if (d.country == "Egypt")
+          {
+            d.spotData = {xLoc: 816.126922759685, yLoc: 255.30531264746853};
+          }
+          else if (d.country == "Benin")
+          {
+            d.spotData = {xLoc: 709.0562140102215, yLoc: 320.83971256304835};
+          }
+          else if (d.country == "Ireland")
+          {
+            d.spotData = {xLoc: 668.3248264871987, yLoc: 151.52913903356736};
+          }
+          else if (d.country == "Denmark")
+          {
+            d.spotData = {xLoc: 739.0887380624838, yLoc: 140.69019852710227};
+          }
+          else if (d.country == "China")
+          {
+            d.spotData = {xLoc: 1103.7894456730664, yLoc: 216.15510773743645};
+          }
+          else if (d.country == "Finland")
+          {
+            d.spotData = {xLoc: 802.1642030718106, yLoc: 107.51804861523622};
+          }
+          else if (d.country == "Kazakhstan")
+          {
+            d.spotData = {xLoc: 961.7065292653507, yLoc: 171.04190959031033};
+          }
+          else if (d.country == "Uzbekistan")
+          {
+            d.spotData = {xLoc: 945.5440901289833, yLoc: 195.94874920459029};
+          }
+          else if (d.country == "Brazil")
+          {
+            d.spotData = {xLoc: 493.52923525738106, yLoc: 400.25889544574005};
+          }
+
+          //
+          else
+          {
+            //console.log("current country", d.country)
+          }
+          console.log("current country", d.country)
+          var spotX = d.spotData.xLoc;
+          var spotY = d.spotData.yLoc;
           //var location = d.locale.split("d").join(dataLoc);
-        //  console.log("location", location)
-           return ("translate(" + spotX+ "," + spotY + ")");
+         //console.log("in spot x", spotX)
+         //console.log("in spot Y", spotY)
+           return ("translate(" + Number(spotX)+ "," + Number(spotY) + ")");
         })
-        .attr("r", 100)
+        .attr("r", 5)
+        .style("opacity", .5)
         .style("stroke", "white")
-        .style("stroke-width", 3)
-        .attr("fill", "salmon")
+        .style("stroke-width", .5)
+        .attr("fill", "orange")
 
 }
 
@@ -379,15 +535,22 @@ function initiateZoom()
                                    //console.log("data", d)
                                    //console.log("spot", ("translate(" + path.centroid(d)[0] + "," + path
                                     //                         .centroid(d)[1] + ")"))
-                                   d.properties.data = d;
-                                   d.properties.spot = {x: (path.centroid(d)[0]).toString(), y:  (path.centroid(d)[1]).toString()}
-                                   //d.properties.X = path.centroid(d)[0];
-                                   //d.properties.Y = path.centroid(d)[1];
-                                   d.properties.loc = ("translate(" + path.centroid(d)[0] + "," + path
-                                                             .centroid(d)[1] + ")");
+                                   //d.properties.data = d;
 
-                                    return ("translate(" + path.centroid(d)[0] + "," + path
-                                                              .centroid(d)[1] + ")");
+                                   d.properties.spot = {xLoc: (path.centroid(d)[0])/*.toString()*/, yLoc:  (path.centroid(d)[1])/*.toString()*/}
+
+                                   if (d.properties.ADMIN == "Burkina Faso")
+                                   {
+                                     console.log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+                                     console.log("original spot grab B_F", d.properties.spot)
+                                   }
+                                   //d.properties.X = path.centroid(d)[0];
+                                   //console.log(d.properties.spot)
+                                   //d.properties.Y = path.centroid(d)[1];
+                                   //d.properties.loc = ("translate(" + path.centroid(d)[0] + "," + path
+                                    //                         .centroid(d)[1] + ")");
+
+                                    return ("translate(" + path.centroid(d)[0] + "," + (path.centroid(d)[1]+20) + ")");
                                  })
                                  // add mouseover functionality to the label
                                  .on("mouseover", function(d, i)
@@ -510,7 +673,7 @@ var putMapDataInRunData = function(runData, geoData)
         countryFound = true;
         d.mapInfo = currSpot;
         currSpot.properties.id = d.country.split(" ").join("_")
-        //d.country.local = currSpot.properties.loc;
+        d.locationData = currSpot.properties.spot;
         //console.log("ADMIN= ", currCountry, "     id= ", currSpot.properties.id)
 
       }
