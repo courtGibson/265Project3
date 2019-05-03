@@ -71,8 +71,13 @@ var makeButtons = function(data)
         //console.log("inside 2018")
         YEAR_INDEX = 4;
       }
+
+      var t = d3.transition()
+          .duration(2)
+          .ease(d3.easeLinear);
+
       console.log("select", d3.select("svg").selectAll("circle"))
-      d3.select("svg").selectAll("circle").remove();
+      d3.select("svg"/*#group"+YEAR_INDEX*/).selectAll("circle").transition(t).remove();//.selectAll("circle").remove();//
       console.log(d.year+ " button clicked");
       //console.log("year index", YEAR_INDEX)
       drawCircles(data);
@@ -87,21 +92,33 @@ var drawCircles = function(data)
 //     ^group female
 //     ^group male
 
+  var currCountryGroup = svg.select("#map").append("g")
+                        .attr("id", "group"+YEAR_INDEX);
+
+
+var countryDot = []
+var eventDot = []
+var athleteDot = []
+
+
+
   data.features.forEach(function(d)
   {
-    var currCountryGroup = svg.select("#map").append("g")
-                            .attr("id", "group"+d.id);
 
+      makeCirc("#group"+YEAR_INDEX, d, svg, d.runData.years[YEAR_INDEX].totalAthletesInCountry, YEAR_INDEX);
       // make circle for each country for current year
       // (id, year data, svg, total number athletes in country)
       //console.log("select1", svg.select("#group"+d.year.toString()))
       if (d.runData.years[YEAR_INDEX].events != null)
       {
-        makeCirc("#group"+d.id, d, svg, d.runData.years[YEAR_INDEX].totalAthletesInCountry, YEAR_INDEX);
+
 
 
       d.runData.years[YEAR_INDEX].events.forEach(function(currE)
       {
+        makeEventCirc("#group"+YEAR_INDEX, d, svg, d.runData.years[YEAR_INDEX].totalAthletesInCountry, YEAR_INDEX, currE);
+
+
         if(d.runData.years[YEAR_INDEX].activeEvents.includes(currE.event))
         {
           //console.log("id thing", "#"+"group"+(d.runData.years[YEAR_INDEX].year.toString()))
@@ -127,15 +144,102 @@ var drawCircles = function(data)
 
 }
 
+var makeEventCirc = function(id, data, svg, size, YEAR_INDEX, currE)
+{
+  d3.select(id)
+     //.selectAll("circle")
+     .datum(data)
+     //.enter()
+     .append("circle")
+     //.transition(t)
+     .attr("transform", function(d, year)
+     {
+       //var dataLoc = d.data;
+
+       //console.log("here", d)
+       var spotX = d.properties.spotData.xLoc;
+       var spotY = d.properties.spotData.yLoc;
+       //var location = d.locale.split("d").join(dataLoc);
+      //console.log("in spot x", spotX)
+      //console.log("in spot Y", spotY)
+      if(currE == "800m")
+      {
+        return ("translate(" + (Number(spotX)-5)+ "," + (Number(spotY)-5) + ")");
+      }
+      else if(currE == "1500m")
+      {
+        return ("translate(" + (Number(spotX)+5)+ "," + (Number(spotY)-5) + ")");
+      }
+      else if(currE == "5000m")
+      {
+        return ("translate(" + (Number(spotX)-5)+ "," + (Number(spotY)+5) + ")");
+      }
+      else if(currE == "10000m")
+      {
+        return ("translate(" + (Number(spotX)+5)+ "," + (Number(spotY)+5) + ")");
+      }
+      else if(currE == "3000mSteeplechase")
+      {
+        return ("translate(" + Number(spotX)+ "," + Number(spotY) + ")");
+      }
+      else if(currE == "marathon")
+      {
+        return ("translate(" + Number(spotX)+ "," + Number(spotY) + ")");
+      }
+
+     })
+     .attr("r", function(d)
+     {
+     console.log("total", Number(Math.sqrt((d.runData.years[0].totalAthletesInCountry))/3.1415))
+
+       return Number(Math.sqrt((d.runData.years[0].totalAthletesInCountry))/3.1415);
+     })
+     .style("opacity", .8)
+    // .style("stroke", "white")
+     .style("stroke-width", function(d)
+   {
+     return Number(Math.sqrt((d.runData.years[0].totalAthletesInCountry)/3.1415*0.1));
+   })
+     .attr("fill", "pink")
+     .on("mouseover", function(d, i)
+     {
+
+       var e = d3.select("#"+[d.id]+"text");
+       //console.log("e", e)
+      e.attr("fill", "GreenYellow")
+         .style("text-shadow","0px 0px 8px Black");
+        d3.select("#countryLabel" + [d.id])
+           .style("display", "block");
+       //console.log(d.properties.id)
+
+     })
+     .on("mouseout", function(d, i)
+     {
+       var e = d3.select("#"+[d.id]+"text");
+       //console.log("e", e)
+      e.attr("fill", "transparent");
+        d3.select("#countryLabel" + [d.id])
+        .style("display", "none");
+     })
+
+
+}
+
 var makeCirc = function(id, data, svg, size, loc, year)
 {
 
+  var t = d3.transition()
+      .duration(2)
+      .ease(d3.easeLinear);
   //console.log("select", d3.select("body"))
 
      //.select(id)
      d3.select(id)
+        //.selectAll("circle")
         .datum(data)
+        //.enter()
         .append("circle")
+        //.transition(t)
         .attr("transform", function(d, year)
         {
           //var dataLoc = d.data;
@@ -151,6 +255,7 @@ var makeCirc = function(id, data, svg, size, loc, year)
         .attr("r", function(d)
         {
         //  console.log("total", d.runData.years[0])
+
           return Number(Math.sqrt((d.runData.years[0].totalAthletesInCountry+40)/3.1415));
         })
         .style("opacity", .8)
