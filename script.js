@@ -23,9 +23,9 @@ Promise.all([dataP, mapP, gdpDataP]).then(function(values)
 
   makeGroupAndDiv();
 
-  makeCircles(geoData);
+  //makeCircles(geoData);
   makeLegend();
-  makeButtons(geoData)
+  makeButtons(geoData);
 
 
   //window.alert("Map Navigation:\n- Click and drag to move\n- Two finger scroll to zoom in/out\n- Click country to zoom to country")
@@ -44,24 +44,42 @@ var makeButtons = function(data)
     .enter()
     .append("button")
     .text(function(d){ return d.year;})
+    .style("float", "right")
+    .style("display", "block")
+    .style("clear", "right")
+    .style("position", "relative")
+    .style("top", "-330px")
+    .style("margin", "0px 100px 10px 0px")
+    .style("padding", "10px 30px 10px")
     .on("click", function(d)
     {
       YEAR_INDEX = Number(d.year)-2014;
       console.log(YEAR_INDEX);
       console.log(d.year+ " button clicked");
 
-      drawCircles();
+
+        makeCircles(data);
+        d3.select("#circleGroup").style("opacity", 1);
+
 
     })
 
     d3.select("body")
       .append("button")
       .text("Map Only")
+      .style("float", "right")
+      .style("display", "block")
+      .style("clear", "right")
+      .style("position", "relative")
+      .style("top", "-330px")
+      .style("margin", "0px 100px 10px 0px")
+      .style("padding", "10px 16px 10px")
       .on("click", function(d)
       {
         YEAR_INDEX = -1;
         console.log(YEAR_INDEX);
         console.log("map only button clicked");
+        d3.select("#circleGroup").style("opacity", 0);
       })
 }
 
@@ -80,6 +98,15 @@ var makeGroupAndDiv = function()
 
 var makeLegend = function()
 {
+
+  d3.select("body").append("svg")
+    .attr("id", "svg2")
+    .attr("width", 280)
+    .attr("height", 600)
+    .style("float", "right")
+    //.attr("fill", "white")//"rgb(23, 25, 32)")
+
+
   var colorThing = d3.scaleLinear().domain([1,length])
                     .range([d3.rgb("rgb(57, 60, 119)"), d3.rgb("rgb(102, 103, 119)")]);
   var colorList = [];
@@ -93,7 +120,7 @@ var makeLegend = function()
     colorList.push(currObj);
   }
 
-  var linearGradient = d3.select("svg")
+  var linearGradient = d3.select("#svg2")
                   .append("defs")
                   .append("linearGradient")
                   .attr("id", "linear-gradient")
@@ -116,38 +143,103 @@ var makeLegend = function()
                   return d.color;
                 })
 
+  var svg2 = d3.select("#svg2")
 
+    svg2.append("rect")
+        .attr("x", 0)
+        .attr("y", 0)
+        .attr("width", 280)
+        .attr("height", 200)
+        .attr("fill","white")
+        .style("stroke", "black")
+        .style("stroke-width", 1)
+        .style("opacity", .8)
+        .attr("rx", 6)
+        .attr("ry", 6)
 
-  d3.select("svg")
-        .append("rect")
+    svg2.append("rect")
+        .attr("x", 0)
+        .attr("y", 210)
+        .attr("width", 280)
+        .attr("height", 390)
+        .attr("fill","white")
+        .style("stroke", "black")
+        .style("stroke-width", 1)
+        .style("opacity", .8)
+        .attr("rx", 6)
+        .attr("ry", 6)
+
+    svg2.append("rect")
         .attr("id", "colorLegend")
-        .attr("x", 25)
-        .attr("y", 550)
+        .attr("x", 30)
+        .attr("y", 85)
         .attr("width", 200)
-        .attr("height", 10)
+        .attr("height", 15)
         .attr("fill","url(#linear-gradient)")
-        .style("stroke", "white")
+        .style("stroke", "black")
         .style("stroke-width", 1)
 
+    svg2.append("text")
+        .text("Legend")
+        .attr("x", 95)
+        .attr("y", 25)
+        .style("text-decoration", "underline")
+        .style("font-weight", "bold")
+
+    svg2.append("text")
+        .text("GDP per Capita")
+        .attr("x", 60)
+        .attr("y", 70)
+
+    svg2.append("text")
+        .text("Low")
+        .attr("x", 30)
+        .attr("y", 120)
+
+    svg2.append("text")
+        .text("High")
+        .attr("x", 190)
+        .attr("y", 120)
+
+    svg2.append("circle")
+        .attr("cx", 220)
+        .attr("cy", 167)
+        .attr("r", 20)
+        .style("opacity", .8)
+        .style("stroke", "white")
+        .style("stroke-width", 10*0.1)
+        .attr("fill", "gold")
+
+    svg2.append("text")
+        .text("Number of athletes:")
+        .attr("x", 30)
+        .attr("y", 175)
 
 
+    svg2.append("text")
+        .text("View:")
+        .attr("x", 105)
+        .attr("y", 250)
 
 
 }
 
+
+
 var makeCircles = function(data)
 {
-  /*  var t = d3.transition()
-        .duration(2)
-        .ease(d3.easeLinear);
+
     //console.log("select", d3.select("body"))
-  */
+
     var svg = d3.select("svg")
 
     var total = 0;
 
-     d3.select("#circleGroup")
-        .selectAll("circle")
+
+    var circ =  d3.select("#circleGroup").selectAll("circle").remove();
+
+
+    circ.selectAll("circle")
         .data(data.features)
         .enter()
         .append("circle")
@@ -180,7 +272,18 @@ var makeCircles = function(data)
           return Number(Math.sqrt((d.runData.years[YEAR_INDEX].totalAthletesInCountry+40)/3.1415)*0.1);
         })
         .attr("fill", "gold")
-        .on("mouseover", function(d, i)
+
+
+  var t = d3.transition()
+      .duration(200)
+      .ease(d3.easeLinear);
+
+  circ.transition(t)
+    .delay(function(d,i){ return i * (200 / 4); })
+
+
+
+    circ.on("mouseover", function(d, i)
         {
           /*div.transition()
               .duration(200)
@@ -211,7 +314,7 @@ var makeCircles = function(data)
                  .duration(500)
                  .style("opacity", 0);*/
         })
-        .on("click", function(d)
+      .on("click", function(d)
         {
           total++;
 
