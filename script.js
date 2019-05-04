@@ -3,6 +3,7 @@ var mapP = d3.json("countries.geojson")
 var gdpDataP = d3.json("csvjson.json")
 
 var YEAR_INDEX = 0;
+var PREV_INDEX = 0;
 
 Promise.all([dataP, mapP, gdpDataP]).then(function(values)
 {
@@ -43,7 +44,11 @@ var makeButtons = function(data)
     .data(data.features[0].runData.years)
     .enter()
     .append("button")
-    .text(function(d){ return d.year;})
+    .text(function(d)
+    {
+      return d.year;
+
+    })
     .style("float", "right")
     .style("display", "block")
     .style("clear", "right")
@@ -53,6 +58,7 @@ var makeButtons = function(data)
     .style("padding", "10px 30px 10px")
     .on("click", function(d)
     {
+      PREV_INDEX = YEAR_INDEX;
       YEAR_INDEX = Number(d.year)-2014;
       console.log(YEAR_INDEX);
       console.log(d.year+ " button clicked");
@@ -61,6 +67,7 @@ var makeButtons = function(data)
         makeCircles(data);
         d3.select("#circleGroup").style("opacity", 1);
 
+        drawButtonLabel(d);
 
     })
 
@@ -80,7 +87,35 @@ var makeButtons = function(data)
         console.log(YEAR_INDEX);
         console.log("map only button clicked");
         d3.select("#circleGroup").style("opacity", 0);
+        drawButtonLabel(d);
+
       })
+}
+
+
+var drawButtonLabel = function(d)
+{
+  var svg = d3.select("#svg2")
+
+  svg.select("#prevText").remove();
+  svg.select("#currText").remove();
+  for (var i = 0; i<5; i++)
+  {
+    if (i == PREV_INDEX)
+    {
+      svg.append("text")
+          .attr("id", "prevText")
+          .attr("x", 30)
+          .attr("y", PREV_INDEX*30)
+    }
+    else if(i == YEAR_INDEX)
+    {
+      svg.append("text")
+          .attr("id", "currText")
+          .attr("x", 30)
+          .attr("y", YEAR_INDEX*30)
+    }
+  }
 }
 
 var makeGroupAndDiv = function()
@@ -102,7 +137,7 @@ var makeLegend = function()
   d3.select("body").append("svg")
     .attr("id", "svg2")
     .attr("width", 280)
-    .attr("height", 600)
+    .attr("height", 700)
     .style("float", "right")
     //.attr("fill", "white")//"rgb(23, 25, 32)")
 
@@ -149,7 +184,7 @@ var makeLegend = function()
         .attr("x", 0)
         .attr("y", 0)
         .attr("width", 280)
-        .attr("height", 200)
+        .attr("height", 300)
         .attr("fill","white")
         .style("stroke", "black")
         .style("stroke-width", 1)
@@ -159,7 +194,7 @@ var makeLegend = function()
 
     svg2.append("rect")
         .attr("x", 0)
-        .attr("y", 210)
+        .attr("y", 310)
         .attr("width", 280)
         .attr("height", 390)
         .attr("fill","white")
@@ -219,7 +254,7 @@ var makeLegend = function()
     svg2.append("text")
         .text("View:")
         .attr("x", 105)
-        .attr("y", 250)
+        .attr("y", 350)
 
 
 }
@@ -236,7 +271,9 @@ var makeCircles = function(data)
     var total = 0;
 
 
-    var circ =  d3.select("#circleGroup").selectAll("circle").remove();
+    var circ =  d3.select("#circleGroup")
+
+    circ.selectAll("circle").remove();
 
 
     circ.selectAll("circle")
@@ -271,75 +308,94 @@ var makeCircles = function(data)
         {
           return Number(Math.sqrt((d.runData.years[YEAR_INDEX].totalAthletesInCountry+40)/3.1415)*0.1);
         })
-        .attr("fill", "gold")
+        .attr("fill", function(d)
+        {
+          if (d.runData.years[YEAR_INDEX].totalAthletesInCountry < d.runData.years[PREV_INDEX].totalAthletesInCountry)
+          {
+            return "orangered"
+          }
+          else if (d.runData.years[YEAR_INDEX].totalAthletesInCountry > d.runData.years[PREV_INDEX].totalAthletesInCountry)
+          {
+            return "cyan"
+          }
+          else
+          {
+            return "gold";
+          }
+        })
+        .on("mouseover", function(d, i)
+            {
+              /*div.transition()
+                  .duration(200)
+                  .style("opacity", .9);
+              div.html(d.countryName + "<br/>"  + d.countryName)
+                  .style("left", (d3.event.pageX) + "px")
+                  .style("top", (d3.event.pageY - 28) + "px");*/
+
+
+              var e = d3.select("#"+[d.id]+"text");
+              //console.log("e", e)
+             e.attr("fill", "GreenYellow")
+                .style("text-shadow","0px 0px 8px Black");
+               d3.select("#countryLabel" + [d.id])
+                  .style("display", "block");
+              //console.log(d.properties.id)
+
+            })
+            .on("mouseout", function(d, i)
+            {
+              var e = d3.select("#"+[d.id]+"text");
+              //console.log("e", e)
+             e.attr("fill", "transparent");
+               d3.select("#countryLabel" + [d.id])
+               .style("display", "none");
+
+              /* div.transition()
+                     .duration(500)
+                     .style("opacity", 0);*/
+            })
+          .on("click", function(d)
+            {
+              total++;
+
+
+              d3.select("#circle"+YEAR_INDEX+d.countryName)
+                  .attr("fill", "lime")
+
+
+
+              if(total%2 == 0)
+              {
+                div.transition()
+                    .duration(200)
+                    .style("opacity", .9);
+
+                div.html(d.countryName + "<br/>"  + d.countryName)
+              }
+              else
+              {
+                div.transition()
+                      .duration(500)
+                      .style("opacity", 0);
+              }
+
+          })
+
 
 
   var t = d3.transition()
       .duration(200)
       .ease(d3.easeLinear);
 
-  circ.transition(t)
-    .delay(function(d,i){ return i * (200 / 4); })
+
+  circ.selectAll("circle")
+    .transition()
+    .duration(4000)
+    .ease(d3.easeQuadInOut)
+    .attr("fill", "gold");
 
 
 
-    circ.on("mouseover", function(d, i)
-        {
-          /*div.transition()
-              .duration(200)
-              .style("opacity", .9);
-          div.html(d.countryName + "<br/>"  + d.countryName)
-              .style("left", (d3.event.pageX) + "px")
-              .style("top", (d3.event.pageY - 28) + "px");*/
-
-
-          var e = d3.select("#"+[d.id]+"text");
-          //console.log("e", e)
-         e.attr("fill", "GreenYellow")
-            .style("text-shadow","0px 0px 8px Black");
-           d3.select("#countryLabel" + [d.id])
-              .style("display", "block");
-          //console.log(d.properties.id)
-
-        })
-        .on("mouseout", function(d, i)
-        {
-          var e = d3.select("#"+[d.id]+"text");
-          //console.log("e", e)
-         e.attr("fill", "transparent");
-           d3.select("#countryLabel" + [d.id])
-           .style("display", "none");
-
-          /* div.transition()
-                 .duration(500)
-                 .style("opacity", 0);*/
-        })
-      .on("click", function(d)
-        {
-          total++;
-
-
-          d3.select("#circle"+YEAR_INDEX+d.countryName)
-              .attr("fill", "lime")
-
-
-
-          if(total%2 == 0)
-          {
-            div.transition()
-                .duration(200)
-                .style("opacity", .9);
-
-            div.html(d.countryName + "<br/>"  + d.countryName)
-          }
-          else
-          {
-            div.transition()
-                  .duration(500)
-                  .style("opacity", 0);
-          }
-
-      })
 
 
 
