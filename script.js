@@ -21,8 +21,10 @@ Promise.all([dataP, mapP, gdpDataP]).then(function(values)
 
   var map = makeMap(geoData);
 
-  makeCircles(geoData);
+  makeGroupAndDiv();
 
+  makeCircles(geoData);
+  makeLegend();
   makeButtons(geoData)
 
 
@@ -46,18 +48,92 @@ var makeButtons = function(data)
     {
       YEAR_INDEX = Number(d.year)-2014;
       console.log(YEAR_INDEX);
-      var t = d3.transition()
-          .duration(2)
-          .ease(d3.easeLinear);
-
-      //console.log("select", d3.select("svg").selectAll("circle"))
-      d3.select("svg"/*#group"+YEAR_INDEX*/).selectAll("circle").transition(t).remove();//.selectAll("circle").remove();//
       console.log(d.year+ " button clicked");
-      //console.log("year index", YEAR_INDEX)
-      drawCircles(data);
+
+      drawCircles();
+
     })
+
+    d3.select("body")
+      .append("button")
+      .text("Map Only")
+      .on("click", function(d)
+      {
+        YEAR_INDEX = -1;
+        console.log(YEAR_INDEX);
+        console.log("map only button clicked");
+      })
 }
 
+var makeGroupAndDiv = function()
+{
+  var svg = d3.select("svg")
+
+    svg.select("#map").append("g")
+      .attr("id", "circleGroup")
+      .style("opacity", 0);
+
+    var div = d3.select("body").append("div")
+                .attr("class", "tooltip")
+                .style("opacity", 0);
+}
+
+var makeLegend = function()
+{
+  var colorThing = d3.scaleLinear().domain([1,length])
+                    .range([d3.rgb("rgb(57, 60, 119)"), d3.rgb("rgb(102, 103, 119)")]);
+  var colorList = [];
+
+  for (var i = 0; i<100; i++)
+  {
+    var currObj = {};
+    currObj.val = i;
+    currObj.color = colorThing(i*0.01)
+
+    colorList.push(currObj);
+  }
+
+  var linearGradient = d3.select("svg")
+                  .append("defs")
+                  .append("linearGradient")
+                  .attr("id", "linear-gradient")
+                  /*.attr("x1", "0%")
+                  .attr("y1", "0%")
+                  .attr("x2", "100%")
+                  .attr("y2", "0%");*/
+
+  linearGradient.selectAll("stop")
+                .data(colorList)
+                .enter()
+                .append("stop")
+                .attr("offset", function(d)
+                {
+                  //console.log(d)
+                  return d.val+"%";
+                })
+                .attr("stop-color", function(d)
+                {
+                  return d.color;
+                })
+
+
+
+  d3.select("svg")
+        .append("rect")
+        .attr("id", "colorLegend")
+        .attr("x", 25)
+        .attr("y", 550)
+        .attr("width", 200)
+        .attr("height", 10)
+        .attr("fill","url(#linear-gradient)")
+        .style("stroke", "white")
+        .style("stroke-width", 1)
+
+
+
+
+
+}
 
 var makeCircles = function(data)
 {
@@ -68,23 +144,14 @@ var makeCircles = function(data)
   */
     var svg = d3.select("svg")
 
+    var total = 0;
 
-    var div = d3.select("body").append("div")
-                .attr("class", "tooltip")
-                .style("opacity", 0);
-
-  for (var currYear = 0; currYear < 5; currYear++)
-  {
-    svg.select("#map").append("g")
-      .attr("id", "group"+currYear);
-
-      var total = 0;
-
-     d3.select("#group"+currYear)
+     d3.select("#circleGroup")
         .selectAll("circle")
         .data(data.features)
         .enter()
         .append("circle")
+        .attr("id", function(d){return "circle"+YEAR_INDEX+d.countryName})
         .attr("transform", function(d)
         {
           var spotX = d.properties.spotData.xLoc;
@@ -96,9 +163,9 @@ var makeCircles = function(data)
         .attr("r", function(d)
         {
         //  console.log("total", d.runData.years[0])
-          if (d.runData.years[currYear].events != null)
+          if (d.runData.years[YEAR_INDEX].events != null)
           {
-            return Number(Math.sqrt((d.runData.years[currYear].totalAthletesInCountry+40)/3.1415));
+            return Number(Math.sqrt((d.runData.years[YEAR_INDEX].totalAthletesInCountry+40)/3.1415));
           }
           else
           {
@@ -110,11 +177,18 @@ var makeCircles = function(data)
         .style("stroke", "white")
         .style("stroke-width", function(d)
         {
-          return Number(Math.sqrt((d.runData.years[currYear].totalAthletesInCountry+40)/3.1415)*0.1);
+          return Number(Math.sqrt((d.runData.years[YEAR_INDEX].totalAthletesInCountry+40)/3.1415)*0.1);
         })
         .attr("fill", "gold")
         .on("mouseover", function(d, i)
         {
+          /*div.transition()
+              .duration(200)
+              .style("opacity", .9);
+          div.html(d.countryName + "<br/>"  + d.countryName)
+              .style("left", (d3.event.pageX) + "px")
+              .style("top", (d3.event.pageY - 28) + "px");*/
+
 
           var e = d3.select("#"+[d.id]+"text");
           //console.log("e", e)
@@ -132,39 +206,45 @@ var makeCircles = function(data)
          e.attr("fill", "transparent");
            d3.select("#countryLabel" + [d.id])
            .style("display", "none");
+
+          /* div.transition()
+                 .duration(500)
+                 .style("opacity", 0);*/
         })
         .on("click", function(d)
-      {
-        total++;
+        {
+          total++;
 
-        if(total%2 == 0)
-        {
-          div.transition()
-              .duration(200)
-              .style("opacity", .9);
-          div.html(d.countryName + "<br/>"  + d.countryName)
-              .style("left", (d3.event.pageX) + "px")
-              .style("top", (d3.event.pageY - 28) + "px");
-        }
-        else
-        {
-          div.transition()
-                .duration(500)
-                .style("opacity", 0);
-        }
+
+          d3.select("#circle"+YEAR_INDEX+d.countryName)
+              .attr("fill", "lime")
+
+
+
+          if(total%2 == 0)
+          {
+            div.transition()
+                .duration(200)
+                .style("opacity", .9);
+
+            div.html(d.countryName + "<br/>"  + d.countryName)
+          }
+          else
+          {
+            div.transition()
+                  .duration(500)
+                  .style("opacity", 0);
+          }
 
       })
 
 
 
-
-    }
-
 }
 
 var makeMap = function(geoData, gdpData)
 {
-  var w = 1400;
+  var w = 1200;
   var h = 600;
 
   var zoom = d3
@@ -294,8 +374,11 @@ function initiateZoom()
 
                                 var e = d3.select("#"+[d.id]+"text");
                                 //console.log("e", e)
-                               e.attr("fill", "GreenYellow")
+                               e.transition()
+                                   .duration(200)
+                                   .attr("fill", "GreenYellow")
                                   .style("text-shadow","0px 0px 8px Black");
+
                                  d3.select("#countryLabel" + [d.id])
                                     .style("display", "block");
                                 //console.log(d.properties.id)
@@ -305,7 +388,10 @@ function initiateZoom()
                               {
                                 var e = d3.select("#"+[d.id]+"text");
                                 //console.log("e", e)
-                               e.attr("fill", "transparent");
+                               e.transition()
+                                   .duration(500)
+                                   .attr("fill", "transparent");
+
                                  d3.select("#countryLabel" + [d.id])
                                  .style("display", "none");
                               })
@@ -338,7 +424,9 @@ function initiateZoom()
                                    //console.log(d.properties.ADMIN+"text")
                                    var e = d3.select("#"+[d.id]+"text");
                                    //console.log("e", e)
-                                  e.attr("fill", "GreenYellow")
+                                  e.transition()
+                                      .duration(200)
+                                      .attr("fill", "GreenYellow")
 
                                     //d3.select(this).attr("font-size", 7);
                                     d3.select(this).style("display", "block")
@@ -349,7 +437,10 @@ function initiateZoom()
                                  {
                                    var e = d3.select("#"+[d.id]+"text");
                                    //console.log("e", e)
-                                  e.attr("fill", "transparent");
+                                  e.transition()
+                                      .duration(500)
+                                      .attr("fill", "transparent");
+
                                      d3.select(this).style("display", "none")
 
                                  })
@@ -426,7 +517,7 @@ var getColor = function(c)
   //var colorThing = d3.scaleSequential(d3.interpolateRdBu);
 
   var colorThing = d3.scaleLinear().domain([1,length])
-                    .interpolate(d3.interpolateHcl)
+                    //.interpolate(d3.interpolateHcl)
                     .range([d3.rgb("rgb(102, 103, 119)"), d3.rgb("rgb(57, 60, 119)")]);
 
 

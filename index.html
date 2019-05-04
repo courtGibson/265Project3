@@ -2,7 +2,28 @@
 <html lang="en" dir="ltr">
   <head>
     <style>
-    body {background-color: rgb(23, 25, 32);}
+    body
+    {
+      background-color: rgb(23, 25, 32);
+    }
+    div.tooltip
+    {
+      position: absolute;
+      text-align: center;
+      width: 200px;
+      height: 300px;
+      padding: 2px;
+      font: 12px sans-serif;
+      background: white;
+      border: 0px;
+      border-radius: 6px;
+      pointer-events: none;
+      float: right;
+    }
+    #colorLegend
+    {
+      z-index: 1000;
+    }
     </style>
     <meta charset="utf-8">
     <script src="https://d3js.org/d3.v5.min.js" type="text/javascript"></script>
