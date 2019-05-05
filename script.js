@@ -24,12 +24,12 @@ Promise.all([dataP, mapP, gdpDataP]).then(function(values)
 
   makeGroupAndDiv();
 
-  //makeCircles(geoData);
+  makeCircles(geoData);
   makeLegend();
   makeButtons(geoData);
 
 
-  //window.alert("Map Navigation:\n- Click and drag to move\n- Two finger scroll to zoom in/out\n- Click country to zoom to country")
+  window.alert("Map Navigation:\n    - Click and drag to move\n    - Two finger scroll to zoom in/out\n    - Click to zoom to country")
 },
   function(err)
 {
@@ -53,7 +53,7 @@ var makeButtons = function(data)
     .style("display", "block")
     .style("clear", "right")
     .style("position", "relative")
-    .style("top", "-330px")
+    .style("top", "-420px")
     .style("margin", "0px 100px 10px 0px")
     .style("padding", "10px 30px 10px")
     .on("click", function(d)
@@ -78,7 +78,7 @@ var makeButtons = function(data)
       .style("display", "block")
       .style("clear", "right")
       .style("position", "relative")
-      .style("top", "-330px")
+      .style("top", "-420px")
       .style("margin", "0px 100px 10px 0px")
       .style("padding", "10px 16px 10px")
       .on("click", function(d)
@@ -88,6 +88,11 @@ var makeButtons = function(data)
         console.log("map only button clicked");
         d3.select("#circleGroup").style("opacity", 0);
         drawButtonLabel(d);
+
+        d3.select(".tooltip")
+            .transition()
+            .duration(200)
+            .style("opacity", 0);
 
       })
 }
@@ -105,15 +110,17 @@ var drawButtonLabel = function(d)
     {
       svg.append("text")
           .attr("id", "prevText")
-          .attr("x", 30)
-          .attr("y", PREV_INDEX*30)
+          .attr("x", 10)
+          .attr("y", ((50*i)+395))
+          .text("Previous:")
     }
     else if(i == YEAR_INDEX)
     {
       svg.append("text")
           .attr("id", "currText")
-          .attr("x", 30)
-          .attr("y", YEAR_INDEX*30)
+          .attr("x", 10)
+          .attr("y", ((50*i)+395))
+          .text("Current:")
     }
   }
 }
@@ -124,7 +131,7 @@ var makeGroupAndDiv = function()
 
     svg.select("#map").append("g")
       .attr("id", "circleGroup")
-      .style("opacity", 0);
+      .style("opacity", 1);
 
     var div = d3.select("body").append("div")
                 .attr("class", "tooltip")
@@ -237,7 +244,7 @@ var makeLegend = function()
         .attr("y", 120)
 
     svg2.append("circle")
-        .attr("cx", 220)
+        .attr("cx", 240)
         .attr("cy", 167)
         .attr("r", 20)
         .style("opacity", .8)
@@ -247,7 +254,7 @@ var makeLegend = function()
 
     svg2.append("text")
         .text("Number of athletes:")
-        .attr("x", 30)
+        .attr("x", 15)
         .attr("y", 175)
 
 
@@ -255,6 +262,36 @@ var makeLegend = function()
         .text("View:")
         .attr("x", 105)
         .attr("y", 350)
+
+
+        svg2.append("circle")
+            .attr("cx", 240)
+            .attr("cy", 212)
+            .attr("r", 20)
+            .style("opacity", .8)
+            .style("stroke", "white")
+            .style("stroke-width", 10*0.1)
+            .attr("fill", "cyan")
+
+        svg2.append("text")
+            .text("Increase from previous:")
+            .attr("x", 15)
+            .attr("y", 220)
+
+
+            svg2.append("circle")
+                .attr("cx", 240)
+                .attr("cy", 257)
+                .attr("r", 20)
+                .style("opacity", .8)
+                .style("stroke", "white")
+                .style("stroke-width", 10*0.1)
+                .attr("fill", "orangered")
+
+            svg2.append("text")
+                .text("Decrease from previous:")
+                .attr("x", 15)
+                .attr("y", 265)
 
 
 }
@@ -268,7 +305,7 @@ var makeCircles = function(data)
 
     var svg = d3.select("svg")
 
-    var total = 0;
+    var total = 1;
 
 
     var circ =  d3.select("#circleGroup")
@@ -292,7 +329,7 @@ var makeCircles = function(data)
         .attr("r", function(d)
         {
         //  console.log("total", d.runData.years[0])
-          if (d.runData.years[YEAR_INDEX].events != null)
+          if (d.runData.years[YEAR_INDEX].events != null && d.runData.years[YEAR_INDEX].totalAthletesInCountry != 0)
           {
             return Number(Math.sqrt((d.runData.years[YEAR_INDEX].totalAthletesInCountry+40)/3.1415));
           }
@@ -359,24 +396,29 @@ var makeCircles = function(data)
               total++;
 
 
-              d3.select("#circle"+YEAR_INDEX+d.countryName)
-                  .attr("fill", "lime")
-
-
-
               if(total%2 == 0)
               {
-                div.transition()
+                d3.select(".tooltip")
+                    .transition()
                     .duration(200)
-                    .style("opacity", .9);
+                    .style("opacity", .8);
 
-                div.html(d.countryName + "<br/>"  + d.countryName)
+                var info = getInfo(d);
+
+                d3.select(".tooltip").html(info)
+
+                /*d3.select("#circle"+YEAR_INDEX+d.countryName)
+                    .attr("fill", "lime")*/
               }
               else
               {
-                div.transition()
+                d3.select(".tooltip")
+                      .transition()
                       .duration(500)
                       .style("opacity", 0);
+
+            /*  d3.select("#circle"+YEAR_INDEX+d.countryName)
+                  .attr("fill", "gold")*/
               }
 
           })
@@ -401,9 +443,38 @@ var makeCircles = function(data)
 
 }
 
+var getInfo = function(data)
+{
+  var string = "";
+  var curr = data.runData.years[YEAR_INDEX];
+
+  string = string+"Country: "+data.countryName+"\n";
+  string = string+"Year: "+(YEAR_INDEX+2014)+"\n";
+  string = string+"\tGDP per Capita: "+Math.round(curr.gdp)+"\n";
+  string = string+"\tTotal Athletes: "+curr.totalAthletesInCountry+"\n";
+
+  curr.events.forEach(function(d)
+  {
+    string = string +"\nEvent "+d.event+":\n";
+    string = string +"\tFemales: \n";
+    d.gender.female.forEach(function(d)
+    {
+      string = string +"\t\t"+d.name+": "+d.time+"\n";
+    })
+    string = string +"\tMales: \n";
+    d.gender.male.forEach(function(d)
+    {
+      string = string +"\t\t"+d.name+": "+d.time+"\n";
+    })
+  })
+
+  return string;
+}
+
+
 var makeMap = function(geoData, gdpData)
 {
-  var w = 1200;
+  var w = 1000;
   var h = 600;
 
   var zoom = d3
@@ -412,6 +483,7 @@ var makeMap = function(geoData, gdpData)
      //.passive = true;
 
   var svg = d3.select("body").append("svg")
+                             .attr("id", "svg1")
                              .attr("width", w)
                              .attr("height", h)
                              .attr("fill", "rgb(23, 25, 32)")
