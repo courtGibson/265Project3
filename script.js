@@ -30,7 +30,7 @@ Promise.all([dataP, mapP, gdpDataP]).then(function(values)
   makeButtons(geoData);
 
 
-//  window.alert("Map Navigation:\n    - Click and drag to move\n    - Two finger scroll to zoom in/out\n    - Click to zoom to country")
+  window.alert("Map Navigation:\n    - Click and drag to move\n    - Two finger scroll to zoom in/out\n    - Click to zoom to country")
 },
   function(err)
 {
