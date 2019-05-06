@@ -154,7 +154,8 @@ var makeLegend = function()
     //.attr("fill", "white")//"rgb(23, 25, 32)")
 
 
-  var colorThing = d3.scaleLinear().domain([1,length])
+  var colorThing = d3.scaleLog()
+                    .domain([1,length])
                     .range([d3.rgb("rgb(57, 60, 119)"), d3.rgb("rgb(102, 103, 119)")]);
   var colorList = [];
 
@@ -752,18 +753,18 @@ var getColor = function(c)
   //# d3.schemePuBu[k]
   //var colorThing = d3.scaleSequential(d3.interpolateRdBu);
 
-  var colorThing = d3.scaleLinear().domain([1,length])
+  var colorThing = d3.scaleLog().domain([1,length])
                     //.interpolate(d3.interpolateHcl)
                     .range([d3.rgb("rgb(102, 103, 119)"), d3.rgb("rgb(57, 60, 119)")]);
 
 
-  var linearScale = d3.scaleLinear()
+  var logScale = d3.scaleLog()
                             .domain([80000, 0])
                             .range([0,1]);
 
 
     //  console.log("color", colorThing(linearScale(c)));
-  var returnColor = colorThing(linearScale(c));
+  var returnColor = colorThing(logScale(c));
   return returnColor;
 }
 
