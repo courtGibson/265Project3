@@ -20,16 +20,17 @@ Promise.all([dataP, mapP, gdpDataP]).then(function(values)
   console.log("data", runData);
   console.log("map", geoData);
 
+  makeDiv();
   var map = makeMap(geoData);
+  makeGroup();
 
-  makeGroupAndDiv();
 
   makeCircles(geoData);
   makeLegend();
   makeButtons(geoData);
 
 
-  window.alert("Map Navigation:\n    - Click and drag to move\n    - Two finger scroll to zoom in/out\n    - Click to zoom to country")
+//  window.alert("Map Navigation:\n    - Click and drag to move\n    - Two finger scroll to zoom in/out\n    - Click to zoom to country")
 },
   function(err)
 {
@@ -130,17 +131,21 @@ var drawButtonLabel = function(d)
   }
 }
 
-var makeGroupAndDiv = function()
+var makeDiv = function()
+{
+   var div = d3.select("body").append("div")
+                .attr("class", "tooltip")
+                .style("opacity", 0);
+
+}
+
+var makeGroup = function()
 {
   var svg = d3.select("svg")
 
     svg.select("#map").append("g")
       .attr("id", "circleGroup")
       .style("opacity", 1);
-
-    var div = d3.select("body").append("div")
-                .attr("class", "tooltip")
-                .style("opacity", 0);
 }
 
 var makeLegend = function()
@@ -154,7 +159,7 @@ var makeLegend = function()
     //.attr("fill", "white")//"rgb(23, 25, 32)")
 
 
-  var colorThing = d3.scaleLog()
+  var colorThing = d3.scaleLinear()
                     .domain([1,length])
                     .range([d3.rgb("rgb(57, 60, 119)"), d3.rgb("rgb(102, 103, 119)")]);
   var colorList = [];
@@ -367,36 +372,39 @@ var makeCircles = function(data)
           }
         })
         .on("mouseover", function(d, i)
-            {
-              /*div.transition()
-                  .duration(200)
-                  .style("opacity", .9);
-              div.html(d.countryName + "<br/>"  + d.countryName)
-                  .style("left", (d3.event.pageX) + "px")
-                  .style("top", (d3.event.pageY - 28) + "px");*/
+        {
 
 
-              var e = d3.select("#"+[d.id]+"text");
-              //console.log("e", e)
-             e.attr("fill", "GreenYellow")
-                .style("text-shadow","0px 0px 8px Black");
-               d3.select("#countryLabel" + [d.id])
-                  .style("display", "block");
-              //console.log(d.properties.id)
+              d3.select(".tooltip").transition()
+                 .duration(200)
+                 .style("opacity", .9);
 
-            })
-            .on("mouseout", function(d, i)
-            {
-              var e = d3.select("#"+[d.id]+"text");
-              //console.log("e", e)
-             e.attr("fill", "transparent");
-               d3.select("#countryLabel" + [d.id])
-               .style("display", "none");
+                 if(d.runData.years[YEAR_INDEX].events != null)
+                 {
+                   var totAth = d.runData.years[YEAR_INDEX].totalAthletesInCountry;
+                 }
+                 else
+                 {
+                   var totAth = 0;
+                 }
+            d3.select(".tooltip").html(d.countryName + "<br/></br>"  + "GDP: "+Math.round(d.runData.years[YEAR_INDEX].gdp) + "<br/>"  +"Total Athletes: "+totAth+"<br/><br/>"+"<svg id='smallsvg1'></svg>"+"<svg id='smallsvg2'></svg>")
+                 .style("left", (d3.event.pageX) + "px")
+                 .style("top", (d3.event.pageY - 28) + "px");
 
-              /* div.transition()
-                     .duration(500)
-                     .style("opacity", 0);*/
-            })
+
+                 makeGraphs(d);
+          //console.log(d.properties.id)
+
+        })
+        .on("mouseout", function(d, i)
+        {
+          d3.select(".tooltip").transition()
+             .duration(200)
+             .style("opacity", 0);
+
+           d3.select("#countryLabel" + [d.id])
+           .style("display", "none");
+        })
           .on("click", function(d)
             {
               total++;
@@ -446,6 +454,170 @@ var makeCircles = function(data)
 
 
 
+
+}
+
+
+
+var makeGraphs = function(data)
+{
+  var svg1 = d3.select("#smallsvg1")
+  var svg2 = d3.select("#smallsvg2")
+
+  makeGenderGraph(data, svg1);
+  makeEventGraph(data, svg2);
+}
+
+var makeGenderGraph = function(data, svg)
+{
+  var margins =
+    {
+      top: 10,
+      bottom: 10,
+      left: 50,
+      right: 10
+    }
+
+
+  var width = 230;
+  var height = 100;
+  var svg = svg.attr("width", width+margins.left+margins.right)
+                .attr("height", height+margins.top+margins.bottom)
+
+
+  var xScale = d3.scaleLinear()
+                .domain([0,100])
+                .range([0,width-margins.left-margins.right])
+
+var numFemale = 0;
+    if (data.runData.years[YEAR_INDEX].events)
+    {
+      data.runData.years[YEAR_INDEX].events.forEach(function(d)
+      {
+        numFemale = numFemale + d.gender.female.length;
+      })
+    }
+    console.log("numFemale", numFemale)
+
+
+var numMale = 0
+    if (data.runData.years[YEAR_INDEX].events)
+    {
+      data.runData.years[YEAR_INDEX].events.forEach(function(d)
+      {
+        numMale = numMale + d.gender.male.length;
+      })
+    }
+
+  console.log("numMale", numMale)
+
+  var mFPercent = [numFemale/data.runData.years[YEAR_INDEX].totalAthletesInCountry,numMale/data.runData.years[YEAR_INDEX].totalAthletesInCountry];
+
+  var yScale = d3.scaleLinear()
+          .domain([0, 100])
+          .range([0, 85])
+
+
+  var xAxis  = d3.axisBottom(xScale)
+                  .tickValues([0,25,50,75,100])
+                  .tickFormat(function(n) { return n+"%";})
+
+
+  var yAxis  = d3.axisLeft(yScale)
+                  .tickValues([25, 75])
+                  .tickFormat(function(n) { console.log("n", n); if(n == 25){return "Males";}else{return "Female";}})
+
+
+  svg.append("g")
+         .classed(xAxis,true)
+         .call(xAxis)
+         .attr("transform","translate("+margins.left+","
+         +(margins.top+height-margins.top-margins.bottom)+")"
+      );
+
+
+   svg.append("g")
+     .classed(yAxis,true)
+     .call(yAxis)
+     .attr("transform","translate("+(margins.left)+","
+     + 5 +")");
+
+     var bars = svg.selectAll(".bar")
+                 .data(mFPercent)
+                 .enter()
+                 .append("g")
+
+     bars.append("rect")
+           .attr("class", "bar")
+           .attr("x", 0+margins.left+1)
+           .attr("y", function(d,i)
+           {
+             if(i == 1)
+             {
+               return yScale(25);
+             }
+             else
+             {
+               return yScale(75);
+             }
+           })
+           .attr("height", 20)
+           .attr("width", function(d)
+           {
+               return xScale(d*100);
+           })
+           .attr("fill", function(d,i)
+           {
+             if(i == 0)
+             {
+               return "pink";
+             }
+             else
+             {
+               return "lightblue";
+             }
+           })
+
+   bars.append("text")
+          .attr("class", "label")
+          .attr("y", function (d, i)
+          {
+            if(i == 0)
+            {
+              return yScale(75+15);
+            }
+            else
+            {
+              return yScale(25+15);
+            }
+          })
+          .attr("x", function (d)
+          {
+            if(d == 0)
+            {
+              return margins.left+3;
+            }
+            else if (isNaN(d))
+            {
+              return margins.left+3;
+            }
+              return xScale(d*100)+margins.left+3;
+          })
+          .text(function (d)
+          {
+            if (isNaN(d))
+            {
+              return "0%";
+            }
+              return Math.round(d*100)+"%";
+          });
+
+
+
+}
+
+var makeEventGraph = function(data, svg)
+{
 
 }
 
@@ -609,25 +781,33 @@ function initiateZoom()
                               .on("mouseover", function(d, i)
                               {
 
-                                var e = d3.select("#"+[d.id]+"text");
-                                //console.log("e", e)
-                               e.transition()
-                                   .duration(200)
-                                   .attr("fill", "GreenYellow")
-                                  .style("text-shadow","0px 0px 8px Black");
 
-                                 d3.select("#countryLabel" + [d.id])
-                                    .style("display", "block");
+                                    d3.select(".tooltip").transition()
+                                       .duration(200)
+                                       .style("opacity", .9);
+
+                                       if(d.runData.years[YEAR_INDEX].events != null)
+                                       {
+                                         var totAth = d.runData.years[YEAR_INDEX].totalAthletesInCountry;
+                                       }
+                                       else
+                                       {
+                                         var totAth = 0;
+                                       }
+                                  d3.select(".tooltip").html(d.countryName + "<br/></br>"  + "GDP: "+Math.round(d.runData.years[YEAR_INDEX].gdp) + "<br/>"  +"Total Athletes: "+totAth+"<br/><br/>"+"<svg id='smallsvg1'></svg>"+"<svg id='smallsvg2'></svg>")
+                                       .style("left", (d3.event.pageX) + "px")
+                                       .style("top", (d3.event.pageY - 28) + "px");
+
+
+                                       makeGraphs(d);
                                 //console.log(d.properties.id)
 
                               })
                               .on("mouseout", function(d, i)
                               {
-                                var e = d3.select("#"+[d.id]+"text");
-                                //console.log("e", e)
-                               e.transition()
-                                   .duration(500)
-                                   .attr("fill", "transparent");
+                                d3.select(".tooltip").transition()
+                                   .duration(200)
+                                   .style("opacity", 0);
 
                                  d3.select("#countryLabel" + [d.id])
                                  .style("display", "none");
@@ -659,11 +839,7 @@ function initiateZoom()
                                  {
                                    //d3.select(this).attr("fill","black");
                                    //console.log(d.properties.ADMIN+"text")
-                                   var e = d3.select("#"+[d.id]+"text");
-                                   //console.log("e", e)
-                                  e.transition()
-                                      .duration(200)
-                                      .attr("fill", "GreenYellow")
+
 
                                     //d3.select(this).attr("font-size", 7);
                                     d3.select(this).style("display", "block")
@@ -672,11 +848,6 @@ function initiateZoom()
                                  })
                                  .on("mouseout", function(d, i)
                                  {
-                                   var e = d3.select("#"+[d.id]+"text");
-                                   //console.log("e", e)
-                                  e.transition()
-                                      .duration(500)
-                                      .attr("fill", "transparent");
 
                                      d3.select(this).style("display", "none")
 
@@ -753,12 +924,12 @@ var getColor = function(c)
   //# d3.schemePuBu[k]
   //var colorThing = d3.scaleSequential(d3.interpolateRdBu);
 
-  var colorThing = d3.scaleLog().domain([1,length])
+  var colorThing = d3.scaleLinear().domain([1,length])
                     //.interpolate(d3.interpolateHcl)
                     .range([d3.rgb("rgb(102, 103, 119)"), d3.rgb("rgb(57, 60, 119)")]);
 
 
-  var logScale = d3.scaleLog()
+  var logScale = d3.scaleLinear()
                             .domain([80000, 0])
                             .range([0,1]);
 
