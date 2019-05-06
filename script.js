@@ -159,44 +159,9 @@ var makeLegend = function()
     //.attr("fill", "white")//"rgb(23, 25, 32)")
 
 
-  var colorThing = d3.scaleLinear()
-                    .domain([1,length])
-                    .range([d3.rgb("rgb(57, 60, 119)"), d3.rgb("rgb(102, 103, 119)")]);
-  var colorList = [];
-
-  for (var i = 0; i<100; i++)
-  {
-    var currObj = {};
-    currObj.val = i;
-    currObj.color = colorThing(i*0.01)
-
-    colorList.push(currObj);
-  }
-
-  var linearGradient = d3.select("#svg2")
-                  .append("defs")
-                  .append("linearGradient")
-                  .attr("id", "linear-gradient")
-                  /*.attr("x1", "0%")
-                  .attr("y1", "0%")
-                  .attr("x2", "100%")
-                  .attr("y2", "0%");*/
-
-  linearGradient.selectAll("stop")
-                .data(colorList)
-                .enter()
-                .append("stop")
-                .attr("offset", function(d)
-                {
-                  //console.log(d)
-                  return d.val+"%";
-                })
-                .attr("stop-color", function(d)
-                {
-                  return d.color;
-                })
-
   var svg2 = d3.select("#svg2")
+
+
 
     svg2.append("rect")
         .attr("x", 0)
@@ -206,7 +171,7 @@ var makeLegend = function()
         .attr("fill","white")
         .style("stroke", "black")
         .style("stroke-width", 1)
-        .style("opacity", .8)
+        .style("opacity", 1)
         .attr("rx", 6)
         .attr("ry", 6)
 
@@ -218,19 +183,9 @@ var makeLegend = function()
         .attr("fill","white")
         .style("stroke", "black")
         .style("stroke-width", 1)
-        .style("opacity", .8)
+        .style("opacity", 1)
         .attr("rx", 6)
         .attr("ry", 6)
-
-    svg2.append("rect")
-        .attr("id", "colorLegend")
-        .attr("x", 30)
-        .attr("y", 85)
-        .attr("width", 200)
-        .attr("height", 15)
-        .attr("fill","url(#linear-gradient)")
-        .style("stroke", "black")
-        .style("stroke-width", 1)
 
     svg2.append("text")
         .text("Legend")
@@ -239,27 +194,104 @@ var makeLegend = function()
         .style("text-decoration", "underline")
         .style("font-weight", "bold")
 
+        svg2.append("rect")
+            .attr("x", 20)
+            .attr("y", 80)
+            .attr("width", 38)
+            .attr("height", 20)
+            .style("stroke", "black")
+            .style("stroke-width", 1)
+            .attr("fill", getColor(1))
+
+        svg2.append("rect")
+            .attr("x", 58)
+            .attr("y", 80)
+            .attr("width", 38)
+            .attr("height", 20)
+            .style("stroke", "black")
+            .style("stroke-width", 1)
+            .attr("fill", getColor(300))
+
+        svg2.append("rect")
+            .attr("x", 96)
+            .attr("y", 80)
+            .attr("width", 38)
+            .attr("height", 20)
+            .style("stroke", "black")
+            .style("stroke-width", 1)
+            .attr("fill", getColor(3000))
+
+        svg2.append("rect")
+            .attr("x", 134)
+            .attr("y", 80)
+            .attr("width", 38)
+            .attr("height", 20)
+            .style("stroke", "black")
+            .style("stroke-width", 1)
+            .attr("fill", getColor(10000))
+
+
+        svg2.append("rect")
+            .attr("x", 172)
+            .attr("y", 80)
+            .attr("width", 38)
+            .attr("height", 20)
+            .style("stroke", "black")
+            .style("stroke-width", 1)
+            .attr("fill", getColor(30000))
+
+
+        svg2.append("rect")
+            .attr("x", 210)
+            .attr("y", 80)
+            .attr("width", 38)
+            .attr("height", 20)
+            .style("stroke", "black")
+            .style("stroke-width", 1)
+            .attr("fill", getColor(90000))
+
+
     svg2.append("text")
         .text("GDP per Capita")
         .attr("x", 60)
         .attr("y", 70)
 
     svg2.append("text")
-        .text("Low")
-        .attr("x", 30)
+        .text("200")
+        .attr("x", 58-15)
         .attr("y", 120)
+        .style("font-size", "15px")
 
     svg2.append("text")
-        .text("High")
-        .attr("x", 190)
+        .text("2000")
+        .attr("x", 96-20)
         .attr("y", 120)
+        .style("font-size", "15px")
 
+        svg2.append("text")
+            .text("5000")
+            .attr("x", 134-20)
+            .attr("y", 120)
+            .style("font-size", "15px")
+
+            svg2.append("text")
+                .text("20000")
+                .attr("x", 172-20)
+                .attr("y", 120)
+                .style("font-size", "15px")
+
+                svg2.append("text")
+                    .text("80000")
+                    .attr("x", 210-10)
+                    .attr("y", 120)
+                    .style("font-size", "15px")
+//20000, 80000
     svg2.append("circle")
         .attr("cx", 240)
         .attr("cy", 167)
         .attr("r", 20)
-        .style("opacity", .8)
-        .style("stroke", "white")
+        .style("opacity", 1)
+        .style("stroke", "black")
         .style("stroke-width", 10*0.1)
         .attr("fill", "gold")
 
@@ -279,8 +311,8 @@ var makeLegend = function()
             .attr("cx", 240)
             .attr("cy", 212)
             .attr("r", 20)
-            .style("opacity", .8)
-            .style("stroke", "white")
+            .style("opacity", 1)
+            .style("stroke", "black")
             .style("stroke-width", 10*0.1)
             .attr("fill", "cyan")
 
@@ -294,8 +326,8 @@ var makeLegend = function()
                 .attr("cx", 240)
                 .attr("cy", 257)
                 .attr("r", 20)
-                .style("opacity", .8)
-                .style("stroke", "white")
+                .style("opacity", 1)
+                .style("stroke", "black")
                 .style("stroke-width", 10*0.1)
                 .attr("fill", "orangered")
 
@@ -350,8 +382,8 @@ var makeCircles = function(data)
           }
 
         })
-        .style("opacity", .8)
-        .style("stroke", "white")
+        .style("opacity", 0.8)
+        .style("stroke", "black")
         .style("stroke-width", function(d)
         {
           return Number(Math.sqrt((d.runData.years[YEAR_INDEX].totalAthletesInCountry+40)/3.1415)*0.1);
@@ -377,7 +409,7 @@ var makeCircles = function(data)
 
               d3.select(".tooltip").transition()
                  .duration(200)
-                 .style("opacity", .9);
+                 .style("opacity", 1);
 
                  if(d.runData.years[YEAR_INDEX].events != null)
                  {
@@ -387,10 +419,19 @@ var makeCircles = function(data)
                  {
                    var totAth = 0;
                  }
-            d3.select(".tooltip").html(d.countryName + "<br/></br>"  + "GDP: "+Math.round(d.runData.years[YEAR_INDEX].gdp) + "<br/>"  +"Total Athletes: "+totAth+"<br/><br/>"+"<svg id='smallsvg1'></svg>"+"<svg id='smallsvg2'></svg>")
-                 .style("left", (d3.event.pageX) + "px")
-                 .style("top", (d3.event.pageY - 28) + "px");
 
+                 if(d.runData.years[YEAR_INDEX].gdp == 0)
+                 {
+                   var gdpS = "N/A";
+                 }
+                 else
+                 {
+                   var gdpS= Math.round(d.runData.years[YEAR_INDEX].gdp);
+
+                 }
+            d3.select(".tooltip").html(d.countryName + "<br/></br>"  + "GDP per Capita: "+ gdpS + "<br/>"  +"Total Athletes: "+totAth+"<br/>"+"<svg id='smallsvg1'></svg>"+"<svg id='smallsvg2'></svg>")
+                 .style("left", "0px")//(d3.event.pageX) + "px")
+                 .style("top", "100px")//(d3.event.pageY - 28) + "px");
 
                  makeGraphs(d);
           //console.log(d.properties.id)
@@ -399,43 +440,12 @@ var makeCircles = function(data)
         .on("mouseout", function(d, i)
         {
           d3.select(".tooltip").transition()
-             .duration(200)
+             .duration(500)
              .style("opacity", 0);
 
            d3.select("#countryLabel" + [d.id])
            .style("display", "none");
         })
-          .on("click", function(d)
-            {
-              total++;
-
-
-              if(total%2 == 0)
-              {
-                d3.select(".tooltip")
-                    .transition()
-                    .duration(200)
-                    .style("opacity", .8);
-
-                var info = getInfo(d);
-
-                d3.select(".tooltip").html(info)
-
-                /*d3.select("#circle"+YEAR_INDEX+d.countryName)
-                    .attr("fill", "lime")*/
-              }
-              else
-              {
-                d3.select(".tooltip")
-                      .transition()
-                      .duration(500)
-                      .style("opacity", 0);
-
-            /*  d3.select("#circle"+YEAR_INDEX+d.countryName)
-                  .attr("fill", "gold")*/
-              }
-
-          })
 
 
 
@@ -618,6 +628,162 @@ var numMale = 0
 
 var makeEventGraph = function(data, svg)
 {
+  var margins =
+    {
+      top: 10,
+      bottom: 10,
+      left: 70,
+      right: 0
+    }
+
+
+  var width = 230;
+  var height = 250;
+  var svg = svg.attr("width", width+margins.left+margins.right)
+                .attr("height", height+margins.top+margins.bottom)
+
+
+  var xScale = d3.scaleLinear()
+                .domain([0,45])
+                .range([0,width-margins.left-margins.right])
+
+  var num800 = 0;
+    if (data.runData.years[YEAR_INDEX].events)
+    {
+      num800 = data.runData.years[YEAR_INDEX].events[0].totalAthletesInEvent;
+    }
+    console.log("num800", num800)
+
+var num1500 = 0;
+  if (data.runData.years[YEAR_INDEX].events)
+  {
+    num1500 = data.runData.years[YEAR_INDEX].events[1].totalAthletesInEvent;
+  }
+  console.log("num1500", num1500)
+
+  var num3k = 0;
+    if (data.runData.years[YEAR_INDEX].events)
+    {
+      num3k = data.runData.years[YEAR_INDEX].events[2].totalAthletesInEvent;
+    }
+    console.log("num3k", num3k)
+
+  var num5k = 0;
+    if (data.runData.years[YEAR_INDEX].events)
+    {
+      num5k = data.runData.years[YEAR_INDEX].events[3].totalAthletesInEvent;
+    }
+    console.log("num5k", num5k)
+
+  var num10k = 0;
+    if (data.runData.years[YEAR_INDEX].events)
+    {
+      num10k = data.runData.years[YEAR_INDEX].events[4].totalAthletesInEvent;
+    }
+    console.log("num10k", num10k)
+
+  var numMar = 0;
+    if (data.runData.years[YEAR_INDEX].events)
+    {
+      numMar = data.runData.years[YEAR_INDEX].events[5].totalAthletesInEvent;
+    }
+    console.log("numMar", numMar)
+
+  var tots = [num800, num1500, num3k, num5k, num10k, numMar];
+
+
+  var yScale = d3.scaleLinear()
+          .domain([0, 100])
+          .range([0, 250-margins.bottom])
+
+
+  var xAxis  = d3.axisBottom(xScale)
+                  .tickValues([0,15,30,45])
+                  .tickFormat(function(n) { return n;})
+
+
+  var yAxis  = d3.axisLeft(yScale)
+                  .tickValues([10,25,40,55,70,85])
+                  .tickFormat(function(n)
+                  {
+                    if(n == 10){return "800m";}
+                    else if(n==25){return "1500m";}
+                    else if(n==40){return "3k Steeplechase";}
+                    else if(n==55){return "5k";}
+                    else if(n==70){return "10k";}
+                    else{return "Marathon";}
+
+                  })
+
+
+  svg.append("g")
+         .classed(xAxis,true)
+         .call(xAxis)
+         .attr("transform","translate("+margins.left+","
+         +(margins.top+height-margins.top-margins.bottom)+")"
+      );
+
+
+   svg.append("g")
+     .classed(yAxis,true)
+     .call(yAxis)
+     .attr("transform","translate("+(margins.left)+","
+     + 5 +")");
+
+     var bars = svg.selectAll(".bar")
+                 .data(tots)
+                 .enter()
+                 .append("g")
+
+var colorScale = d3.scaleOrdinal(d3.schemeCategory10);
+
+
+     bars.append("rect")
+           .attr("class", "bar")
+           .attr("x", 0+margins.left+1)
+           .attr("y", function(d,i)
+           {
+             return yScale((i*15)+8);
+           })
+           .attr("height", 20)
+           .attr("width", function(d)
+           {
+               return xScale(d);
+           })
+           .attr("fill", function(d,i)
+           {
+              return colorScale(i);
+           })
+
+   bars.append("text")
+          .attr("class", "label")
+          .attr("y", function (d, i)
+          {
+              return yScale((i*15)+15);
+
+          })
+          .attr("x", function (d)
+          {
+            if(d == 0)
+            {
+              return margins.left+3;
+            }
+            else if (isNaN(d))
+            {
+              return margins.left+3;
+            }
+              return xScale(d)+margins.left+3;
+          })
+          .text(function (d)
+          {
+            if (isNaN(d))
+            {
+              return "0";
+            }
+              return d+"";
+          });
+
+
 
 }
 
@@ -628,7 +794,15 @@ var getInfo = function(data)
 
   string = string+"Country: "+data.countryName+"\n";
   string = string+"Year: "+(YEAR_INDEX+2014)+"\n";
-  string = string+"\tGDP per Capita: "+Math.round(curr.gdp)+"\n";
+  if(curr.gdp == 0)
+  {
+    string = string+"\tGDP per Capita: N/A\n";
+  }
+  else
+  {
+    string = string+"\tGDP per Capita: "+Math.round(curr.gdp)+"\n";
+
+  }
   string = string+"\tTotal Athletes: "+curr.totalAthletesInCountry+"\n";
 
   curr.events.forEach(function(d)
@@ -652,7 +826,7 @@ var getInfo = function(data)
 
 var makeMap = function(geoData, gdpData)
 {
-  var w = 1000;
+  var w = 900;
   var h = 600;
 
   var zoom = d3
@@ -759,6 +933,7 @@ function initiateZoom()
                );
            }
 
+var count = 1;
 
    countries = countriesGroup.selectAll("path")
                               .data(geoData.features)
@@ -782,31 +957,41 @@ function initiateZoom()
                               {
 
 
-                                    d3.select(".tooltip").transition()
-                                       .duration(200)
-                                       .style("opacity", .9);
+                                d3.select(".tooltip").transition()
+                                   .duration(200)
+                                   .style("opacity", 1);
 
-                                       if(d.runData.years[YEAR_INDEX].events != null)
-                                       {
-                                         var totAth = d.runData.years[YEAR_INDEX].totalAthletesInCountry;
-                                       }
-                                       else
-                                       {
-                                         var totAth = 0;
-                                       }
-                                  d3.select(".tooltip").html(d.countryName + "<br/></br>"  + "GDP: "+Math.round(d.runData.years[YEAR_INDEX].gdp) + "<br/>"  +"Total Athletes: "+totAth+"<br/><br/>"+"<svg id='smallsvg1'></svg>"+"<svg id='smallsvg2'></svg>")
-                                       .style("left", (d3.event.pageX) + "px")
-                                       .style("top", (d3.event.pageY - 28) + "px");
+                                   if(d.runData.years[YEAR_INDEX].events != null)
+                                   {
+                                     var totAth = d.runData.years[YEAR_INDEX].totalAthletesInCountry;
+                                   }
+                                   else
+                                   {
+                                     var totAth = 0;
+                                   }
 
 
-                                       makeGraphs(d);
+                                   if(d.runData.years[YEAR_INDEX].gdp == 0)
+                                   {
+                                     var gdpS = "N/A";
+                                   }
+                                   else
+                                   {
+                                     var gdpS= Math.round(d.runData.years[YEAR_INDEX].gdp);
+
+                                   }
+                              d3.select(".tooltip").html(d.countryName + "<br/></br>"  + "GDP per Capita: "+ gdpS + "<br/>"  +"Total Athletes: "+totAth+"<br/>"+"<svg id='smallsvg1'></svg>"+"<svg id='smallsvg2'></svg>")
+                                   .style("left", "0px")//(d3.event.pageX) + "px")
+                                   .style("top", "100px")//(d3.event.pageY - 28) + "px");
+
+                                   makeGraphs(d);
                                 //console.log(d.properties.id)
 
                               })
                               .on("mouseout", function(d, i)
                               {
                                 d3.select(".tooltip").transition()
-                                   .duration(200)
+                                   .duration(500)
                                    .style("opacity", 0);
 
                                  d3.select("#countryLabel" + [d.id])
@@ -834,25 +1019,49 @@ function initiateZoom()
                                     d.properties.spotData = {xLoc: path.centroid(d)[0], yLoc: path.centroid(d)[1]};
                                     return ("translate(" + path.centroid(d)[0] + "," + (path.centroid(d)[1]+20) + ")");
                                  })
-                                 // add mouseover functionality to the label
                                  .on("mouseover", function(d, i)
                                  {
-                                   //d3.select(this).attr("fill","black");
-                                   //console.log(d.properties.ADMIN+"text")
 
 
-                                    //d3.select(this).attr("font-size", 7);
-                                    d3.select(this).style("display", "block")
+                                   d3.select(".tooltip").transition()
+                                      .duration(200)
+                                      .style("opacity", 1);
 
+                                      if(d.runData.years[YEAR_INDEX].events != null)
+                                      {
+                                        var totAth = d.runData.years[YEAR_INDEX].totalAthletesInCountry;
+                                      }
+                                      else
+                                      {
+                                        var totAth = 0;
+                                      }
+
+                                      if(d.runData.years[YEAR_INDEX].gdp == 0)
+                                      {
+                                        var gdpS = "N/A";
+                                      }
+                                      else
+                                      {
+                                        var gdpS= Math.round(d.runData.years[YEAR_INDEX].gdp);
+
+                                      }
+                                 d3.select(".tooltip").html(d.countryName + "<br/></br>"  + "GDP per Capita: "+ gdpS + "<br/>"  +"Total Athletes: "+totAth+"<br/>"+"<svg id='smallsvg1'></svg>"+"<svg id='smallsvg2'></svg>")
+                                      .style("left", "0px")//(d3.event.pageX) + "px")
+                                      .style("top", "100px")//(d3.event.pageY - 28) + "px");
+
+                                      makeGraphs(d);
+                                   //console.log(d.properties.id)
 
                                  })
                                  .on("mouseout", function(d, i)
                                  {
+                                   d3.select(".tooltip").transition()
+                                      .duration(500)
+                                      .style("opacity", 0);
 
-                                     d3.select(this).style("display", "none")
-
+                                    d3.select("#countryLabel" + [d.id])
+                                    .style("display", "none");
                                  })
-                                 // add an onlcick action to zoom into clicked country
                                  .on("click", function(d, i)
                                  {
                                     d3.selectAll(".country")
@@ -924,18 +1133,23 @@ var getColor = function(c)
   //# d3.schemePuBu[k]
   //var colorThing = d3.scaleSequential(d3.interpolateRdBu);
 
-  var colorThing = d3.scaleLinear().domain([1,length])
+
+ var colorThing = d3.scaleThreshold()
+      .domain([200, 2000, 5000, 20000, 80000])
+      .range(d3.schemePurples[6])
+
+/*  var colorThing = d3.scaleLinear().domain([1,length])
                     //.interpolate(d3.interpolateHcl)
-                    .range([d3.rgb("rgb(102, 103, 119)"), d3.rgb("rgb(57, 60, 119)")]);
+                    .range([d3.rgb("rgb(102, 103, 119)"), d3.rgb("rgb(57, 60, 119)")]);*/
 
 
-  var logScale = d3.scaleLinear()
-                            .domain([80000, 0])
-                            .range([0,1]);
+  /*var logScale = d3.scaleLinear()
+                    .domain([0,80000])
+                    .range([0,1]);*/
 
 
     //  console.log("color", colorThing(linearScale(c)));
-  var returnColor = colorThing(logScale(c));
+  var returnColor = colorThing(c);
   return returnColor;
 }
 
